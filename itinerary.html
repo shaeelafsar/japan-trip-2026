@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day-by-day itinerary | Japan trip shortlist</title>
+<meta name="description" content="A draft day-by-day Tokyo itinerary for Nov 25 - Dec 2, with daylight, weather, early-start flags, day trips and a booking calendar.">
+<script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    let saved = null;
+    try { saved = localStorage.getItem("theme"); } catch (e) {}
+    const theme =
+      param || saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<style>
+:root {
+  color-scheme: light;
+  --cp-bg: #f7f4ef;
+  --cp-bg-elevated: #fcfbf8;
+  --cp-surface: #ffffff;
+  --cp-surface-soft: #f5f5f5;
+  --cp-border: #dedede;
+  --cp-border-strong: #919191;
+  --cp-text: #242424;
+  --cp-text-muted: #5c5c5c;
+  --cp-text-soft: #6f6f6f;
+  --cp-accent: #b11f4b;
+  --cp-accent-hover: #9a1a41;
+  --cp-accent-soft: rgba(177, 31, 75, 0.08);
+  --cp-accent-fg: #ffffff;
+  --cp-success: #16a34a;
+  --cp-danger: #dc2626;
+  --cp-warning: #f59e0b;
+  --cp-link: #0078d4;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
+  --cp-overlay: rgba(255, 255, 255, 0.8);
+  --cp-panel: rgba(255, 255, 255, 0.86);
+  --cp-panel-strong: rgba(255, 255, 255, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.55);
+  --cp-highlight: rgba(177, 31, 75, 0.12);
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --cp-bg: #3d3b3a;
+  --cp-bg-elevated: #343231;
+  --cp-surface: #292929;
+  --cp-surface-soft: #2e2e2e;
+  --cp-border: #474747;
+  --cp-border-strong: #5f5f5f;
+  --cp-text: #dedede;
+  --cp-text-muted: #919191;
+  --cp-text-soft: #b0b0b0;
+  --cp-accent: #fd8ea1;
+  --cp-accent-hover: #fb7b91;
+  --cp-accent-soft: rgba(253, 142, 161, 0.14);
+  --cp-accent-fg: #1a1a1a;
+  --cp-success: #4ade80;
+  --cp-danger: #f87171;
+  --cp-warning: #fbbf24;
+  --cp-link: #4da6ff;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+  --cp-overlay: rgba(41, 41, 41, 0.88);
+  --cp-panel: rgba(41, 41, 41, 0.72);
+  --cp-panel-strong: rgba(41, 41, 41, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.04);
+  --cp-highlight: rgba(253, 142, 161, 0.12);
+}
+</style>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><span>Japan</span> trip shortlist</a>
+    <nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="itinerary.html" aria-current="page">Itinerary</a><a href="must-see.html">Must-see</a><a href="walking.html">Walks &amp; hikes</a><a href="activities.html">Activities</a><a href="food.html">Food</a><a href="more-ideas.html">More ideas</a><a href="sources.html">Sources &amp; credits</a></nav>
+    <button class="theme-toggle" id="theme-toggle" type="button">Dark mode</button>
+  </div>
+</header>
+<main class="container">
+<div class="hero">
+  <p class="eyebrow">Nov 25 - Dec 2, 2026 · Draft 1</p>
+  <h1>Day-by-day itinerary</h1>
+  <p class="lede">Built from the four research reports (Must-see, Walks and Hikes, Activities, Food). Tokyo base with day trips, 2 adults, Wed Nov 25 to Wed Dec 2, 2026. No pork and no alcoholic drinks. Nothing is booked. Items are tagged <strong>SEE</strong>, <strong>DO</strong>, <strong>WALK</strong> and <strong>EAT</strong> after the four categories. Transit times are planning estimates (see section 12); check each leg on the day with Google Maps or a Japan transit app.</p>
+</div>
+<nav class="jump" aria-label="On this page"><a href="#read-first">Read this first</a><a href="#daylight">Daylight</a><a href="#stay">Where to stay</a><a href="#week">Week</a><a href="#day-nov-25">Nov 25</a><a href="#day-nov-26">Nov 26</a><a href="#day-nov-27">Nov 27</a><a href="#day-nov-28">Nov 28</a><a href="#day-nov-29">Nov 29</a><a href="#day-nov-30">Nov 30</a><a href="#day-dec-1">Dec 1</a><a href="#day-dec-2">Dec 2</a><a href="#swap">Swap rules</a><a href="#option-b">Option B</a><a href="#option-c">Option C</a><a href="#booking">Bookings</a><a href="#left-out">Left out</a><a href="#evenings">Evenings</a><a href="#verified">Verified?</a></nav>
+
+<section class="block" id="read-first">
+  <div class="callout"><h2>1. Read this first</h2><ul><li><strong>Early starts are flagged in the plan.</strong> Fri Nov 27 (Fuji) is the only day that needs a truly early start (out by 06:45). Mon Nov 30 and Tue Dec 1 start at 09:00. Every other day starts at 10:00 to 11:00, which is your normal rhythm.</li><li><strong>Daylight is short.</strong> Sunset is about 16:30 every day. Plan sights and wooded walks between about 09:30 and 15:30, and use the dark hours for lights, observatories, indoor shows and dinner.</li><li><strong>Every day has a break</strong> (a long seated lunch, a museum, a bus ride or a hotel rest). The two long days are Sat Nov 28 and Fri Nov 27, and both have a cut list.</li><li><strong>Late nights stay in well-lit, busy places with an easy train home.</strong> See section 11.</li><li><strong>Hikes avoid bear-alert areas.</strong> Mt Takao (alert level 1 and a bear filmed 70 m off Trail 1), Mitake and Oyama are left out. The two walks that do count as hikes are the Kamakura Daibutsu forest course and the Chureito stair climb. Both are heavily used, and the reports found no bear alert for Kamakura. Yamanashi has only a general bear mention (snippet-only), so stay on the maintained paths at Chureito.</li><li><strong>Nights away are undecided, so Option A (no nights away) is the main plan.</strong> Section 7 swaps in one night at Kawaguchiko or Hakone. Section 8 swaps in two nights in Kyoto and Nara.</li><li><strong>Assumption to confirm:</strong> I guessed you may be jet-lagged and awake early on days 1 to 3. The plan does not depend on it.</li></ul></div>
+</section>
+
+<section class="block" id="daylight">
+  <h2>2. Daylight and weather</h2>
+  <div class="panel"><div class="table-wrap"><table class="data-table"><thead><tr><th>Date</th><th>Sunrise</th><th>Sunset</th><th>Last usable light (civil dusk)</th></tr></thead><tbody><tr><td>Wed Nov 25</td><td>06:27</td><td>16:30</td><td>16:58</td></tr><tr><td>Thu Nov 26</td><td>06:28</td><td>16:30</td><td>16:58</td></tr><tr><td>Fri Nov 27</td><td>06:29</td><td>16:30</td><td>16:57</td></tr><tr><td>Sat Nov 28</td><td>06:30</td><td>16:29</td><td>16:57</td></tr><tr><td>Sun Nov 29</td><td>06:30</td><td>16:29</td><td>16:57</td></tr><tr><td>Mon Nov 30</td><td>06:31</td><td>16:29</td><td>16:57</td></tr><tr><td>Tue Dec 1</td><td>06:32</td><td>16:29</td><td>16:57</td></tr><tr><td>Wed Dec 2</td><td>06:33</td><td>16:29</td><td>16:57</td></tr></tbody></table></div>
+<p>Times are for central Tokyo, calculated with standard solar equations and within about 2 minutes (two dates were cross-checked against an online sunrise API). Kawaguchiko and Kamakura sunsets are within a few minutes of these.</p>
+<ul><li><strong>Temperatures (Japan Guide, from Japan Meteorological Agency data):</strong> November averages about 17 °C high and 10 °C low; December about 12 °C high and 5 °C low. For our dates expect roughly 12 to 16 °C by day and 5 to 9 °C at night (my interpolation). It will feel colder on rooftops, on the Kamakura coast and at Kawaguchiko (a rule of thumb is 5 to 8 °C colder than Tokyo, my estimate).</li><li><strong>Rain and sun:</strong> late November has about 20 to 25 percent rainy days and 55 to 60 percent sunny days; early December is drier (10 to 15 percent rainy, 65 to 75 percent sunny). Japan Guide's table gives two values per month, which I read as early and late month. Winter air usually gives clear Fuji views but not on every day.</li><li><strong>Pack:</strong> layers with a windproof outer layer, a compact umbrella, shoes with grip for the Kamakura trail, gloves and a hat for the observatories and Fuji.</li><li><strong>Rush hour</strong> peaks 08:00 to 09:00 and after 17:00 (Japan Guide). Your 10:00 to 11:00 starts miss the morning peak; the 06:45 Fuji start and the 09:00 starts do not, so travel light on those days.</li></ul></div>
+</section>
+
+<section class="block" id="stay">
+  <h2>3. Where to stay</h2>
+  <div class="panel"><p><strong>Shinjuku, on the south or west side (near the South, New South or West exits), not Kabukicho or Golden Gai.</strong> Why:</p>
+<ul><li><strong>Day trips leave from here.</strong> Kamakura (about 55 to 65 minutes, Shonan-Shinjuku Line), Kawaguchiko (highway bus from Busta Shinjuku, about 1 hour 45 minutes, ¥2,200 each way) and Hakone (Odakyu Romancecar) all start in Shinjuku.</li><li><strong>The plan's food is here.</strong> Tsunahachi Annex, Imahan, Isetan with Toraya and Sushi Zanmai are all in or next to Shinjuku.</li><li><strong>It has easy hotel breaks</strong> because Shibuya, Harajuku and Ginza are 7 to 16 minutes away by train.</li><li><strong>Haneda</strong> is one airport bus or one train change away (about 60 to 75 minutes, my estimate).</li><li><strong>Alternative:</strong> Tokyo Station if you choose the Kyoto option (Option C), because the Shinkansen leaves from there.</li></ul></div>
+</section>
+
+<section class="block" id="week">
+  <h2>4. The week at a glance</h2>
+  <div class="panel"><div class="table-wrap"><table class="data-table"><thead><tr><th>Day</th><th>Theme</th><th>Out</th><th>Back</th><th>Rhythm</th></tr></thead><tbody><tr><td>Wed Nov 25</td><td>Arrive</td><td>-</td><td>-</td><td>Land 17:45. Easy evening only.</td></tr><tr><td>Thu Nov 26</td><td>West Tokyo: Meiji Jingu, Harajuku, Shibuya, SHIBUYA SKY</td><td>10:00</td><td>19:15</td><td>Normal</td></tr><tr><td>Fri Nov 27</td><td><strong>Mt Fuji from Kawaguchiko, with Chureito Pagoda</strong></td><td><strong>06:45</strong></td><td>19:00</td><td><strong>EARLY</strong>, bus ride and long lunch as breaks</td></tr><tr><td>Sat Nov 28</td><td>Ueno, Tokyo National Museum, teamLab Borderless</td><td>11:00</td><td>21:45</td><td>Normal start, <strong>long day</strong>, cut list below</td></tr><tr><td>Sun Nov 29</td><td>Shinjuku Gyoen, tempura, Toraya, sumo show</td><td>10:45</td><td>21:00</td><td>Slow, hotel rest 15:45</td></tr><tr><td>Mon Nov 30</td><td>Kamakura: forest trail, Great Buddha, Hase-dera</td><td>09:00</td><td>18:00</td><td><strong>Earlier start (09:00)</strong></td></tr><tr><td>Tue Dec 1</td><td>Asakusa, sushi class, Sumida, Ginza eel and Marunouchi lights</td><td>09:00</td><td>22:00</td><td><strong>Earlier start (09:00)</strong>, hotel rest 16:20 to 18:00</td></tr><tr><td>Wed Dec 2</td><td>Slow morning, Haneda</td><td>-</td><td>leave 12:00</td><td>Flight 16:50</td></tr></tbody></table></div>
+<p>Rough walking per day (my estimate, with 18+ km allowed): Thu 9 to 11 km, Fri 9 to 12 km (398 steps at Chureito), Sat 7 to 9 km, Sun 6 to 8 km, Mon 10 to 12 km (3.6 km of it is the forest trail), Tue 8 to 10 km.</p></div>
+</section>
+
+<section class="block" id="days">
+  <div class="section-head"><h2>5. Day by day</h2><p>Times are a plan, not a schedule to obey. Every day has a break.</p></div>
+  <div class="card-list">
+<article class="card day" id="day-nov-25">
+  <div class="card-body">
+    <div class="card-head"><h3>Wed Nov 25: Arrive, easy evening</h3></div>
+    <p class="why"><strong>Rhythm:</strong> Land at Haneda 17:45. Nothing else planned.</p>
+    <div class="table-wrap"><table class="data-table day-table"><thead><tr><th>Time</th><th>Plan</th><th>Notes</th></tr></thead><tbody><tr><td>17:45</td><td>Land at Haneda</td><td>Immigration and bags usually take 60 to 90 minutes (my estimate).</td></tr><tr><td>About 19:30</td><td>Airport to Shinjuku</td><td>Airport bus or Keikyu train plus JR, about 60 to 75 minutes. Check the day-of route.</td></tr><tr><td>About 20:45</td><td>Hotel check-in</td><td></td></tr><tr><td>21:00</td><td><strong class="act">EAT</strong> Sushi Zanmai Higashi-Shinjuku, or a convenience store</td><td>Open 11:00 to 05:00, plain seafood sushi, 3 minutes from Higashi-Shinjuku A1. Use the site's ordering card.</td></tr></tbody></table></div>
+  </div>
+</article>
+<article class="card day" id="day-nov-26">
+  <div class="card-body">
+    <div class="card-head"><h3>Thu Nov 26: West Tokyo</h3><span class="badge flag-good">Normal start</span></div>
+    <p class="why"><strong>Rhythm:</strong> Out 10:00, home about 19:15. Walking about 9 to 11 km. Sunset 16:30.</p>
+    <div class="table-wrap"><table class="data-table day-table"><thead><tr><th>Time</th><th>Plan</th><th>Notes</th></tr></thead><tbody><tr><td>10:00</td><td>Shinjuku to Harajuku</td><td>JR Yamanote, a few minutes.</td></tr><tr><td>10:20 to 12:15</td><td><strong class="act">SEE and WALK</strong> Meiji Jingu forest approach and shrine, Yoyogi Park edge</td><td>Free. Open 06:10 to 16:10 in November. Level gravel, no climb. Calmest before midday.</td></tr><tr><td>12:15 to 13:00</td><td><strong class="act">WALK</strong> Takeshita Street and Omotesando</td><td>Busiest after midday. Use the parallel streets. Skip street snacks (not screened for pork).</td></tr><tr><td>13:00 to 14:15</td><td><strong class="act">EAT</strong> Sakura-tei vegan okonomiyaki (3-20-1 Jingumae)</td><td>Order the vegan preparation explicitly and choose the food menu, not an alcohol plan. Check hours and book via the official link. Conditional pick.</td></tr><tr><td>14:15 to 15:30</td><td><strong class="act">WALK</strong> Harajuku to Shibuya, Shibuya Crossing and Hachiko</td><td>About 1.5 to 2 km. Use a locker for bags (no bags on the SKY roof). Coffee stop here is the day's break.</td></tr><tr><td>15:45</td><td><strong class="act">DO</strong> SHIBUYA SKY, sunset slot</td><td>Open 10:00 to 22:30. Book at <strong>00:00 JST on Nov 12</strong> (JST is UTC+9, so convert it to your own time zone). Sunset slots sell out first.</td></tr><tr><td>17:15</td><td>Shibuya to Ebisu</td><td>JR Yamanote, about 3 minutes.</td></tr><tr><td>17:30 to 18:45</td><td><strong class="act">EAT</strong> Honolu chicken paitan ramen (1-23-1 Ebisuminami, America-bashi building 1F)</td><td>Explicit no-pork policy. Open 17:00 to 21:30. Walk-in, bring cash, about 7 minutes from Ebisu Station. Hiiragi taiyaki nearby if there is no queue.</td></tr><tr><td>About 19:00</td><td>Back to Shinjuku</td><td>JR, about 8 to 10 minutes.</td></tr></tbody></table></div>
+<ul><li><strong>If it rains:</strong> Meiji Jingu is fine in light rain. In heavy rain, shorten to Meiji Jingu plus the indoor lunch, and keep SKY only if visibility looks fair (check its cancellation terms when you book).</li><li><strong>If SKY sells out:</strong> use the free Tokyo Metropolitan Government observatory (20 to 30 minute queue, north deck open to 22:00).</li></ul>
+  </div>
+</article>
+<article class="card day" id="day-nov-27">
+  <div class="card-body">
+    <div class="card-head"><h3>Fri Nov 27: Mt Fuji from Kawaguchiko</h3><span class="badge flag-warn">EARLY start</span></div>
+    <p class="why"><strong>Rhythm: early day.</strong> Wake about 06:00, out 06:45, bus about 07:15, back at the hotel about 19:00. Walking about 9 to 12 km. Nothing is booked in the evening, and you have a full seated lunch plus the two bus rides as breaks. This is the weather-flex day (section 6).</p>
+    <div class="table-wrap"><table class="data-table day-table"><thead><tr><th>Time</th><th>Plan</th><th>Notes</th></tr></thead><tbody><tr><td>06:45</td><td>Hotel to Busta Shinjuku</td><td>Buy a convenience-store onigiri or sandwich for breakfast, and read the label for pork.</td></tr><tr><td>About 07:15</td><td><strong class="act">DO</strong> Highway bus to Kawaguchiko</td><td>About 1 hour 45 minutes, ¥2,200 each way. Book both ways. Pick an outbound bus that arrives by about 09:30.</td></tr><tr><td>About 09:30</td><td>Kawaguchiko to Shimoyoshida (Fujikyu line)</td><td>About 20 minutes (my estimate).</td></tr><tr><td>10:00 to 11:45</td><td><strong class="act">WALK and SEE</strong> Chureito Pagoda at Arakurayama Sengen Park</td><td>398 steps on maintained stairs, about 1 to 1.5 hours with photos. Best Fuji light is in the morning. Stay on the marked path (general Yamanashi bear mention, snippet-only).</td></tr><tr><td>12:00 to 13:15</td><td><strong class="act">EAT</strong> lunch near Shimoyoshida or Kawaguchiko</td><td>Choose on the spot with the ordering card. Hoto (the local miso stew) often contains pork, so ask or pick another dish. This is your long break.</td></tr><tr><td>13:45 to 15:30</td><td><strong class="act">WALK</strong> Lake Kawaguchiko shore and Oishi Park</td><td>Flat. Fuji reflection views. The Momiji Festival runs to Nov 29, but most foliage is past peak. A local pass costs ¥1,500 to 2,000 if you use the loop bus.</td></tr><tr><td>About 15:45</td><td>Bus back to Shinjuku</td><td>Friday traffic can add time. Arrive about 18:15 to 19:00. Leave the light-up (to 21:00 to 22:00) for another trip.</td></tr><tr><td>About 19:00</td><td><strong class="act">EAT</strong> easy dinner</td><td>Isetan B1 bento (before it closes at 20:00) or a convenience store.</td></tr></tbody></table></div>
+<ul><li><strong>Guided tour option:</strong> a guided Fuji day (about ¥6,700 to 26,900, 8 to 12 hours) replaces the DIY bus if you want transport and a guide handled. It is a longer day.</li><li><strong>Cut list if tired:</strong> skip Oishi Park and catch an earlier bus.</li></ul>
+  </div>
+</article>
+<article class="card day" id="day-nov-28">
+  <div class="card-body">
+    <div class="card-head"><h3>Sat Nov 28: Ueno, museum and teamLab</h3><span class="badge flag-warn">Normal start, long day</span></div>
+    <p class="why"><strong>Rhythm:</strong> Out 11:00, back about 21:45 (about 10.5 hours, with three sit-down blocks). Walking about 7 to 9 km. Sat is a weekend, so Ueno is busy. The Tokyo National Museum's Toyokan and Honkan Rooms 17 to 20 are open only through Sun Nov 29 (they close Nov 30 to Dec 31), and the museum stays open until 20:00 on Saturday.</p>
+    <div class="table-wrap"><table class="data-table day-table"><thead><tr><th>Time</th><th>Plan</th><th>Notes</th></tr></thead><tbody><tr><td>11:00</td><td>Shinjuku to Ueno</td><td>JR, about 25 to 30 minutes.</td></tr><tr><td>11:30 to 12:20</td><td><strong class="act">WALK</strong> Ueno Park and Shinobazu Pond</td><td>Ginkgo and maple colour.</td></tr><tr><td>12:30 to 13:45</td><td><strong class="act">EAT</strong> Panga Shin-Okachimachi wagyu kalbi and loin lunch (3-27-9 Taito)</td><td>Walk-in only at lunch, about 10 minutes from the park, 3 to 5 from Shin-Okachimachi A2. Water or tea only (alcohol is sold). The operator declares JHF certification and halal-prepared wagyu; reconfirm.</td></tr><tr><td>14:00 to 16:30</td><td><strong class="act">SEE</strong> Tokyo National Museum</td><td>¥1,000. Queue can exceed 30 minutes. No suitcases. Honkan Japanese art plus the Toyokan. Open until 20:00 on Fri and Sat.</td></tr><tr><td>16:45</td><td>Ueno to Akihabara, Hibiya line</td><td>About 4 minutes.</td></tr><tr><td>17:00 to 17:50</td><td><strong class="act">EAT</strong> T's Tantan golden sesame vegan ramen (ecute Akihabara, outside the Electric Town gate)</td><td>Strongest no-pork evidence of any pick. Walk-in.</td></tr><tr><td>18:00</td><td>Hibiya line to Kamiyacho</td><td>Direct, about 20 minutes (my estimate).</td></tr><tr><td>18:30 to 20:30</td><td><strong class="act">DO</strong> teamLab Borderless, Azabudai Hills</td><td>Timed ticket, ¥3,400 to 3,800, sold online only. Open to 21:00, last entry 20:00. Azabudai Hills' free winter lights (about Nov 21 to Dec 25, snippet-only) are next door.</td></tr><tr><td>About 21:00</td><td>Home: Kamiyacho, Hibiya line to Kasumigaseki, Marunouchi line to Shinjuku</td><td>About 35 minutes. This route avoids Roppongi's street level.</td></tr></tbody></table></div>
+<ul><li><strong>Cut list if tired:</strong> skip Ueno Park, or cut the museum to 1.5 hours. Ameyoko (the market between Ueno and Okachimachi) is not scheduled because its street food is mostly pork and it is crowded on weekends.</li><li><strong>Alternative:</strong> teamLab Planets (Toyosu) instead of Borderless, but pick only one.</li></ul>
+  </div>
+</article>
+<article class="card day" id="day-nov-29">
+  <div class="card-body">
+    <div class="card-head"><h3>Sun Nov 29: Shinjuku, slow day</h3></div>
+    <p class="why"><strong>Rhythm:</strong> Out 10:45, hotel rest 15:45 to 17:00, back about 21:00. Walking about 6 to 8 km. A recovery day before Monday's earlier start.</p>
+    <div class="table-wrap"><table class="data-table day-table"><thead><tr><th>Time</th><th>Plan</th><th>Notes</th></tr></thead><tbody><tr><td>10:45 to 13:00</td><td><strong class="act">WALK and SEE</strong> Shinjuku Gyoen</td><td>¥500. Open 09:00 to 16:30, last entry 16:00. Flat, 3 to 4 km loop, glasshouse for warmth. Colour timing is uncertain (it may be near its end). Weekends are busier.</td></tr><tr><td>13:15 to 14:30</td><td><strong class="act">EAT</strong> Tsunahachi Annex tempura (3-28-4 Shinjuku, TRES SHINJUKU 6F or B1F)</td><td>Lunch served to 15:00. About 3 minutes from Shinjuku-sanchome. Confirm frying oil has no lard and check the sauce and soup. Conditional pick. The old main shop is closed for rebuilding.</td></tr><tr><td>14:45 to 15:30</td><td><strong class="act">EAT</strong> Toraya Yoru no Ume yokan at Isetan B1</td><td>Takeaway takes 10 to 20 minutes. Sugar, azuki and agar only. Browse the depachika.</td></tr><tr><td>15:45 to 17:00</td><td>Hotel rest</td><td>The day's break.</td></tr><tr><td>17:15 to 19:00</td><td><strong class="act">DO</strong> Shinjuku sumo show (Okubo 2-chome)</td><td>About 1.5 hours, ¥8,200 to 11,700, cashless, free cancellation up to 24 hours before. Hard to find: confirm the meeting instructions. Decline alcohol. Pick a slot that ends by about 20:00.</td></tr><tr><td>19:15 to 20:15</td><td><strong class="act">EAT</strong> Sushi Zanmai Higashi-Shinjuku (1-1-15 Okubo)</td><td>Close to the sumo venue and open until 05:00. Plain seafood sushi. Stay on the main road, ignore touts.</td></tr><tr><td>About 21:00</td><td>Back to the hotel</td><td>Optional on the way: Shinjuku Minamilumi lights (about Nov 11 to Feb 14, free).</td></tr></tbody></table></div>
+<ul><li><strong>If sumo start times differ:</strong> swap lunch and dinner (Sushi Zanmai at lunch, Tsunahachi at dinner) or move the rest.</li><li><strong>Alternative evening:</strong> Rikugien night illumination (Nov 25 to Dec 6, 18:00 to 20:30, last entry 19:30, ¥1,000 online in advance, daily caps) instead of the sumo show.</li></ul>
+  </div>
+</article>
+<article class="card day" id="day-nov-30">
+  <div class="card-body">
+    <div class="card-head"><h3>Mon Nov 30: Kamakura</h3><span class="badge flag-good">Earlier start</span></div>
+    <p class="why"><strong>Rhythm:</strong> Out 09:00, back at Shinjuku about 18:00. Walking about 10 to 12 km. A weekday, so temples are quieter. Shinjuku Gyoen and the Tokyo National Museum are closed today, so this is the right day to be elsewhere.</p>
+    <div class="table-wrap"><table class="data-table day-table"><thead><tr><th>Time</th><th>Plan</th><th>Notes</th></tr></thead><tbody><tr><td>09:00</td><td>Shinjuku to Kita-Kamakura</td><td>Shonan-Shinjuku Line (may need a change at Ofuna), about 55 to 65 minutes. Return about ¥2,200 to 2,700.</td></tr><tr><td>10:30 to 12:15</td><td><strong class="act">WALK</strong> Daibutsu hiking course</td><td>Kita-Kamakura, Jochi-ji, Kuzuharaoka, Genjiyama, Daibutsu-zaka. 3.59 km, 54 to 85 minutes (allow up to 2 hours with stops), about 198 m of climbing. Muddy after rain, no water on the route. No bear or trail alert found. Keep wooded sections finished well before sunset (16:30).</td></tr><tr><td>12:30 to 13:15</td><td><strong class="act">SEE</strong> Great Buddha at Kotoku-in</td><td>¥300, open 08:00 to 17:00. The trail exit is about 6 minutes away.</td></tr><tr><td>13:15 to 14:15</td><td><strong class="act">EAT</strong> lunch near Hase</td><td>Choose on the spot with the ordering card. This is the main break.</td></tr><tr><td>14:30 to 15:45</td><td><strong class="act">SEE</strong> Hase-dera</td><td>¥400, open to 17:00, last entry 16:30. Stairs and a view over the bay.</td></tr><tr><td>16:00</td><td>Optional: Yuigahama Beach for sunset</td><td>About 15 minutes away. Do not add Enoshima: the report says not to combine them in a winter day.</td></tr><tr><td>About 16:30</td><td>Back by Enoden and JR</td><td>Arrive Shinjuku about 18:00.</td></tr><tr><td>18:45 to 20:30</td><td><strong class="act">EAT</strong> Imahan sukiyaki at Takashimaya Shinjuku 14F</td><td>Reserve through the official concierge and disclose no pork. Ask about cooking fat and the warishita sauce. Sukiyaki from about ¥9,900, bento ¥3,300. Allow a possible 10 percent service charge from 17:00. Warming after a cold trail.</td></tr></tbody></table></div>
+<ul><li><strong>If it rains hard:</strong> skip the hike, do Kotoku-in and Hase-dera in rain gear, or swap days with Fuji (section 6).</li></ul>
+  </div>
+</article>
+<article class="card day" id="day-dec-1">
+  <div class="card-body">
+    <div class="card-head"><h3>Tue Dec 1: Asakusa and Ginza</h3><span class="badge flag-good">Earlier start</span></div>
+    <p class="why"><strong>Rhythm:</strong> Out 09:00, hotel rest 16:20 to 18:00, back about 22:00. Walking about 8 to 10 km. The last full day; Wed has a slow morning. The Tokyo Metropolitan Government's south observatory is closed today, so it is not used.</p>
+    <div class="table-wrap"><table class="data-table day-table"><thead><tr><th>Time</th><th>Plan</th><th>Notes</th></tr></thead><tbody><tr><td>09:00</td><td>Shinjuku to Asakusa</td><td>About 35 to 45 minutes (my estimate).</td></tr><tr><td>09:45 to 11:30</td><td><strong class="act">SEE</strong> Senso-ji, Kaminarimon and the back streets</td><td>Grounds open 24 hours, hall to 17:00, shops from about 09:00. Avoid the Nakamise menchi-katsu (pork). A weekday is calmer than the weekend.</td></tr><tr><td>11:45 to 13:25</td><td><strong class="act">DO</strong> Asakusa sushi-making class (this is lunch)</td><td>1 hour 40 minutes, ¥8,500 to 12,600, about 3 minutes from Asakusa Station. Book a slot starting about 11:45 to 12:00, and not the sake option. Limited places per slot.</td></tr><tr><td>13:45 to 15:30</td><td><strong class="act">WALK</strong> Sumida riverside to the Skytree approach</td><td>Flat, about 1.5 to 2 km, breezy. The Skytree deck is not recommended.</td></tr><tr><td>15:30 to 16:20</td><td>Back to the hotel</td><td>About 40 minutes.</td></tr><tr><td>16:20 to 18:00</td><td>Hotel rest</td><td>The day's break.</td></tr><tr><td>18:00</td><td>Marunouchi line to Ginza</td><td>About 16 minutes.</td></tr><tr><td>18:30 to 20:00</td><td><strong class="act">EAT</strong> Bincho hitsumabushi eel (Marronnier Gate Ginza 1, 12F, 2-2-14 Ginza)</td><td>Reserve online. Eel and rice, then with condiments, then with stock. Confirm the glaze and soup. Conditional pick. Hours need checking.</td></tr><tr><td>20:15 to 21:15</td><td><strong class="act">WALK and SEE</strong> Marunouchi winter illumination</td><td>Free, runs 16:00 to 23:00 (Nov 12 to Feb 14). About 10 minutes' walk from Yurakucho to Marunouchi Naka-dori.</td></tr><tr><td>About 21:30</td><td>Marunouchi line from Tokyo Station to Shinjuku</td><td>About 15 to 20 minutes.</td></tr></tbody></table></div>
+<ul><li><strong>If it rains:</strong> swap the Sumida walk for the Samurai Ninja Museum (about 1 hour, ¥3,200 to 3,500) and keep the rest.</li></ul>
+  </div>
+</article>
+<article class="card day" id="day-dec-2">
+  <div class="card-body">
+    <div class="card-head"><h3>Wed Dec 2: Slow morning and departure</h3></div>
+    <p class="why"><strong>Rhythm:</strong> Sleep in. Leave the hotel about 12:00 for Haneda (flight 16:50, so you arrive about 13:15 to 13:30). Nothing booked.</p>
+    <div class="table-wrap"><table class="data-table day-table"><thead><tr><th>Time</th><th>Plan</th><th>Notes</th></tr></thead><tbody><tr><td>09:00 to 10:00</td><td>Late breakfast</td><td></td></tr><tr><td>10:00 to 11:30</td><td><strong class="act">EAT</strong> Isetan B1 (opens about 10:00): Toraya yokan to take home, a bento for the flight</td><td>Check the opening time.</td></tr><tr><td>About 12:00</td><td>Leave for Haneda</td><td>Allow 60 to 75 minutes. Keep souvenirs in the carry-on.</td></tr></tbody></table></div>
+  </div>
+</article>
+  </div>
+</section>
+
+<section class="block" id="swap">
+  <h2>6. Weather and swap rules</h2>
+  <div class="panel"><ul><li><strong>Fuji day (Fri Nov 27) is the flex day.</strong> About a week out, check the forecast for Fri and Mon. If Fri looks cloudy or wet and Mon looks clear, swap Fuji and Kamakura (Kamakura Fri, Fuji Mon). Fuji needs a clear forecast; Kamakura tolerates overcast. Book the bus with an eye to its change policy, and hold refundable dinner bookings.</li><li><strong>Both days wet:</strong> do Kamakura's temples without the trail, and swap Fuji for indoor items (Tokyo National Museum, teamLab, the sushi class, the Samurai Ninja Museum, the Isetan food hall).</li><li><strong>Closures that fix the order:</strong> Shinjuku Gyoen and the Tokyo National Museum are closed Mon Nov 30. Tokyo National Museum's Toyokan and Honkan Rooms 17 to 20 close from Nov 30. The Imperial East Gardens are closed Mon and Fri. The Tokyo Metropolitan Government south observatory is closed Tue Dec 1.</li><li><strong>Colour is a late-window bet.</strong> Tokyo's foliage usually peaks late November to early December, and Kawaguchiko's is mostly over. Do not build a day around it.</li></ul></div>
+</section>
+
+<section class="block" id="option-b">
+  <h2>7. Option B: one night away</h2>
+  <div class="panel"><p><strong>B1. Kawaguchiko overnight, Fri Nov 27 to Sat Nov 28</strong> (replaces the Fuji day trip and eases the 06:45 start)</p>
+<ul><li>Fri: bus about 08:30 (arrive about 10:15), Chureito, lunch, Oishi Park, check in somewhere with a Fuji view and an onsen. Take a small overnight bag and leave the suitcase at the Shinjuku hotel.</li><li>Sat: Fuji at sunrise (06:30), breakfast, bus back about 11:00 (arrive about 13:00 to 14:00).</li><li>Sat afternoon: go straight to the Tokyo National Museum (open to 20:00), then T's Tantan and teamLab as in the main plan. Panga lunch and Ueno Park drop out.</li><li><strong>Gain:</strong> better Fuji light and a slower Friday. <strong>Cost:</strong> lodging near the Momiji Festival (to Nov 29) is booked up early, and a Saturday highway bus is busy. Ask the lodging in advance for a pork-free dinner.</li></ul>
+<p><strong>B2. Hakone overnight, Mon Nov 30 to Tue Dec 1</strong> (replaces Kamakura and Tuesday's Asakusa morning)</p>
+<ul><li>Mon: Odakyu Romancecar from Shinjuku (Freepass ¥7,100, ¥9,500 with Romancecar), Old Tokaido cedar avenue and the Moto-Hakone walk (3 to 5 hours), the Lake Ashi cruise as a transit leg only, onsen at the lodging.</li><li>Tue: back by about 13:00, then Senso-ji and the sushi class in the afternoon, and the Ginza and Marunouchi evening as in the main plan.</li><li>The ropeway can stop for wind or gas on any day; its Dec 7 to 24 suspension is after our dates.</li></ul></div>
+</section>
+
+<section class="block" id="option-c">
+  <h2>8. Option C: Kyoto and Nara</h2>
+  <div class="panel"><p>Keeps Thu, Fri and Sat in Tokyo unchanged. Replaces Shinjuku Gyoen, the sumo show, Kamakura and Asakusa. Cost: about ¥28,000 to 31,000 per adult return by Shinkansen (2 hours 15 minutes each way), plus two Kyoto nights.</p>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>Day</th><th>Plan</th></tr></thead><tbody><tr><td>Sun Nov 29</td><td>Shinkansen to Kyoto in the morning. Fushimi Inari in the afternoon (free, open 24 hours). Kiyomizu-dera night viewing (Nov 21 to 30, to 21:30).</td></tr><tr><td>Mon Nov 30</td><td>Nara: Todai-ji (¥800, hall 08:00 to 17:00) and the park. Back in Kyoto by early evening. Eikando's illumination (Nov 20 to Dec 6, snippet-only) is the evening option. Nijo Castle's Ninomaru is closed Tue Dec 1, so skip it or fit it into Sunday.</td></tr><tr><td>Tue Dec 1</td><td>Kyoto morning, Shinkansen back to Tokyo by midday, then the Ginza eel dinner and Marunouchi lights as in the main plan.</td></tr><tr><td>Wed Dec 2</td><td>Senso-ji at 07:00 before the flight is possible if you check out early (check whether a direct Asakusa to Haneda train fits with your bags).</td></tr></tbody></table></div>
+<p>Kyoto's foliage likely peaks late November to early December (my knowledge, to verify), which makes this option the best match for the season. It costs about three Tokyo days of content.</p></div>
+</section>
+
+<section class="block" id="booking">
+  <h2>9. Booking calendar</h2>
+  <div class="panel"><div class="table-wrap"><table class="data-table"><thead><tr><th>When</th><th>What</th><th>Why</th></tr></thead><tbody><tr><td>Now</td><td>Hotel in Shinjuku</td><td>Not booked yet.</td></tr><tr><td>About Oct 27</td><td>Kawaguchiko bus both ways, Fri Nov 27</td><td>Buses release one calendar month ahead (snippet-only, confirm on the operator site). Check the change policy for the weather swap.</td></tr><tr><td>Nov 12, 00:00 JST</td><td>SHIBUYA SKY, Thu Nov 26, sunset slot</td><td>Tickets go on sale 00:00 JST two weeks ahead. Sunset slots sell out first.</td></tr><tr><td>As soon as slots show</td><td>teamLab Borderless, Sat Nov 28, entry about 18:30</td><td>Timed, dynamically priced, online only.</td></tr><tr><td>As soon as you decide</td><td>Sushi class, Tue Dec 1, 11:45 slot</td><td>Limited places per slot. Skip the sake option.</td></tr><tr><td>As soon as you decide</td><td>Sumo show, Sun Nov 29, slot ending by about 20:00</td><td>Free cancellation up to 24 hours before.</td></tr><tr><td>1 to 2 weeks before</td><td>Imahan, Mon Nov 30 evening, and Bincho, Tue Dec 1, 18:30</td><td>Reserve through the official pages and state no pork and no alcohol.</td></tr><tr><td>Optional</td><td>Rikugien advance ticket (if you swap in Sunday's alternative)</td><td>Online only, ¥1,000, daily caps. Sales date was not announced.</td></tr><tr><td>No booking</td><td>Meiji Jingu, Senso-ji, Shinjuku Gyoen (e-ticket optional), Kamakura temples, Tokyo National Museum, Honolu, T's Tantan, Panga lunch</td><td>Walk-in.</td></tr></tbody></table></div></div>
+</section>
+
+<section class="block" id="left-out">
+  <h2>10. Left out, and why</h2>
+  <div class="panel"><ul><li><strong>Mt Takao, Mitake and Oyama:</strong> bear alerts or incident clusters, and Takao Trail 6 is uphill-only. Takao is an opt-in swap only if you accept a busy trail with the alert-level-1 notice.</li><li><strong>Rikugien night illumination:</strong> a good B-rated item, but ticket sales were not announced and the daily cap is a risk. It is the Sunday alternative.</li><li><strong>Tokyo Metropolitan Government observatory:</strong> free and good, but it duplicates SHIBUYA SKY. It is the fallback if SKY sells out.</li><li><strong>Imperial East Gardens, Hamarikyu, Zojo-ji and Tokyo Tower, Akihabara shopping, Yanaka, Kichijoji and Inokashira Park:</strong> fine, but not needed once the days are full. They are the swap pool for a rain day or a cancelled booking.</li><li><strong>Samurai Ninja Museum, kimono rental, tea or matcha class, teamLab Planets:</strong> swap candidates. Pick only one teamLab.</li><li><strong>Skytree deck, Nikko, Jigokudani snow monkeys, Ghibli Museum (closed Dec 1), Yomiuriland, street go-karts:</strong> weak fit for these dates or this group, per the reports.</li><li><strong>Food not scheduled:</strong> Isehiro yakitori-don, Kanda Yabusoba (closed Wednesdays), Maruka udon, Ginza Kagari ramen, Hiiragi (only if passing). Add them as lunch swaps.</li><li><strong>Ameyoko:</strong> crowded and mostly pork street food.</li></ul></div>
+</section>
+
+<section class="block" id="evenings">
+  <h2>11. Evenings: safety and getting home</h2>
+  <div class="panel"><div class="table-wrap"><table class="data-table"><thead><tr><th>Evening</th><th>Where</th><th>Way home</th><th>Notes</th></tr></thead><tbody><tr><td>Thu Nov 26</td><td>Shibuya and Ebisu</td><td>JR Yamanote or Saikyo direct to Shinjuku</td><td>Skip Shibuya's nightlife streets.</td></tr><tr><td>Fri Nov 27</td><td>Back from Kawaguchiko by about 19:00</td><td>Bus then a short walk</td><td>No evening plan.</td></tr><tr><td>Sat Nov 28</td><td>Azabudai Hills</td><td>Hibiya to Kasumigaseki, Marunouchi to Shinjuku</td><td>Skip Roppongi street level.</td></tr><tr><td>Sun Nov 29</td><td>Okubo (sumo and sushi)</td><td>Short train or walk on the main road</td><td>This is the edge of Kabukicho. Go straight to the venue, decline touts and bar invitations.</td></tr><tr><td>Mon Nov 30</td><td>Takashimaya Shinjuku</td><td>Short walk</td><td>Inside the department store.</td></tr><tr><td>Tue Dec 1</td><td>Ginza and Marunouchi</td><td>Marunouchi line direct to Shinjuku</td><td>Busy and well lit.</td></tr></tbody></table></div>
+<p>The UK Foreign Office warns about touts, drink spiking and overcharging in Kabukicho, Shibuya, Roppongi and Ikebukuro nightlife. Nothing here sends you into the main nightlife streets of those areas after dark, but Sunday's Okubo venues are at the edge of Kabukicho (see the table). This is a risk flag, not a guarantee.</p></div>
+</section>
+
+<section class="block" id="verified">
+  <div class="callout"><h2>12. What is verified and what is not</h2><ul><li><strong>From the reports (checked 2026-10-19/20):</strong> the opening hours, closures and ticket rules named above; the Kamakura trail figures; teamLab, SHIBUYA SKY, sumo and sushi-class details; the pork and alcohol notes for each food pick.</li><li><strong>My own estimates (not source-verified):</strong> every train and bus duration inside Tokyo, Haneda to Shinjuku, the Shonan-Shinjuku direct service and possible change at Ofuna, the Fujikyu leg to Shimoyoshida, the Fuji bus return times and Friday traffic, walking distances, the Hibiya and Marunouchi line connections, and the 5 to 8 °C Kawaguchiko rule of thumb.</li><li><strong>Snippet-only (search-result text, not read on the official page):</strong> the Roppongi and Azabudai illumination dates, the Yamanashi and Hakone bear status, the one-month Fuji bus release, the Eikando dates, the Hakone ropeway dates and some fares.</li><li><strong>Not known yet:</strong> sumo start times, Sakura-tei, Bincho and Imahan reservation details, teamLab slot availability, Sunday evening crowds at Rikugien, and where you will stay.</li><li><strong>Not accessible:</strong> Reddit stayed blocked in every research pass, so no pick is rated high confidence.</li><li><strong>Unconfirmed assumption:</strong> the jet-lag guess.</li><li><strong>Food:</strong> no restaurant is certified. Show the ordering card and read labels. Cooking sake and mirin are acceptable; alcoholic drinks are not.</li></ul></div>
+</section>
+
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>Built from four research reports plus one page of ideas from memory, and a draft itinerary built from them. Food was checked on 2026-10-19; Walks, Activities and Must-see were redone on 2026-10-19/20 using live Google, TripAdvisor, AllTrails, booking-site and official-page data. Prices are approximate JPY per adult, and hours, closures and tickets should be rechecked before booking. Nothing is booked yet.</p>
+    <p>Photos come from Wikimedia Commons under free licenses; see <a href="sources.html#photo-credits">Sources &amp; credits</a>.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
