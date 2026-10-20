@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walks and hikes | Japan trip shortlist</title>
+<meta name="description" content="Lively city walks and easy-to-moderate hikes in busy, well-visited areas.">
+<script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    let saved = null;
+    try { saved = localStorage.getItem("theme"); } catch (e) {}
+    const theme =
+      param || saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<style>
+:root {
+  color-scheme: light;
+  --cp-bg: #f7f4ef;
+  --cp-bg-elevated: #fcfbf8;
+  --cp-surface: #ffffff;
+  --cp-surface-soft: #f5f5f5;
+  --cp-border: #dedede;
+  --cp-border-strong: #919191;
+  --cp-text: #242424;
+  --cp-text-muted: #5c5c5c;
+  --cp-text-soft: #6f6f6f;
+  --cp-accent: #b11f4b;
+  --cp-accent-hover: #9a1a41;
+  --cp-accent-soft: rgba(177, 31, 75, 0.08);
+  --cp-accent-fg: #ffffff;
+  --cp-success: #16a34a;
+  --cp-danger: #dc2626;
+  --cp-warning: #f59e0b;
+  --cp-link: #0078d4;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
+  --cp-overlay: rgba(255, 255, 255, 0.8);
+  --cp-panel: rgba(255, 255, 255, 0.86);
+  --cp-panel-strong: rgba(255, 255, 255, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.55);
+  --cp-highlight: rgba(177, 31, 75, 0.12);
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --cp-bg: #3d3b3a;
+  --cp-bg-elevated: #343231;
+  --cp-surface: #292929;
+  --cp-surface-soft: #2e2e2e;
+  --cp-border: #474747;
+  --cp-border-strong: #5f5f5f;
+  --cp-text: #dedede;
+  --cp-text-muted: #919191;
+  --cp-text-soft: #b0b0b0;
+  --cp-accent: #fd8ea1;
+  --cp-accent-hover: #fb7b91;
+  --cp-accent-soft: rgba(253, 142, 161, 0.14);
+  --cp-accent-fg: #1a1a1a;
+  --cp-success: #4ade80;
+  --cp-danger: #f87171;
+  --cp-warning: #fbbf24;
+  --cp-link: #4da6ff;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+  --cp-overlay: rgba(41, 41, 41, 0.88);
+  --cp-panel: rgba(41, 41, 41, 0.72);
+  --cp-panel-strong: rgba(41, 41, 41, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.04);
+  --cp-highlight: rgba(253, 142, 161, 0.12);
+}
+</style>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><span>Japan</span> trip shortlist</a>
+    <nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="must-see.html">Must-see</a><a href="walking.html" aria-current="page">Walks &amp; hikes</a><a href="activities.html">Activities</a><a href="food.html">Food</a><a href="more-ideas.html">More ideas</a><a href="sources.html">Sources &amp; credits</a></nav>
+    <button class="theme-toggle" id="theme-toggle" type="button">Dark mode</button>
+  </div>
+</header>
+<main class="container">
+<div class="hero">
+  <p class="eyebrow">Nov 25 - Dec 2 · Tokyo and beyond</p>
+  <h1>Walks and hikes</h1>
+  <p class="lede">Lively city walks and easy-to-moderate hikes in busy, well-visited areas.</p>
+</div>
+<nav class="jump" aria-label="On this page"><a href="#quick">Quick take</a><a href="#shortlist">Shortlist table</a><a href="#tier-a">Top picks</a><a href="#tier-b">Worth it if it fits</a><a href="#tier-c">Conditional</a><a href="#travel">Travel</a><a href="#skip">Skip list</a><a href="#checklist">Checklist</a></nav>
+
+<section class="block" id="quick">
+  <div class="callout"><h2>Quick take</h2><ul><li><strong>Six A-tier walks, five of them in or near Tokyo.</strong> Mount Takao is the only real hike; the others are easy city strolls.</li><li><strong>Start outdoor walks early.</strong> Sunset is about 16:28, so save evening hours for shops and illuminated streets.</li><li><strong>Takao tip:</strong> choose a dry day and an early start. Trail 6 is uphill-only (Oct 31-Dec 6, 2026), so check the trail signs.</li><li><strong>These are alternatives, not a checklist.</strong> Pick one or two walks per day.</li></ul></div>
+  <p class="note" style="margin-top:12px">Tiers: <strong>A</strong> strongest fit, <strong>B</strong> worth it if it fits, <strong>C</strong> conditional or lower priority.
+  Ranked using traveler experiences, review volume and agreement across sources, and numbers follow that order within each tier. Prices are approximate JPY per adult.</p>
+  <p class="note" style="margin-top:8px"><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span> means the <a href="more-ideas.html">More ideas</a> page has an idea at the same place, area or purpose. Each badged card links to it, and the rank was reviewed against it.</p>
+</section>
+
+<section class="block" id="shortlist">
+  <h2>The shortlist at a glance</h2>
+  <div class="table-wrap"><table class="data-table"><thead><tr><th>#</th><th>Pick</th><th>Tier</th><th>Area</th><th>Cost per adult</th><th>Time</th><th>Confidence</th></tr></thead><tbody><tr><td class="num">1</td><td><a href="#walking-01">Asakusa, Sumida and Skytree approach</a><br><span class="table-badge"><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span></span></td><td><span class="badge tier-a">A · Strongest fit</span></td><td>Tokyo east</td><td>Free; tower excluded</td><td>2.5-4 hours</td><td>Medium</td></tr><tr><td class="num">2</td><td><a href="#walking-02">Meiji Jingu, Harajuku and Shibuya</a></td><td><span class="badge tier-a">A · Strongest fit</span></td><td>Tokyo west</td><td>Free</td><td>3-5 hours</td><td>Medium</td></tr><tr><td class="num">3</td><td><a href="#walking-03">Shinjuku Gyoen and commercial streets</a><br><span class="table-badge"><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span></span></td><td><span class="badge tier-a">A · Strongest fit</span></td><td>Tokyo west</td><td>¥500</td><td>3-4.5 hours</td><td>Medium</td></tr><tr><td class="num">4</td><td><a href="#walking-04">Kamakura Hase, coast and Komachi</a></td><td><span class="badge tier-a">A · Strongest fit</span></td><td>Kanagawa</td><td>Free streets; two temples ¥700</td><td>4-6 hours</td><td>Medium</td></tr><tr><td class="num">5</td><td><a href="#walking-05">Takao Trail 1/cable-car alternative</a><br><span class="table-badge"><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span></span></td><td><span class="badge tier-a">A · Strongest fit</span></td><td>Western Tokyo</td><td>Free trail; cable ¥490 one-way/¥980 return</td><td>4-5 hours; cable-assisted 2.5-3</td><td>Medium</td></tr><tr><td class="num">6</td><td><a href="#walking-06">Ameyoko, Ueno and Yanaka Ginza</a></td><td><span class="badge tier-a">A · Strongest fit</span></td><td>Tokyo north</td><td>Free</td><td>3-4.5 hours</td><td>Medium</td></tr><tr><td class="num">7</td><td><a href="#walking-07">Enoshima shrine ridge</a></td><td><span class="badge tier-b">B · Worth it if it fits</span></td><td>Kanagawa</td><td>Free; Escar optional ¥500</td><td>3-4 hours</td><td>Medium</td></tr><tr><td class="num">8</td><td><a href="#walking-08">Rikugien and Sugamo</a><br><span class="table-badge"><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span></span></td><td><span class="badge tier-b">B · Worth it if it fits</span></td><td>Tokyo north</td><td>¥300 daytime</td><td>2.5-3.5 hours</td><td>Medium</td></tr><tr><td class="num">9</td><td><a href="#walking-09">Marunouchi, palace exterior and Ginza</a></td><td><span class="badge tier-b">B · Worth it if it fits</span></td><td>Central Tokyo</td><td>Free</td><td>2.5-4 hours</td><td>Medium</td></tr><tr><td class="num">10</td><td><a href="#walking-10">Kawaguchiko north-shore short walks</a><br><span class="table-badge"><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span></span></td><td><span class="badge tier-b">B · Worth it if it fits</span></td><td>Fuji Five Lakes</td><td>Free; local bus pass optional ¥1,500</td><td>2-3 hours plus bus links</td><td>Medium</td></tr><tr><td class="num">11</td><td><a href="#walking-11">Hakone park and Cedar Avenue</a></td><td><span class="badge tier-b">B · Worth it if it fits</span></td><td>Hakone</td><td>Free</td><td>2.5-4 hours</td><td>Medium</td></tr><tr><td class="num">12</td><td><a href="#walking-12">Higashiyama to Gion</a><br><span class="table-badge"><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span></span></td><td><span class="badge tier-c">C · Conditional</span></td><td>Kyoto</td><td>Free; paid interiors excluded</td><td>3.5-5 hours</td><td>Medium</td></tr><tr><td class="num">13</td><td><a href="#walking-13">Nara Park and Naramachi</a></td><td><span class="badge tier-c">C · Conditional</span></td><td>Nara</td><td>Free; Buddha Hall optional ¥800</td><td>4.5-6 hours</td><td>Medium</td></tr><tr><td class="num">14</td><td><a href="#walking-14">Nikko temple approaches</a></td><td><span class="badge tier-c">C · Conditional</span></td><td>Tochigi</td><td>Free; Toshogu optional ¥1,600</td><td>3-4 hours; interiors longer</td><td>Medium</td></tr></tbody></table></div>
+</section>
+
+
+
+<section class="block" id="picks">
+  <div class="section-head"><h2>All picks in detail</h2><p>6 top picks, 5 worth it if it fits, 3 conditional.</p></div>
+  <div class="chips" role="group" aria-label="Filter by tier">
+    <button class="chip" type="button" data-tier="all" aria-pressed="true">All</button>
+    <button class="chip" type="button" data-tier="A" aria-pressed="false">A · Top picks</button>
+    <button class="chip" type="button" data-tier="B" aria-pressed="false">B · Worth it if it fits</button>
+    <button class="chip" type="button" data-tier="C" aria-pressed="false">C · Conditional</button>
+  </div>
+  <div class="tier-group" data-tier="A" id="tier-a">
+  <div class="tier-heading"><span class="badge tier-a">A · Strongest fit</span><h3>Top pick (6)</h3><p>Best value for your time and the most consistent traveler support.</p></div>
+  <div class="card-list">
+<article class="card tier-a" id="walking-01">
+<div class="gallery n2"><img src="images/walking/walking-01-1.jpg" alt="Asakusa, Sumida and Skytree approach: photo 1" loading="lazy" width="4471" height="2981"><img src="images/walking/walking-01-3.jpg" alt="Asakusa, Sumida and Skytree approach: photo 2" loading="lazy" width="4872" height="3208"></div><p class="photo-credit">Photo credit: <a href="https://commons.wikimedia.org/wiki/File:Aerial_view_of_tokyo_skytree.jpg" target="_blank" rel="noopener">Ian G Shingler</a>, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Sensoji_at_night.JPG" target="_blank" rel="noopener">Kakidai</a>, CC BY-SA 3.0 (Wikimedia Commons)</p>
+  <div class="card-body">
+    <div class="card-head">
+      <span class="rank" aria-label="Number 1">1</span>
+      <h3>Asakusa, Sumida and Skytree approach</h3>
+      <span class="badge tier-a">A · Strongest fit</span>
+    </div>
+    <div class="tags"><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span></div>
+    <p class="description">Tokyo&#x27;s old-town walk: Kaminarimon gate, Nakamise street, the Sumida River bridge and views of Tokyo Skytree. Shops, river and landmarks in one easy route.</p>
+    <p class="action"><strong>Route:</strong> Start <strong>Kaminarimon</strong> &rarr; Nakamise &rarr; Sensoji forecourt &rarr; Shin-Nakamise/Rokku shopping streets &rarr; Azumabashi Bridge &rarr; east-bank Sumida Park &rarr; Tokyo Mizumachi &rarr; finish <strong>Oshiage Station/Skytree Town</strong>. This is a street-and-river walk, not a tower visit or boat ride.</p>
+    <div class="facts"><div class="fact"><span class="label">Cost per adult</span><span class="value">Free; tower excluded</span></div><div class="fact"><span class="label">Time</span><span class="value">2.5-4 hours</span></div><div class="fact"><span class="label">Confidence</span><span class="value">Medium</span></div><div class="fact"><span class="label">Area</span><span class="value">Tokyo east</span></div></div>
+    <p class="watch"><strong>Main tradeoff:</strong> Temple crowds, breezy river.</p>
+    <p class="why"><strong>Why it ranks here:</strong> The best low-cost combination of recognizable Tokyo, active shopping streets, and open riverside views.</p>
+    <p class="overlap-note"><strong>Memory overlap:</strong> <a href="more-ideas.html#more-activities-02">Kimono rental and stroll in Asakusa</a> (same area; now researched in iteration 2). The rank was reviewed against it and left as is.</p>
+    <details class="more"><summary>More details and sources</summary><dl class="detail-grid"><dt>Traveler evidence</dt><dd>Stuart describes souvenir-shopping energy, Sensoji congestion and riverside relief. The independent Tokyo podcast also features Sensoji. Wanderlog's Google-labelled <strong>92,016</strong> counter supports Sensoji's mainstream popularity, not approval of this entire route. [<a class="src" href="sources.html#walking-S53">S53</a>]</dd><dt>Location and access</dt><dd>Asakusa's Ginza/Asakusa/Tobu stations serve the start; Oshiage serves the finish. Stop at Asakusa instead if the river is unpleasant.</dd><dt>Time and physical effort</dt><dd>Approximately 4-5 km, 2.5-4 hours; predominantly flat, with bridge ramps and occasional steps. No hiking terrain.</dd><dt>Approximate cost</dt><dd>Free walking and temple forecourt; allow 400-800 for Tokyo access. Shopping and tower admission are additional, not necessary.</dd><dt>Crowds and booking</dt><dd>No reservation. Parallel shopping streets avoid fashionable-stall queues; the temple approach remains busy even on weekdays.</dd><dt>Late-November / early-December fit</dt><dd>Good daylight walk with commercial areas afterward. Nakamise shops need not stay open as late.</dd><dt>Safety and constraints</dt><dd>Riverside wind, wet paving and bicycles merit attention. Use signed toilets at visitor facilities, temple/park areas and open retail complexes.</dd><dt>Uncertainty / what to verify</dt><dd>Riverside works, shop hours and particular station exits; no promise that every waterfront segment is open.</dd><dt>Sources</dt><dd>Traveler/editorial: <a class="src" href="sources.html#walking-S01">S01</a>, <a class="src" href="sources.html#walking-S24">S24</a>. Official access: <a class="src" href="sources.html#walking-S02">S02</a>. Venue volume only: <a class="src" href="sources.html#walking-S53">S53</a>.</dd></dl></details>
+  </div>
+</article>
+<article class="card tier-a" id="walking-02">
+<div class="gallery n3"><img src="images/walking/walking-02-1.jpg" alt="Meiji Jingu, Harajuku and Shibuya: photo 1" loading="lazy" width="2048" height="1536"><img src="images/walking/walking-02-2.jpg" alt="Meiji Jingu, Harajuku and Shibuya: photo 2" loading="lazy" width="5712" height="4284"><img src="images/walking/walking-02-3.jpg" alt="Meiji Jingu, Harajuku and Shibuya: photo 3" loading="lazy" width="2500" height="1608"></div><p class="photo-credit">Photo credit: <a href="https://commons.wikimedia.org/wiki/File:Cat_Street,_Ura_Harajuku_2.jpg" target="_blank" rel="noopener">Aw1805</a>, CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:Shibuya_Crossing_in_July_2026.jpg" target="_blank" rel="noopener">Gatorfan252525</a>, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:2018_Meiji_Shrine.jpg" target="_blank" rel="noopener">Kakidai</a>, CC BY-SA 4.0 (Wikimedia Commons)</p>
+  <div class="card-body">
+    <div class="card-head">
+      <span class="rank" aria-label="Number 2">2</span>
+      <h3>Meiji Jingu, Harajuku and Shibuya</h3>
+      <span class="badge tier-a">A · Strongest fit</span>
+    </div>
+    
+    <p class="description">From a forest shrine to the fashion streets: Meiji Jingu, Takeshita Street, Omotesando, Cat Street and Shibuya Crossing. Lively, varied and mostly free.</p>
+    <p class="action"><strong>Route:</strong> Start <strong>Harajuku Station</strong> &rarr; Meiji Jingu south entrance &rarr; main shrine and return &rarr; Takeshita Street &rarr; Omotesando &rarr; Cat Street &rarr; Miyashita Park vicinity &rarr; Shibuya Scramble/Hachiko &rarr; finish <strong>Shibuya Station</strong>. Bypass Takeshita via the larger streets if it becomes a human bottleneck.</p>
+    <div class="facts"><div class="fact"><span class="label">Cost per adult</span><span class="value">Free</span></div><div class="fact"><span class="label">Time</span><span class="value">3-5 hours</span></div><div class="fact"><span class="label">Confidence</span><span class="value">Medium</span></div><div class="fact"><span class="label">Area</span><span class="value">Tokyo west</span></div></div>
+    <p class="watch"><strong>Main tradeoff:</strong> Congestion, early shrine closure.</p>
+    <p class="why"><strong>Why it ranks here:</strong> The strongest free walk for varied, lively contemporary Tokyo, with a popular shrine rather than an isolated forest excursion.</p>
+    <details class="more"><summary>More details and sources</summary><dl class="detail-grid"><dt>Traveler evidence</dt><dd>Stuart contrasts Omotesando/Harajuku but warns about extreme Takeshita crowds. Jenkins' podcast notes independently connect Meiji, Harajuku and Omotesando. Wanderlog displays Google-labelled counters of <strong>53,006 for Meiji Jingu</strong> and <strong>18,984 for Shibuya Crossing</strong>, not the whole district or this composite walk. [<a class="src" href="sources.html#walking-S53">S53</a>, <a class="src" href="sources.html#walking-S54">S54</a>]</dd><dt>Location and access</dt><dd>Harajuku/Meiji-jingumae at the start; Omotesando and Shibuya provide intermediate exits.</dd><dt>Time and physical effort</dt><dd>About 5.5-7 km, 3-5 hours, mostly paved streets plus gravel shrine paths; modest hills, station stairs and sustained standing.</dd><dt>Approximate cost</dt><dd>Free chosen route; 400-800 Tokyo access. Inner Garden, museum and observation-deck tickets are not included or required.</dd><dt>Crowds and booking</dt><dd>No reservation. Browse rather than queue for viral snacks; late-morning shopping hours suit the brief better than dawn.</dd><dt>Late-November / early-December fit</dt><dd>Complete Meiji first: official closing is <strong>16:10 in November, 16:00 in December</strong>, earlier than many visitors expect.</dd><dt>Safety and constraints</dt><dd>Respect shrine photography restrictions and busy crossings. Stations/open malls provide toilets and indoor breaks.</dd><dt>Uncertainty / what to verify</dt><dd>Individual stores change frequently; the older article's cafe suggestions are not current recommendations.</dd><dt>Sources</dt><dd>Traveler/editorial: <a class="src" href="sources.html#walking-S03">S03</a>, <a class="src" href="sources.html#walking-S24">S24</a>. Official hours: <a class="src" href="sources.html#walking-S04">S04</a>. Venue volume only: <a class="src" href="sources.html#walking-S53">S53</a>, <a class="src" href="sources.html#walking-S54">S54</a>.</dd></dl></details>
+  </div>
+</article>
+<article class="card tier-a" id="walking-03">
+<div class="gallery n3"><img src="images/walking/walking-03-1.jpg" alt="Shinjuku Gyoen and commercial streets: photo 1" loading="lazy" width="1600" height="1200"><img src="images/walking/walking-03-2.jpg" alt="Shinjuku Gyoen and commercial streets: photo 2" loading="lazy" width="2560" height="1364"><img src="images/walking/walking-03-3.jpg" alt="Shinjuku Gyoen and commercial streets: photo 3" loading="lazy" width="5184" height="3456"></div><p class="photo-credit">Photo credit: <a href="https://commons.wikimedia.org/wiki/File:Shinjuku_Gyoen_autumn_season.jpg" target="_blank" rel="noopener">Terabita34</a>, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Skyscrapers_of_Shinjuku_2009_January.jpg" target="_blank" rel="noopener">Morio</a>, CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:Shinjuku_gyoen_sunny_autumn_day.jpg" target="_blank" rel="noopener">Japanexperterna.se</a>, CC BY-SA 3.0 (Wikimedia Commons)</p>
+  <div class="card-body">
+    <div class="card-head">
+      <span class="rank" aria-label="Number 3">3</span>
+      <h3>Shinjuku Gyoen and commercial streets</h3>
+      <span class="badge tier-a">A · Strongest fit</span>
+    </div>
+    <div class="tags"><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span></div>
+    <p class="description">A garden stroll followed by the city: Shinjuku Gyoen&#x27;s ponds and lawns, then department stores and shopping streets.</p>
+    <p class="action"><strong>Route:</strong> Start <strong>Sendagaya Gate</strong> &rarr; landscape-garden ponds &rarr; pavilion vicinity &rarr; formal tree-lined garden &rarr; Shinjuku Gate &rarr; Southern Terrace/Takashimaya vicinity &rarr; east-side shopping streets &rarr; Kabukicho cinema-street exterior &rarr; finish <strong>Shinjuku Station East Exit</strong>. No bar crawl is needed.</p>
+    <div class="facts"><div class="fact"><span class="label">Cost per adult</span><span class="value">¥500</span></div><div class="fact"><span class="label">Time</span><span class="value">3-4.5 hours</span></div><div class="fact"><span class="label">Confidence</span><span class="value">Medium</span></div><div class="fact"><span class="label">Area</span><span class="value">Tokyo west</span></div></div>
+    <p class="watch"><strong>Main tradeoff:</strong> Monday garden closure.</p>
+    <p class="why"><strong>Why it ranks here:</strong> Best garden-plus-city contrast without a day-trip fare or reliance on mountain weather.</p>
+    <p class="overlap-note"><strong>Memory overlap:</strong> <a href="more-ideas.html#more-must-see-06">Hamarikyu Gardens</a> (another garden). The rank was reviewed against it and left as is.</p>
+    <details class="more"><summary>More details and sources</summary><dl class="detail-grid"><dt>Traveler evidence</dt><dd>Nano's photographed autumn visits praise the varied landscapes but report earlier visits with still-green foliage: useful seasonal disagreement with fixed peak-date claims. Wanderlog displays a Google-labelled <strong>45,662</strong> counter for Gyoen, supporting broad garden popularity, not the entire Shinjuku street extension. [<a class="src" href="sources.html#walking-S53">S53</a>]</dd><dt>Location and access</dt><dd>Sendagaya or Kokuritsu-kyogijo for the start. Shinjuku-gyoenmae provides an early escape; Shinjuku provides extensive onward transport.</dd><dt>Time and physical effort</dt><dd>About 4-6 km, 3-4.5 hours. Mostly easy garden paths and pavements; optional steps and considerable station navigation.</dd><dt>Approximate cost</dt><dd>Garden admission <strong>500</strong>; allow 400-800 Tokyo transport.</dd><dt>Crowds and booking</dt><dd>Advance e-tickets avoid ticket-counter queues, not gate queues. An autumn timed-reservation requirement was not verified.</dd><dt>Late-November / early-December fit</dt><dd>Official hours are <strong>09:00-16:30, last entry 16:00</strong>. Under the assumed year, <strong>Monday November 30 is a normal closure day</strong>.</dd><dt>Safety and constraints</dt><dd>Use garden toilets before exiting. Decline tout invitations; FCDO identifies Kabukicho extortion/spiking risks. Busy public streets are not a safety guarantee.</dd><dt>Uncertainty / what to verify</dt><dd>Special closures and event admissions. The garden's cherry-season reservation rules should not be transferred automatically to November.</dd><dt>Sources</dt><dd>First-person: <a class="src" href="sources.html#walking-S05">S05</a>. Official: <a class="src" href="sources.html#walking-S06">S06</a>, <a class="src" href="sources.html#walking-S50">S50</a>. Venue volume only: <a class="src" href="sources.html#walking-S53">S53</a>.</dd></dl></details>
+  </div>
+</article>
+<article class="card tier-a" id="walking-04">
+<div class="gallery n3"><img src="images/walking/walking-04-1.jpg" alt="Kamakura Hase, coast and Komachi: photo 1" loading="lazy" width="3072" height="2304"><img src="images/walking/walking-04-2.jpg" alt="Kamakura Hase, coast and Komachi: photo 2" loading="lazy" width="4256" height="2832"><img src="images/walking/walking-04-3.jpg" alt="Kamakura Hase, coast and Komachi: photo 3" loading="lazy" width="6593" height="3341"></div><p class="photo-credit">Photo credit: <a href="https://commons.wikimedia.org/wiki/File:Inari_shrine_at_Tsurugaoka_Hachiman-g%C5%AB_01.JPG" target="_blank" rel="noopener">Biliana Nikolova-Lefterova</a>, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Kaguraden-Hachimangu_Kamakura.jpg" target="_blank" rel="noopener">Urashimataro</a>, Public domain; <a href="https://commons.wikimedia.org/wiki/File:Yuigahama_2025_June_30_various_2.jpg" target="_blank" rel="noopener">Nesnad</a>, CC BY 4.0 (Wikimedia Commons)</p>
+  <div class="card-body">
+    <div class="card-head">
+      <span class="rank" aria-label="Number 4">4</span>
+      <h3>Kamakura Hase, coast and Komachi</h3>
+      <span class="badge tier-a">A · Strongest fit</span>
+    </div>
+    
+    <p class="description">Kamakura&#x27;s best sights on foot: Hase temple, the Great Buddha, a short beach stretch, Tsurugaoka Hachimangu shrine and Komachi-dori shopping street.</p>
+    <p class="action"><strong>Route:</strong> Start <strong>Hase Station</strong> &rarr; Hasedera &rarr; Kotoku-in &rarr; short Yuigahama beachfront section &rarr; Wakamiya Oji &rarr; Tsurugaoka Hachimangu &rarr; Komachi-dori &rarr; finish <strong>Kamakura Station</strong>. The two Hase temples require tickets to enter; public street walking is free. Do not substitute a forest shortcut.</p>
+    <div class="facts"><div class="fact"><span class="label">Cost per adult</span><span class="value">Free streets; two temples ¥700</span></div><div class="fact"><span class="label">Time</span><span class="value">4-6 hours</span></div><div class="fact"><span class="label">Confidence</span><span class="value">Medium</span></div><div class="fact"><span class="label">Area</span><span class="value">Kanagawa</span></div></div>
+    <p class="watch"><strong>Main tradeoff:</strong> Rail overhead, temple steps.</p>
+    <p class="why"><strong>Why it ranks here:</strong> The strongest nearby town walk: established visitor streets, coast and temple gardens without committing to woodland hiking.</p>
+    <details class="more"><summary>More details and sources</summary><dl class="detail-grid"><dt>Traveler evidence</dt><dd>Christensen enjoyed Hasedera's views and Enoden links; mfedley found the Great Buddha photo-oriented and crowded. Their disagreement favors selective visits. Review count not verified.</dd><dt>Location and access</dt><dd>JR to Kamakura, then Enoden to Hase; or the slower Odakyu/Fujisawa approach using its pass.</dd><dt>Time and physical effort</dt><dd>Approximately 6-8 km, 4-6 hours with the two temple visits. Street sections are easy; Hasedera and Hachimangu add substantial stair flights.</dd><dt>Approximate cost</dt><dd>Official pages list Hasedera <strong>400</strong>, Kotoku-in <strong>300</strong>. Budget roughly 2,200-2,700 for JR/Enoden return travel, or <strong>1,640</strong> for the Shinjuku Odakyu/Enoden pass with a longer journey.</dd><dt>Crowds and booking</dt><dd>No booking. Busy Hase/Komachi favor skipping optional interiors and snack queues.</dd><dt>Late-November / early-December fit</dt><dd>Good coastal-town option; do not infer swimming weather. Hasedera closes 17:00, last entry 16:30.</dd><dt>Safety and constraints</dt><dd>Narrow pavements, Enoden crossings, wet temple steps and coastal wind. Hase/Kamakura stations and visitor facilities offer breaks and escape options.</dd><dt>Uncertainty / what to verify</dt><dd>JR fares and temple notices; old fares and the article's UNESCO claim are rejected.</dd><dt>Sources</dt><dd>First-person: <a class="src" href="sources.html#walking-S14">S14</a>, <a class="src" href="sources.html#walking-S15">S15</a>. Official: <a class="src" href="sources.html#walking-S16">S16</a>, <a class="src" href="sources.html#walking-S17">S17</a>, <a class="src" href="sources.html#walking-S18">S18</a>.</dd></dl></details>
+  </div>
+</article>
+<article class="card tier-a" id="walking-05">
+<div class="gallery n2"><img src="images/walking/walking-05-1.jpg" alt="Takao Trail 1/cable-car alternative: photo 1" loading="lazy" width="1600" height="1200"><img src="images/walking/walking-05-3.jpg" alt="Takao Trail 1/cable-car alternative: photo 2" loading="lazy" width="3072" height="1728"></div><p class="photo-credit">Photo credit: <a href="https://commons.wikimedia.org/wiki/File:Fuji_from_Takao_1.JPG" target="_blank" rel="noopener">Asteiner</a>, CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:Takaosan_Yakuouin_hondo.JPG" target="_blank" rel="noopener">KENPEI</a>, CC BY-SA 4.0 (Wikimedia Commons)</p>
+  <div class="card-body">
+    <div class="card-head">
+      <span class="rank" aria-label="Number 5">5</span>
+      <h3>Takao Trail 1/cable-car alternative</h3>
+      <span class="badge tier-a">A · Strongest fit</span>
+    </div>
+    <div class="tags"><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span></div>
+    <p class="description">Tokyo&#x27;s most popular day hike (Mount Takao, 599 m) on a paved trail, or ride the cable car and walk less. Autumn colour and a busy, well-supported mountain.</p>
+    <p class="action"><strong>Route:</strong> Start <strong>Takaosanguchi Station</strong> &rarr; Kiyotaki cable-car base &rarr; Trail 1 &rarr; upper cable station &rarr; gentler Onnazaka fork &rarr; Yakuoin &rarr; summit &rarr; return by Trail 1 to the same station. Alternatively ride the cable car both ways and walk the upper section. Neither version is step-free.</p>
+    <div class="facts"><div class="fact"><span class="label">Cost per adult</span><span class="value">Free trail; cable ¥490 one-way/¥980 return</span></div><div class="fact"><span class="label">Time</span><span class="value">4-5 hours; cable-assisted 2.5-3</span></div><div class="fact"><span class="label">Confidence</span><span class="value">Medium</span></div><div class="fact"><span class="label">Area</span><span class="value">Western Tokyo</span></div></div>
+    <p class="watch"><strong>Main tradeoff:</strong> Real climb, crowds, daylight.</p>
+    <p class="why"><strong>Why it ranks here:</strong> Best genuine hill walk for this brief, conditional on dry footing and an early enough start.</p>
+    <p class="overlap-note"><strong>Memory overlap:</strong> <a href="more-ideas.html#more-walking-07">Mount Mitake</a> (another hike). The rank was reviewed against it and left as is.</p>
+    <details class="more"><summary>More details and sources</summary><dl class="detail-grid"><dt>Traveler evidence</dt><dd>4corners7seas reports steep lower paving, worthwhile temple scenery, crowded autumn weekdays and repeated failure to see Fuji. Tokyobling independently documents an autumn visit. Review count not verified.</dd><dt>Location and access</dt><dd>Keio from Shinjuku to Takaosanguchi, approximately 50-60 minutes station-to-station; allow extra time for the Shinjuku transfer.</dd><dt>Time and physical effort</dt><dd>Official Trail 1 is <strong>3.8 km each way, 100 minutes up/80 down</strong> before stops. Station-to-station allow 8-9 km, roughly 400-500 m cumulative ascent, 4-5 hours. Cable-assisted: about 3.5-4.5 km, 150-200 m ascent, 2.5-3 hours.</dd><dt>Approximate cost</dt><dd>Trail free; Keio return about <strong>860</strong> indicative. Official cable fare <strong>490 one-way/980 return</strong>.</dd><dt>Crowds and booking</dt><dd>Prefer a weekday. Cable-car boarding times cannot be reserved; autumn queues are not included in these times.</dd><dt>Late-November / early-December fit</dt><dd>Attractive but busy foliage season, not guaranteed peak color. Aim to leave wooded walking by approximately 15:30, earlier in poor conditions.</dd><dt>Safety and constraints</dt><dd>This is a steep paved mountain trail with many upper steps, not an urban promenade. Use base/upper-station/visitor-center toilets; carry water, layers, offline map and a light.</dd><dt>Uncertainty / what to verify</dt><dd><strong>Trail 6 is uphill-only all day between Biwa Falls and Trail 5 from October 31-December 6, 2026.</strong> Old descent advice is inapplicable. Recheck weather, wildlife notices, closures and cable operation.</dd><dt>Sources</dt><dd>First-person: <a class="src" href="sources.html#walking-S07">S07</a>, <a class="src" href="sources.html#walking-S08">S08</a>. Official: <a class="src" href="sources.html#walking-S09">S09</a>, <a class="src" href="sources.html#walking-S10">S10</a>, <a class="src" href="sources.html#walking-S11">S11</a>. Rail estimate: <a class="src" href="sources.html#walking-S45">S45</a>.</dd></dl></details>
+  </div>
+</article>
+<article class="card tier-a" id="walking-06">
+<div class="gallery n3"><img src="images/walking/walking-06-1.jpg" alt="Ameyoko, Ueno and Yanaka Ginza: photo 1" loading="lazy" width="4608" height="2592"><img src="images/walking/walking-06-2.jpg" alt="Ameyoko, Ueno and Yanaka Ginza: photo 2" loading="lazy" width="3200" height="2133"><img src="images/walking/walking-06-3.jpg" alt="Ameyoko, Ueno and Yanaka Ginza: photo 3" loading="lazy" width="4288" height="2848"></div><p class="photo-credit">Photo credit: <a href="https://commons.wikimedia.org/wiki/File:Ueno_20241210_133139.jpg" target="_blank" rel="noopener">Ka23 13</a>, CC BY 4.0; <a href="https://commons.wikimedia.org/wiki/File:Kuroda_memorial_hall01s3200.jpg" target="_blank" rel="noopener">663highland</a>, CC BY 2.5; <a href="https://commons.wikimedia.org/wiki/File:Tokyo_-_Yanaka_143.jpg" target="_blank" rel="noopener">Joe Mabel</a>, CC BY-SA 3.0 (Wikimedia Commons)</p>
+  <div class="card-body">
+    <div class="card-head">
+      <span class="rank" aria-label="Number 6">6</span>
+      <h3>Ameyoko, Ueno and Yanaka Ginza</h3>
+      <span class="badge tier-a">A · Strongest fit</span>
+    </div>
+    
+    <p class="description">Ameyoko&#x27;s bargain street market, Ueno Park and its pond, then the old-town Yanaka Ginza shopping street. Crowds and character.</p>
+    <p class="action"><strong>Route:</strong> Start <strong>Okachimachi Station North Exit</strong> &rarr; Ameyoko &rarr; Shinobazu Pond &rarr; Ueno Park museum-side paths &rarr; Ueno Sakuragi/main Yanaka connection &rarr; Yanaka Ginza &rarr; Yuyake Dandan &rarr; finish <strong>Nippori Station</strong>. Keep residential/cemetery passages brief.</p>
+    <div class="facts"><div class="fact"><span class="label">Cost per adult</span><span class="value">Free</span></div><div class="fact"><span class="label">Time</span><span class="value">3-4.5 hours</span></div><div class="fact"><span class="label">Confidence</span><span class="value">Medium</span></div><div class="fact"><span class="label">Area</span><span class="value">Tokyo north</span></div></div>
+    <p class="watch"><strong>Main tradeoff:</strong> Sleepy early, quiet connectors.</p>
+    <p class="why"><strong>Why it ranks here:</strong> High-value northern Tokyo, focusing on active shopping rather than silent back lanes.</p>
+    <details class="more"><summary>More details and sources</summary><dl class="detail-grid"><dt>Traveler evidence</dt><dd>Miles describes Yanaka Ginza changing from sleepy morning preparations to busy daytime shopping: a concrete reason not to visit too early. Review count not verified.</dd><dt>Location and access</dt><dd>Multiple rail/subway options at Okachimachi/Ueno; bail out at Ueno or Sendagi rather than finishing every segment.</dd><dt>Time and physical effort</dt><dd>About 5-7 km, 3-4.5 hours. Gentle slopes and some stairs; pavements and park paths, not woodland hiking.</dd><dt>Approximate cost</dt><dd>Free selected route; 400-800 Tokyo access. Museums and zoo are separate half-day commitments, not automatic additions.</dd><dt>Crowds and booking</dt><dd>No reservation. Late morning through afternoon better suits shopping activity; weekends bring greater compression on the short Yanaka Ginza street.</dd><dt>Late-November / early-December fit</dt><dd>Flexible urban option; do park portions in daylight, without expecting summer lotus.</dd><dt>Safety and constraints</dt><dd>Respect residents and cyclists; do not block narrow shop entrances. Park/station toilets provide practical rest points.</dd><dt>Uncertainty / what to verify</dt><dd>Individual shop hours and rest days.</dd><dt>Sources</dt><dd>First-person: <a class="src" href="sources.html#walking-S12">S12</a>. Official district/access information: <a class="src" href="sources.html#walking-S13">S13</a>.</dd></dl></details>
+  </div>
+</article>
+  </div>
+</div><div class="tier-group" data-tier="B" id="tier-b">
+  <div class="tier-heading"><span class="badge tier-b">B · Worth it if it fits</span><h3>Worth it if it fits (5)</h3><p>Good choices that depend on your interests, the weather or a longer trip.</p></div>
+  <div class="card-list">
+<article class="card tier-b" id="walking-07">
+<div class="gallery n1"><img src="images/walking/walking-07-1.jpg" alt="Enoshima shrine ridge: photo 1" loading="lazy" width="1936" height="1296"></div><p class="photo-credit">Photo credit: <a href="https://commons.wikimedia.org/wiki/File:1_Chome_Enoshima,_Fujisawa-shi,_Kanagawa-ken_251-0036,_Japan_-_panoramio.jpg" target="_blank" rel="noopener">jetsun</a>, CC BY-SA 3.0 (Wikimedia Commons)</p>
+  <div class="card-body">
+    <div class="card-head">
+      <span class="rank" aria-label="Number 7">7</span>
+      <h3>Enoshima shrine ridge</h3>
+      <span class="badge tier-b">B · Worth it if it fits</span>
+    </div>
+    
+    <p class="description">An island walk over a pedestrian bridge, up a shopping street and along a ridge of three shrines with sea views. Many stairs, so not a flat promenade.</p>
+    <p class="action"><strong>Route:</strong> Start <strong>Katase-Enoshima Station</strong> &rarr; pedestrian bridge &rarr; Benzaiten Nakamise &rarr; Hetsunomiya &rarr; Nakatsunomiya &rarr; Samuel Cocking Garden entrance/top area &rarr; Okutsunomiya &rarr; return to the bridge and finish <strong>Katase-Enoshima Station</strong>. Use Escar uphill if desired. The rocky rear shore and caves are optional omissions, not necessary achievements.</p>
+    <div class="facts"><div class="fact"><span class="label">Cost per adult</span><span class="value">Free; Escar optional ¥500</span></div><div class="fact"><span class="label">Time</span><span class="value">3-4 hours</span></div><div class="fact"><span class="label">Confidence</span><span class="value">Medium</span></div><div class="fact"><span class="label">Area</span><span class="value">Kanagawa</span></div></div>
+    <p class="watch"><strong>Main tradeoff:</strong> Descent stairs remain.</p>
+    <p class="why"><strong>Why it ranks here:</strong> Distinctive tourist-traveled coast, emphatically not a flat island promenade.</p>
+    <details class="more"><summary>More details and sources</summary><dl class="detail-grid"><dt>Traveler evidence</dt><dd>Emily Wilson describes the enjoyable shop-lined paths and frequent rest opportunities, while warning that escalators only solve the ascent. Review count not verified.</dd><dt>Location and access</dt><dd>Odakyu via Fujisawa; Enoden links Kamakura. Both complete walks together would make a rushed winter day.</dd><dt>Time and physical effort</dt><dd>Roughly 4-6 km, 3-4 hours; repeated steps and approximately 100-200 m cumulative climbing without assistance. The return still involves descending stairs with Escar.</dd><dt>Approximate cost</dt><dd>Public route free; <strong>Escar 500</strong> for all three sections. The tower costs another <strong>800</strong> if separately chosen. The garden is free before 17:00; event-night charges may apply afterward.</dd><dt>Crowds and booking</dt><dd>No reservation. Bridge/shop bottlenecks concentrate visitors; an attraction bundle is unnecessary.</dd><dt>Late-November / early-December fit</dt><dd>Pleasant on a mild, dry day; exposed wind can outweigh the view. Illuminations are not assumed confirmed.</dd><dt>Safety and constraints</dt><dd>Wet stairs need care. Stay off wave-exposed rocks; the rear shore is not a necessary extension.</dd><dt>Uncertainty / what to verify</dt><dd>Event arrangements, construction and operating hours. Old <strong>360</strong> Escar prices are outdated.</dd><dt>Sources</dt><dd>Traveler/editorial: <a class="src" href="sources.html#walking-S19">S19</a>. Official fares/access: <a class="src" href="sources.html#walking-S20">S20</a>, <a class="src" href="sources.html#walking-S18">S18</a>.</dd></dl></details>
+  </div>
+</article>
+<article class="card tier-b" id="walking-08">
+<div class="gallery n1"><img src="images/walking/walking-08-1.jpg" alt="Rikugien and Sugamo: photo 1" loading="lazy" width="2500" height="1667"></div><p class="photo-credit">Photo credit: <a href="https://commons.wikimedia.org/wiki/File:2018_Rikugien_at_night_05.jpg" target="_blank" rel="noopener">Kakidai</a>, CC BY-SA 4.0 (Wikimedia Commons)</p>
+  <div class="card-body">
+    <div class="card-head">
+      <span class="rank" aria-label="Number 8">8</span>
+      <h3>Rikugien and Sugamo</h3>
+      <span class="badge tier-b">B · Worth it if it fits</span>
+    </div>
+    <div class="tags"><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span></div>
+    <p class="description">A large landscaped garden, then Sugamo&#x27;s long shopping street, often nicknamed the &#x27;grandmothers&#x27; Harajuku&#x27;. Easy and low-key.</p>
+    <p class="action"><strong>Route:</strong> Start <strong>Komagome Station South Exit</strong> &rarr; Rikugien's main entrance &rarr; pond circuit &rarr; optional hill viewpoint &rarr; exit &rarr; Sugamo Jizo-dori shopping street &rarr; finish <strong>Sugamo Station</strong>. This route uses daylight garden admission; the separately ticketed night event is an alternative, not included in this walk.</p>
+    <div class="facts"><div class="fact"><span class="label">Cost per adult</span><span class="value">¥300 daytime</span></div><div class="fact"><span class="label">Time</span><span class="value">2.5-3.5 hours</span></div><div class="fact"><span class="label">Confidence</span><span class="value">Medium</span></div><div class="fact"><span class="label">Area</span><span class="value">Tokyo north</span></div></div>
+    <p class="watch"><strong>Main tradeoff:</strong> Calmer garden atmosphere.</p>
+    <p class="why"><strong>Why it ranks here:</strong> Worthwhile garden-and-shopping combination, not an all-day lively garden destination.</p>
+    <p class="overlap-note"><strong>Memory overlap:</strong> <a href="more-ideas.html#more-must-see-06">Hamarikyu Gardens</a> (another garden). The rank was reviewed against it and left as is.</p>
+    <details class="more"><summary>More details and sources</summary><dl class="detail-grid"><dt>Traveler evidence</dt><dd>Japan Journeys describes the pond/hill circuit. Tokyo Fox reports roughly six visits, appreciates the garden and preferred daylight to spring night lighting; this is not a review of the 2026 autumn event. Wanderlog's Google-labelled <strong>10,666</strong> counter is for the garden, not this walk or its illumination. Nano's separate timing discussion is not a firsthand Rikugien endorsement. [<a class="src" href="sources.html#walking-S55">S55</a>, <a class="src" href="sources.html#walking-S56">S56</a>]</dd><dt>Location and access</dt><dd>Komagome and Sugamo are on the Yamanote Line; either can shorten the outing.</dd><dt>Time and physical effort</dt><dd>About 4-5 km, 2.5-3.5 hours. Garden paths include uneven stones; the small hill has steps and can be omitted.</dd><dt>Approximate cost</dt><dd>Official daytime garden admission <strong>300</strong>, plus 400-800 Tokyo transport. Special evening admission is not included.</dd><dt>Crowds and booking</dt><dd>Daytime admission is separate from illumination ticketing. Foliage weekends can bring queues.</dd><dt>Late-November / early-December fit</dt><dd>Seasonally promising without a guarantee of red leaves. Ordinary garden hours <strong>09:00-17:00, last entry 16:30</strong>.</dd><dt>Safety and constraints</dt><dd>Watch stepping stones and wet leaves near water. Garden/station toilets and Sugamo's open businesses offer breaks.</dd><dt>Uncertainty / what to verify</dt><dd>Leaf condition, open gates and evening ticket availability. The official 2026 night-event dates and prices were verified during cross-report reconciliation; see section 6. Route evidence is thinner than the top six.</dd><dt>Sources</dt><dd>Garden editorial: <a class="src" href="sources.html#walking-S21">S21</a>. First-person: <a class="src" href="sources.html#walking-S56">S56</a>; seasonal context: <a class="src" href="sources.html#walking-S05">S05</a>. Official admission/event: <a class="src" href="sources.html#walking-S22">S22</a>, <a class="src" href="sources.html#walking-S52">S52</a>. Venue volume only: <a class="src" href="sources.html#walking-S55">S55</a>.</dd></dl></details>
+  </div>
+</article>
+<article class="card tier-b" id="walking-09">
+<div class="gallery n1"><img src="images/walking/walking-09-1.jpg" alt="Marunouchi, palace exterior and Ginza: photo 1" loading="lazy" width="5395" height="3597"></div><p class="photo-credit">Photo credit: <a href="https://commons.wikimedia.org/wiki/File:Tokyo-STA_Marunouchi-Entrance_2023.jpg" target="_blank" rel="noopener">MaedaAkihiko</a>, CC BY-SA 4.0 (Wikimedia Commons)</p>
+  <div class="card-body">
+    <div class="card-head">
+      <span class="rank" aria-label="Number 9">9</span>
+      <h3>Marunouchi, palace exterior and Ginza</h3>
+      <span class="badge tier-b">B · Worth it if it fits</span>
+    </div>
+    
+    <p class="description">Tokyo Station&#x27;s brick facade, the Imperial Palace outer plaza, Hibiya Park and Ginza&#x27;s main avenue. Easy to shorten.</p>
+    <p class="action"><strong>Route:</strong> Start <strong>Tokyo Station Marunouchi South Exit</strong> &rarr; Marunouchi brick frontage &rarr; Gyoko-dori &rarr; palace outer plaza/Nijubashi viewpoint &rarr; Hibiya Park &rarr; Yurakucho &rarr; Ginza Chuo-dori &rarr; finish <strong>Ginza 4-chome</strong>. The optional East Gardens require a separate, longer detour.</p>
+    <div class="facts"><div class="fact"><span class="label">Cost per adult</span><span class="value">Free</span></div><div class="fact"><span class="label">Time</span><span class="value">2.5-4 hours</span></div><div class="fact"><span class="label">Confidence</span><span class="value">Medium</span></div><div class="fact"><span class="label">Area</span><span class="value">Central Tokyo</span></div></div>
+    <p class="watch"><strong>Main tradeoff:</strong> Optional gardens add time.</p>
+    <p class="why"><strong>Why it ranks here:</strong> An easy-to-shorten free walk for grand urban scenery and active retail, not a ticket to enter the Imperial Palace.</p>
+    <details class="more"><summary>More details and sources</summary><dl class="detail-grid"><dt>Traveler evidence</dt><dd>Nano enjoyed East Gardens' landscaping; independent firsthand support for this exact composite street route is limited. Review count not verified.</dd><dt>Location and access</dt><dd>Tokyo, Nijubashimae, Hibiya, Yurakucho and Ginza provide frequent exits. No complete moat circuit is necessary.</dd><dt>Time and physical effort</dt><dd>About 4.5-6 km, 2.5-4 hours; largely flat, with broad crossings and occasional stairs.</dd><dt>Approximate cost</dt><dd>Free; 400-800 Tokyo transport. East Gardens are also free when open; shopping is optional.</dd><dt>Crowds and booking</dt><dd>No reservation or fixed-time attraction; department stores offer indoor breaks.</dd><dt>Late-November / early-December fit</dt><dd>Good cool-weather walk; 2026 seasonal-lighting dates remain unverified.</dd><dt>Safety and constraints</dt><dd>Do not mistake palace gates for unrestricted entrances. Use park, station and department-store toilets during opening hours.</dd><dt>Uncertainty / what to verify</dt><dd>East Gardens close Mondays/Fridays, normally <strong>November 27 and 30</strong> within the assumed visit. Winter opening ends <strong>16:00, last entry 15:30</strong>; ceremonial closures can add exceptions.</dd><dt>Sources</dt><dd>First-person garden experience: <a class="src" href="sources.html#walking-S05">S05</a>. Official East Gardens rules: <a class="src" href="sources.html#walking-S23">S23</a>.</dd></dl></details>
+  </div>
+</article>
+<article class="card tier-b" id="walking-10">
+<div class="gallery n1"><img src="images/walking/walking-10-1.jpg" alt="Kawaguchiko north-shore short walks: photo 1" loading="lazy" width="6000" height="4000"></div><p class="photo-credit">Photo credit: <a href="https://commons.wikimedia.org/wiki/File:170505_Lake_Kawaguchi_Japan01s3.jpg" target="_blank" rel="noopener">663highland</a>, CC BY-SA 4.0 (Wikimedia Commons)</p>
+  <div class="card-body">
+    <div class="card-head">
+      <span class="rank" aria-label="Number 10">10</span>
+      <h3>Kawaguchiko north-shore short walks</h3>
+      <span class="badge tier-b">B · Worth it if it fits</span>
+    </div>
+    <div class="tags"><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span></div>
+    <p class="description">Short lakeside walks with Mount Fuji views. Low effort, but only worth the trip when the skies are clear.</p>
+    <p class="action"><strong>Route:</strong> Start <strong>Kawaguchiko Natural Living Center</strong> &rarr; Oishi Park paths &rarr; return to bus stop. Bus to <strong>Music Forest bus stop</strong> &rarr; nearby lakeside/Maple Corridor paths &rarr; finish <strong>Music Forest bus stop</strong>. Two short tourist walks linked by bus, not a continuous separated waterfront trail.</p>
+    <div class="facts"><div class="fact"><span class="label">Cost per adult</span><span class="value">Free; local bus pass optional ¥1,500</span></div><div class="fact"><span class="label">Time</span><span class="value">2-3 hours plus bus links</span></div><div class="fact"><span class="label">Confidence</span><span class="value">Medium</span></div><div class="fact"><span class="label">Area</span><span class="value">Fuji Five Lakes</span></div></div>
+    <p class="watch"><strong>Main tradeoff:</strong> Cloud risk, bus-linked walks.</p>
+    <p class="why"><strong>Why it ranks here:</strong> Best low-effort Fuji-view walking, conditional on a favorable visibility outlook.</p>
+    <p class="overlap-note"><strong>Memory overlap:</strong> <a href="more-ideas.html#more-must-see-04">Chureito Pagoda and Fuji view</a> (same region); <a href="more-ideas.html#more-walking-05">Oshino Hakkai</a> (same region); <a href="more-ideas.html#more-activities-01">Mt. Fuji day tour from Tokyo</a> (same destination, guided; now researched in iteration 2). The rank was reviewed against these and left as is.</p>
+    <details class="more"><summary>More details and sources</summary><dl class="detail-grid"><dt>Traveler evidence</dt><dd>Wilson highlights Oishi Park/north-shore photo locations; mfedley's visit instead found Fuji hidden and winter sightseeing very cold. Both outcomes matter. Review count not verified.</dd><dt>Location and access</dt><dd>Shinjuku highway bus to Kawaguchiko Station, then local Red Line. Allow 20-35 minutes or more for the local connection, excluding waiting.</dd><dt>Time and physical effort</dt><dd>Approximately 2-4 km walking, 2-3 hours with photo stops and bus links; mostly easy tourist paths, little climbing.</dd><dt>Approximate cost</dt><dd>Walks free. Official highway bus <strong>2,200 each way</strong>; local one-day bus pass <strong>1,500</strong>, giving a simple <strong>5,900</strong> transport allowance. Individual fares may be cheaper.</dd><dt>Crowds and booking</dt><dd>Reserve both highway-bus directions; local sightseeing buses can involve standing/queues. A ropeway queue is not required for this recommendation.</dd><dt>Late-November / early-December fit</dt><dd>Cold lakeside conditions; do not count on lingering foliage or a festival. Fuji visibility is never guaranteed.</dd><dt>Safety and constraints</dt><dd>Use marked crossings/pavements; do not force a continuous route along an unsafe roadside. Visitor centers offer toilets.</dd><dt>Uncertainty / what to verify</dt><dd>Bus timetables, road congestion, festival dates and visibility. Not a Fuji climbing recommendation.</dd><dt>Sources</dt><dd>First-person: <a class="src" href="sources.html#walking-S25">S25</a>, <a class="src" href="sources.html#walking-S26">S26</a>. Operators: <a class="src" href="sources.html#walking-S27">S27</a>, <a class="src" href="sources.html#walking-S28">S28</a>, <a class="src" href="sources.html#walking-S46">S46</a>.</dd></dl></details>
+  </div>
+</article>
+<article class="card tier-b" id="walking-11">
+<div class="gallery n1"><img src="images/walking/walking-11-1.jpg" alt="Hakone park and Cedar Avenue: photo 1" loading="lazy" width="5472" height="3648"></div><p class="photo-credit">Photo credit: <a href="https://commons.wikimedia.org/wiki/File:260505_Moto-Hakone_Hakone_Japan01s3.jpg" target="_blank" rel="noopener">663highland</a>, CC BY-SA 4.0 (Wikimedia Commons)</p>
+  <div class="card-body">
+    <div class="card-head">
+      <span class="rank" aria-label="Number 11">11</span>
+      <h3>Hakone park and Cedar Avenue</h3>
+      <span class="badge tier-b">B · Worth it if it fits</span>
+    </div>
+    
+    <p class="description">A lakeside walk past Hakone&#x27;s cedar-lined road and shrine views. Good only if you are already visiting Hakone.</p>
+    <p class="action"><strong>Route:</strong> Start <strong>Hakone-machi-ko bus stop</strong> &rarr; checkpoint vicinity via public streets &rarr; Onshi-Hakone Park viewpoint &rarr; Cedar Avenue &rarr; Moto-Hakone waterfront &rarr; optional Hakone Shrine approach &rarr; finish <strong>Moto-Hakone-ko bus stop</strong>. Paid checkpoint interiors and boats are not required.</p>
+    <div class="facts"><div class="fact"><span class="label">Cost per adult</span><span class="value">Free</span></div><div class="fact"><span class="label">Time</span><span class="value">2.5-4 hours</span></div><div class="fact"><span class="label">Confidence</span><span class="value">Medium</span></div><div class="fact"><span class="label">Area</span><span class="value">Hakone</span></div></div>
+    <p class="watch"><strong>Main tradeoff:</strong> Long access, wet footing.</p>
+    <p class="why"><strong>Why it ranks here:</strong> Sensible if Hakone itself appeals; weaker value as a long journey solely for walking.</p>
+    <details class="more"><summary>More details and sources</summary><dl class="detail-grid"><dt>Traveler evidence</dt><dd>mfedley enjoyed the public park and cedar-path segment but failed to see Fuji on two visits and warned against cramming the whole Hakone loop into a day. Review count not verified.</dd><dt>Location and access</dt><dd>Reach Hakone-Yumoto, then a lake-bound bus; allow roughly 35-55 minutes for the mountain bus in normal conditions, plus waiting.</dd><dt>Time and physical effort</dt><dd>About 4-5 km, 2.5-4 hours; park hills and shrine steps can add approximately 100-200 m cumulative ascent. The cedar section itself is only about <strong>500 m</strong>.</dd><dt>Approximate cost</dt><dd>Selected walk free. Budget approximately <strong>5,000-6,500</strong> return rail/local-bus transport on ordinary trains. A Shinjuku two-day Freepass is <strong>7,100</strong>; Romancecar adds <strong>1,200 each way</strong> to a base ticket/pass.</dd><dt>Crowds and booking</dt><dd>Skip the waterfront-torii photo queue. A pass may not pay off for this bus/walk alone.</dd><dt>Late-November / early-December fit</dt><dd>Colder and wetter underfoot than central Tokyo; wind or cloud may remove the scenic payoff.</dd><dt>Safety and constraints</dt><dd>Cedar Avenue has woodland footing, roots and wet leaves. The longer cobbled Old Tokaido hike is genuinely slippery hiking, not the same short route.</dd><dt>Uncertainty / what to verify</dt><dd>Weather, notices, buses and road congestion. Omit shrine steps if tired; both settlements have bailout buses.</dd><dt>Sources</dt><dd>First-person: <a class="src" href="sources.html#walking-S29">S29</a>. Official route/operator checks: <a class="src" href="sources.html#walking-S30">S30</a>, <a class="src" href="sources.html#walking-S31">S31</a>.</dd></dl></details>
+  </div>
+</article>
+  </div>
+</div><div class="tier-group" data-tier="C" id="tier-c">
+  <div class="tier-heading"><span class="badge tier-c">C · Conditional</span><h3>Only with a reason (3)</h3><p>Only worth it for a specific reason. Each includes a short description.</p></div>
+  <div class="card-list">
+<article class="card tier-c" id="walking-12">
+
+  <div class="card-body">
+    <div class="card-head">
+      <span class="rank" aria-label="Number 12">12</span>
+      <h3>Higashiyama to Gion</h3>
+      <span class="badge tier-c">C · Conditional</span>
+    </div>
+    <div class="tags"><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span></div>
+    <p class="description">Kyoto&#x27;s stone-paved lanes from Kiyomizu-dera down to Gion. Wonderful, but it needs a Kansai trip.</p>
+    <p class="action"><strong>Route:</strong> Start <strong>Kiyomizu-Gojo Station</strong> &rarr; Matsubara approach &rarr; Kiyomizudera entrance area &rarr; Sannenzaka &rarr; Ninenzaka &rarr; Nene-no-michi &rarr; Yasaka Shrine &rarr; public Gion streets &rarr; finish <strong>Gion-Shijo Station</strong>. The paid temple platform/interiors are not included in this free walk.</p>
+    <div class="facts"><div class="fact"><span class="label">Cost per adult</span><span class="value">Free; paid interiors excluded</span></div><div class="fact"><span class="label">Time</span><span class="value">3.5-5 hours</span></div><div class="fact"><span class="label">Confidence</span><span class="value">Medium</span></div><div class="fact"><span class="label">Area</span><span class="value">Kyoto</span></div></div>
+    <p class="watch"><strong>Main tradeoff:</strong> Expensive Tokyo detour.</p>
+    <p class="why"><strong>Why it ranks here:</strong> Intrinsically excellent for this brief, but a conditional regional choice rather than an economical Tokyo day trip.</p>
+    <p class="overlap-note"><strong>Memory overlap:</strong> <a href="more-ideas.html#more-walking-06">Philosopher&#x27;s Path</a> (neighboring Kyoto area). The rank was reviewed against it and left as is.</p>
+    <details class="more"><summary>More details and sources</summary><dl class="detail-grid"><dt>Traveler evidence</dt><dd>mfedley enjoyed Kodaiji-area streets/gardens but encountered congestion and inappropriate tourist photography: both appeal and friction are credible. Review count not verified.</dd><dt>Location and access</dt><dd>Kyoto Station requires an additional local connection/walk; the Shinkansen does not arrive beside the sights. Rail plus walking can avoid relying on a congested sightseeing bus.</dd><dt>Time and physical effort</dt><dd>Roughly 5-7 km, 3.5-5 hours; a sustained uphill approach, sloping stone lanes and many steps, approximately 100-200 m cumulative ascent.</dd><dt>Approximate cost</dt><dd>Selected public route free; local transport roughly <strong>500-1,000</strong>. Tokyo-Kyoto Shinkansen return approximately <strong>28,000-30,000</strong>, before accommodation or relocation costs.</dd><dt>Crowds and booking</dt><dd>No reservation; autumn pedestrian bottlenecks remain. Skip queues for particular photographed storefronts.</dd><dt>Late-November / early-December fit</dt><dd>Potentially strong autumn atmosphere; color and special night openings are not guaranteed.</dd><dt>Safety and constraints</dt><dd>Wet stone steps and mixed pedestrian/vehicle streets. Follow private-lane and photography signs; never follow or obstruct geiko/maiko.</dd><dt>Uncertainty / what to verify</dt><dd>Specific lane restrictions, temple hours if adding paid visits, and actual train fares. Changing cities consumes scarce sightseeing and packing time.</dd><dt>Sources</dt><dd>First-person: <a class="src" href="sources.html#walking-S32">S32</a>. Official: <a class="src" href="sources.html#walking-S33">S33</a>, <a class="src" href="sources.html#walking-S43">S43</a>, <a class="src" href="sources.html#walking-S51">S51</a>.</dd></dl></details>
+  </div>
+</article>
+<article class="card tier-c" id="walking-13">
+
+  <div class="card-body">
+    <div class="card-head">
+      <span class="rank" aria-label="Number 13">13</span>
+      <h3>Nara Park and Naramachi</h3>
+      <span class="badge tier-c">C · Conditional</span>
+    </div>
+    
+    <p class="description">Nara&#x27;s deer park and temple approaches, ending in the old merchant quarter. A Kansai-based option.</p>
+    <p class="action"><strong>Route:</strong> Start <strong>Kintetsu-Nara Station</strong> &rarr; Kofukuji outer paths &rarr; Nandaimon/Todaiji approach &rarr; optional Nigatsudo terrace &rarr; Kasuga Taisha outer approach &rarr; Sarusawa Pond/Naramachi shopping streets &rarr; finish <strong>Kintetsu-Nara Station</strong>. Omit Nigatsudo or Kasuga if tired rather than racing the complete loop.</p>
+    <div class="facts"><div class="fact"><span class="label">Cost per adult</span><span class="value">Free; Buddha Hall optional ¥800</span></div><div class="fact"><span class="label">Time</span><span class="value">4.5-6 hours</span></div><div class="fact"><span class="label">Confidence</span><span class="value">Medium</span></div><div class="fact"><span class="label">Area</span><span class="value">Nara</span></div></div>
+    <p class="watch"><strong>Main tradeoff:</strong> Choose Kansai first.</p>
+    <p class="why"><strong>Why it ranks here:</strong> A strong Kansai walking choice, not a sensible standalone excursion from Tokyo merely to see deer.</p>
+    <details class="more"><summary>More details and sources</summary><dl class="detail-grid"><dt>Traveler evidence</dt><dd>mfedley enjoyed connecting paths/merchant streets but warned of biting/headbutting deer. His bicycle visit is not evidence of measured walking time. Review count not verified.</dd><dt>Location and access</dt><dd>Approximately 45-60 minutes from Kyoto by suitable trains. JR Nara is farther from the park than Kintetsu-Nara.</dd><dt>Time and physical effort</dt><dd>Around 7-9 km, 4.5-6 hours; park gradients and terrace/shrine stairs, approximately 100-200 m cumulative ascent. Shortened loops can be substantially easier.</dd><dt>Approximate cost</dt><dd>Public route free; optional Todaiji Great Buddha Hall <strong>800</strong>. Kyoto-Nara return roughly <strong>1,500-1,800</strong> on ordinary trains; allow roughly <strong>300-400</strong> for a bailout bus.</dd><dt>Crowds and booking</dt><dd>No reservation; busy approaches. A full paid-temple circuit needs longer.</dd><dt>Late-November / early-December fit</dt><dd>Good daylight walking if already in Kansai. Naramachi's individual businesses have varied rest days.</dd><dt>Safety and constraints</dt><dd>Deer are wild, not props: do not tease, chase or corner them; secure bags and give animals space. Use park/station facilities and city buses when needed.</dd><dt>Uncertainty / what to verify</dt><dd>Local fares, route shortening and steps. This is not an invitation to add remote forest trails.</dd><dt>Sources</dt><dd>First-person: <a class="src" href="sources.html#walking-S34">S34</a>. Official access/admission: <a class="src" href="sources.html#walking-S35">S35</a>, <a class="src" href="sources.html#walking-S36">S36</a>.</dd></dl></details>
+  </div>
+</article>
+<article class="card tier-c" id="walking-14">
+
+  <div class="card-body">
+    <div class="card-head">
+      <span class="rank" aria-label="Number 14">14</span>
+      <h3>Nikko temple approaches</h3>
+      <span class="badge tier-c">C · Conditional</span>
+    </div>
+    
+    <p class="description">Temple approaches around Nikko&#x27;s World Heritage site. Choose it for the temples, not for late-autumn hiking.</p>
+    <p class="action"><strong>Route:</strong> Start <strong>Tobu-Nikko Station</strong> &rarr; main street &rarr; Shinkyo viewed from public roadside &rarr; Rinnoji approach &rarr; Toshogu ticket gate &rarr; Futarasan outer precinct &rarr; finish <strong>Omotesando bus stop</strong>, returning by bus. This is a visitor corridor, not an Oku-Nikko woodland hike.</p>
+    <div class="facts"><div class="fact"><span class="label">Cost per adult</span><span class="value">Free; Toshogu optional ¥1,600</span></div><div class="fact"><span class="label">Time</span><span class="value">3-4 hours; interiors longer</span></div><div class="fact"><span class="label">Confidence</span><span class="value">Medium</span></div><div class="fact"><span class="label">Area</span><span class="value">Tochigi</span></div></div>
+    <p class="watch"><strong>Main tradeoff:</strong> Cold, early closing, long access.</p>
+    <p class="why"><strong>Why it ranks here:</strong> Choose for temples, not high late-autumn walking value.</p>
+    <details class="more"><summary>More details and sources</summary><dl class="detail-grid"><dt>Traveler evidence</dt><dd>mfedley describes a coherent 4-5-hour cluster and tour-bus pressure. Old combined-ticket/restoration claims are rejected. Review count not verified.</dd><dt>Location and access</dt><dd>Asakusa to Tobu-Nikko roughly 1 hour 50 minutes-2 hours 10 minutes by appropriate limited express; station-to-Shinkyo walking adds about 25-35 minutes.</dd><dt>Time and physical effort</dt><dd>Approximately 4-6 km, 3-4 hours without full interiors. Uphill roads and temple steps; allow another hour or more for paid sightseeing and additional climbing.</dd><dt>Approximate cost</dt><dd>Public approaches free; Toshogu <strong>1,600</strong> if entering. The World Heritage pass is <strong>3,000</strong>, with limited-express tickets extra; allow approximately <strong>6,000-7,500</strong> return transport depending on train.</dd><dt>Crowds and booking</dt><dd>Reserve suitable limited-express seats. A temple-free walk avoids admission expense but also misses much of Nikko's principal draw.</dd><dt>Late-November / early-December fit</dt><dd>Colder and less reliable for foliage than Tokyo's lowland gardens. Toshogu winter closing is <strong>16:00, last entry 15:30</strong>.</dd><dt>Safety and constraints</dt><dd>Frost, wet stone and early shade matter. Use station facilities before climbing; buses let you avoid the return descent.</dd><dt>Uncertainty / what to verify</dt><dd>Weather, notices and services. Lake Chuzenji/high-country trails and quiet gorges are not automatic extensions.</dd><dt>Sources</dt><dd>First-person: <a class="src" href="sources.html#walking-S37">S37</a>. Official pass/admission: <a class="src" href="sources.html#walking-S38">S38</a>, <a class="src" href="sources.html#walking-S39">S39</a>.</dd></dl></details>
+  </div>
+</article>
+  </div>
+</div>
+</section>
+
+<section class="block" id="travel">
+  <h2>Getting there: travel time and cost</h2>
+  <div class="table-wrap"><table class="data-table"><thead><tr><th>Area</th><th>Typical one-way travel from Tokyo</th><th>Approx. return transport JPY per adult</th><th>Day trip or overnight</th><th>Value for this trip</th></tr></thead><tbody><tr><td>Central Tokyo walks</td><td>Usually 10-40 minutes between major stations, plus exits</td><td>400-800 allowance</td><td>No relocation</td><td>Cheapest, flexible</td></tr><tr><td>Mount Takao</td><td>Shinjuku-Takaosanguchi 50-60 minutes; 5-10 minutes to base</td><td>About 860 rail; 1,840 with return cable</td><td>Day trip</td><td>Best mountain value; weather-dependent</td></tr><tr><td>Kamakura</td><td>Tokyo-Kamakura about 55-65 minutes; add Enoden for Hase. Odakyu/Fujisawa approach often 90-120 minutes</td><td>About 2,200-2,700 JR/Enoden; 1,640 Odakyu/Enoden pass alternative</td><td>Day trip</td><td>Best nearby town-walk choice; cheaper pass trades time for money</td></tr><tr><td>Enoshima</td><td>Shinjuku-Katase-Enoshima 65-80 minutes; 15-25 minutes toward island</td><td>1,300-1,800 ordinary rail; regional pass 1,640</td><td>Day trip</td><td>Both complete Kamakura/island walks would rush</td></tr><tr><td>Kawaguchiko</td><td>Shinjuku bus scheduled 1h45; allow 2-3 hours with traffic, then local bus</td><td>4,400 highway bus; 5,900 with local pass</td><td>Day trip possible</td><td>Clear-weather choice</td></tr><tr><td>Hakone lakeside</td><td>Shinjuku-Hakone-Yumoto about 80-100 minutes Romancecar or roughly 110-130 ordinary trains; then 35-55-minute bus, plus waiting</td><td>Roughly 5,000-6,500 ordinary rail/buses; Freepass 7,100; pass plus return Romancecar about 9,500</td><td>Day trip possible; overnight only as a separate regional choice</td><td>Short walk alone may not justify 5-7 hours of access/return overhead</td></tr><tr><td>Nikko</td><td>Asakusa-Tobu-Nikko about 1 hour 50 minutes-2 hours 10 minutes; then local approach</td><td>About 6,000-7,500 with appropriate limited express and local coverage</td><td>Day trip possible</td><td>Lower late-season walking value; choose for temples, not promised foliage</td></tr><tr><td>Kyoto</td><td>Tokyo-Kyoto 2 hours 10-25 minutes Nozomi; add 20-45 minutes or more locally</td><td>28,000-30,000 intercity; 500-1,000 local</td><td>Overnight regional detour preferable</td><td>Packing/two long rail legs compete with six full days</td></tr><tr><td>Nara</td><td>Via Kyoto, roughly 3 hours 15 minutes-3 hours 50 minutes including transfer; then park approach</td><td>Roughly 30,000-32,000 from Tokyo; 1,500-1,800 return from Kyoto</td><td>Day trip from a Kansai stay</td><td>Strong only after choosing the Kansai detour</td></tr></tbody></table></div>
+  <p><strong>2026-10-19 planning allowances</strong>, not selected-date quotes. Times start at the named Tokyo station; accommodation access and unspecified last-mile travel are additional.</p>
+<p>Return fares compare Tokyo-based travel; they do not assume the departure airport is in Tokyo.</p>
+<p>The official SmartEX regular-season Tokyo-Kyoto example is <strong>13,970 one-way</strong>, from the fare PDF dated 2025-04-01 still linked at checking. Actual date/product pricing and local access differ. No nationwide rail pass is recommended automatically; these walking choices do not establish that one pays off.</p>
+</section>
+
+<section class="block" id="skip">
+  <h2>Overhyped, lower priority or excluded</h2>
+  <div class="panel"><ul><li><strong>Takao Trail 6 descent copied from old blogs:</strong> not merely lower priority: the published uphill-only restriction covers the assumed trip. Trail 1/cable return is the appropriate default.</li><li><strong>Takao-to-Jinba/secluded trails:</strong> longer mountain days reduce daylight margin and complicate escape/navigation, without improving this brief's fit.</li><li><strong>Fuji summit/winter summit hiking:</strong> excluded: the official 2026 season-end notice closes summit routes. Town-based Fuji viewing is different. <a class="src" href="sources.html#walking-S42">S42</a>.</li><li><strong>Kamikochi as an easy add-on:</strong> outside its ordinary April-mid-November serviced season, not an equivalent easy late-November walk. <a class="src" href="sources.html#walking-S44">S44</a>.</li><li><strong>The complete Hakone Old Tokaido from Yumoto:</strong> not interchangeable with 500 m Cedar Avenue. Long, steep/stone-paved sections and roadside stretches do not match a casual low-risk promenade. The short lake route offers better effort value here.</li><li><strong>Full Hakone transport loop/lake cruise:</strong> personal mismatch and time cost, not inherently bad experiences. Pass inclusion does not make them worthwhile.</li><li><strong>Kawaguchiko solely for one social-media photo or a ropeway:</strong> visibility can fail and transport costs remain. The free lakeside walks avoid another queue, but cannot solve cloud.</li><li><strong>Higher Oku-Nikko walks added to the temple cluster:</strong> extra bus time, colder conditions and reduced daylight make them weaker choices than the established lower visitor corridor.</li><li><strong>Takeshita at its busiest, or queues for one snack/photo shop:</strong> urban liveliness is desirable; involuntary shuffling is not. Parallel commercial streets preserve the experience.</li><li><strong>Kyoto/Nara as casual Tokyo day trips:</strong> these are geographic opportunity-cost mismatches, not low-quality destinations. They make more sense as an explicitly chosen Kansai detour.</li><li><strong>Disney and excluded motorized/water activities:</strong> outside scope; no exception justified.</li></ul></div>
+</section>
+
+<section class="block" id="checklist">
+  <details class="section">
+    <summary>Booking, weather, safety and what is still unverified</summary>
+    <ul><li><strong>Daylight:</strong> Tokyo sunset is <strong>16:29 November 25-28</strong>, <strong>16:28 November 29-December 2</strong>. Forest shade arrives earlier; a 15:30 wooded-route finish is only a planning margin. Shorten further in poor conditions. The 17:45 arrival is after sunset. <a class="src" href="sources.html#walking-S40">S40</a>, <a class="src" href="sources.html#walking-S41">S41</a>.</li><li><strong>Weather:</strong> JNTO describes cool/chilly mornings/evenings and busy late-November Kyoto, not a 2026 forecast. Check recent conditions; carry layers, rain shell and grippy footwear. Leaves, moss and frost can be slippery. <a class="src" href="sources.html#walking-S51">S51</a>.</li><li><strong>Choose the correct physical category.</strong> Oishi's maintained tourist paths are not Fuji climbing; cable-assisted Takao still has hill walking and steps; Enoshima escalators do not eliminate descent; Hakone's short cedar passage is not the full cobbled highway hike.</li><li><strong>Recheck notices:</strong> Takao's verified one-way rule does not exclude later weather damage or operational changes. JNTO notes bears even around Tokyo; no current route-specific sighting was verified. Follow local advice, stay on busy marked daylight routes; bells are not guarantees. <a class="src" href="sources.html#walking-S44">S44</a>.</li><li><strong>Bookings have different release rules.</strong> The highway-bus FAQ says one month ahead: for example, a November 26 bus would normally become bookable October 26; no release hour was verified. Odakyu says Romancecar seats open <strong>10:00 JST one month ahead</strong>. Hakone Freepass station sales are available one month ahead. SmartEX's standard service permits booking from <strong>05:30 one year ahead</strong>, with train/time/seat confirmation rules inside the final month: do not apply a blanket one-month rule to every rail product. No tickets were purchased.</li><li><strong>Ordinary walks need no reservations.</strong> Shinjuku Gyoen offers advance e-tickets. Rikugien's official 2026 night event runs <strong>November 25-December 6, 18:00-20:30, last entry 19:30</strong>; the garden closes at 17:00 before reopening. Separate tickets cost <strong>1,000 advance / 1,200 same-day</strong>; sales-start details were still pending when checked. It is not included in the daytime walk. Enoshima's exact 2026 evening-event dates remain unverified. <a class="src" href="sources.html#walking-S52">S52</a>.</li><li><strong>Price precision has limits.</strong> Cable fares, selected admissions, the named passes and highway-bus fares were read from official pages. Not every ordinary JR/Kintetsu/local-bus fare was obtainable as a current point-to-point quote; those ranges are labeled planning allowances. Confirm exact journeys and cancellation terms before paying. Older blogs' transport and attraction prices are not current evidence.</li><li><strong>Review-volume limits:</strong> Five landmark counters were verified in publicly served Wanderlog HTML during reconciliation, with Google labels/logo provenance; none was taken from search snippets. They reinforce popular route anchors, not approval of the complete walks. Upstream freshness is unknown, and other counts remain unverified. Initial direct TripAdvisor/Reddit and Japan Guide checks did not supply usable counts. All recommendations remain medium confidence. <a class="src" href="sources.html#walking-S53">S53</a>, <a class="src" href="sources.html#walking-S54">S54</a>, <a class="src" href="sources.html#walking-S55">S55</a>.</li><li><strong>Independent evidence:</strong> Eleven substantial first-person pages plus diaries/editorials/podcast notes span several hosts; many visits are old and several share mfedley's authorship. Affiliate caveats are disclosed; roundup sales copy is excluded.</li><li><strong>Nightlife:</strong> Popularity does not establish safety. Stick to intended public-street sightseeing and decline tout invitations; FCDO flags extortion/spiking in Kabukicho and other nightlife districts. No bar visit is recommended. <a class="src" href="sources.html#walking-S50">S50</a>.</li><li><strong>Podcast verification:</strong> Episode 550's public show notes were read; its linked MP3 returned HTTP 200 with <code>audio/mpeg</code>. Audio was not listened to and no transcript was available in the opened page. It is supplemental context, not claimed scene-by-scene verification.</li><li><strong>Departure remains unresolved:</strong> confirm the departure airport before considering a Kansai ending or any long-distance departure-day transfer. Airport transfers are not included in these walking budgets. No food vendor has been verified against the dietary requirements.</li></ul>
+  </details>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>Built from four research reports plus one page of ideas from memory. Must-see, Walks and Food were checked on 2026-10-19; Activities was redone on 2026-10-19/20 using live booking-site and Google listings. Prices are approximate JPY per adult, and hours, closures and tickets should be rechecked before booking. Nothing is booked yet.</p>
+    <p>Photos come from Wikimedia Commons under free licenses; see <a href="sources.html#photo-credits">Sources &amp; credits</a>.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

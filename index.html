@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Japan trip shortlist</title>
+<meta name="description" content="Traveler-trusted sights, walks, activities and food for a Nov 25 - Dec 2 Tokyo trip.">
+<script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    let saved = null;
+    try { saved = localStorage.getItem("theme"); } catch (e) {}
+    const theme =
+      param || saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<style>
+:root {
+  color-scheme: light;
+  --cp-bg: #f7f4ef;
+  --cp-bg-elevated: #fcfbf8;
+  --cp-surface: #ffffff;
+  --cp-surface-soft: #f5f5f5;
+  --cp-border: #dedede;
+  --cp-border-strong: #919191;
+  --cp-text: #242424;
+  --cp-text-muted: #5c5c5c;
+  --cp-text-soft: #6f6f6f;
+  --cp-accent: #b11f4b;
+  --cp-accent-hover: #9a1a41;
+  --cp-accent-soft: rgba(177, 31, 75, 0.08);
+  --cp-accent-fg: #ffffff;
+  --cp-success: #16a34a;
+  --cp-danger: #dc2626;
+  --cp-warning: #f59e0b;
+  --cp-link: #0078d4;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
+  --cp-overlay: rgba(255, 255, 255, 0.8);
+  --cp-panel: rgba(255, 255, 255, 0.86);
+  --cp-panel-strong: rgba(255, 255, 255, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.55);
+  --cp-highlight: rgba(177, 31, 75, 0.12);
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --cp-bg: #3d3b3a;
+  --cp-bg-elevated: #343231;
+  --cp-surface: #292929;
+  --cp-surface-soft: #2e2e2e;
+  --cp-border: #474747;
+  --cp-border-strong: #5f5f5f;
+  --cp-text: #dedede;
+  --cp-text-muted: #919191;
+  --cp-text-soft: #b0b0b0;
+  --cp-accent: #fd8ea1;
+  --cp-accent-hover: #fb7b91;
+  --cp-accent-soft: rgba(253, 142, 161, 0.14);
+  --cp-accent-fg: #1a1a1a;
+  --cp-success: #4ade80;
+  --cp-danger: #f87171;
+  --cp-warning: #fbbf24;
+  --cp-link: #4da6ff;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+  --cp-overlay: rgba(41, 41, 41, 0.88);
+  --cp-panel: rgba(41, 41, 41, 0.72);
+  --cp-panel-strong: rgba(41, 41, 41, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.04);
+  --cp-highlight: rgba(253, 142, 161, 0.12);
+}
+</style>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><span>Japan</span> trip shortlist</a>
+    <nav class="nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="must-see.html">Must-see</a><a href="walking.html">Walks &amp; hikes</a><a href="activities.html">Activities</a><a href="food.html">Food</a><a href="more-ideas.html">More ideas</a><a href="sources.html">Sources &amp; credits</a></nav>
+    <button class="theme-toggle" id="theme-toggle" type="button">Dark mode</button>
+  </div>
+</header>
+<main class="container">
+<div class="hero">
+  <p class="eyebrow">Nov 25 - Dec 2, 2026</p>
+  <h1>Japan trip shortlist</h1>
+  <p class="lede">What traveler-trusted sources recommend in Tokyo and nearby, filtered to our trip: 2 adults, 7 nights, no pork and no alcoholic drinks. This is a menu of options, not an itinerary or a hotel choice yet.</p>
+</div>
+
+<section class="block">
+  <h2>Explore the shortlists</h2>
+  <div class="category-grid"><a class="category-card" href="must-see.html">
+  <h3>Must-see sights</h3>
+  <p>Nature, architecture, history and culture that travelers rate most highly.</p>
+  <p><strong>Top picks:</strong> Senso-ji and Asakusa; Shibuya Crossing and commercial district; Meiji Jingu, Harajuku and Omotesando contrast</p>
+  <span class="count">15 picks: 4 A · 9 B · 2 C</span>
+</a><a class="category-card" href="walking.html">
+  <h3>Walks and hikes</h3>
+  <p>Lively city walks and easy-to-moderate hikes in busy, well-visited areas.</p>
+  <p><strong>Top picks:</strong> Asakusa, Sumida and Skytree approach; Meiji Jingu, Harajuku and Shibuya; Shinjuku Gyoen and commercial streets</p>
+  <span class="count">14 picks: 6 A · 5 B · 3 C</span>
+</a><a class="category-card" href="activities.html">
+  <h3>Tourist activities</h3>
+  <p><span class="badge flag-good">Updated: iteration 2, 2026-10-19/20</span></p>
+  <p>Paid experiences, shows, rides and excursions worth planning around.</p>
+  <p><strong>Top picks:</strong> teamLab Borderless (choose one Tokyo teamLab); SHIBUYA SKY (one skyline experience); Shinjuku sumo show with photo</p>
+  <span class="count">21 picks: 6 A · 9 B · 6 C</span>
+</a><a class="category-card" href="food.html">
+  <h3>Must-eat food</h3>
+  <p>Tourist-friendly places and foods that fit no pork and no alcoholic drinks.</p>
+  <p><strong>Top picks:</strong> T&#x27;s Tantan golden sesame vegan ramen, Akihabara; Honolu chicken paitan ramen, Ebisu; Toraya Yoru no Ume yokan; optional wagashi and tea</p>
+  <span class="count">16 picks: 3 A · 11 B · 2 C</span>
+</a><a class="category-card wide" href="more-ideas.html">
+  <h3>More ideas (from memory)</h3>
+  <p>Extra Must-see, Walks and Activities ideas. Most of the Activities ideas, including the Fuji day tour and go-karting, have since been researched on the Activities page. The rest is unverified, so check live ratings.</p>
+  <p><strong>Top ideas:</strong> Tokyo Tower and Zojo-ji; Akihabara Electric Town; Mt. Fuji day tour from Tokyo</p>
+  <span class="count">21 ideas: 7 per category · no photos</span>
+</a></div>
+</section>
+
+<section class="block">
+  <h2>Trip snapshot</h2>
+  <div class="panel"><dl class="facts-table"><dt>Travelers</dt><dd>2 adults</dd><dt>Arrive</dt><dd>Wed, Nov 25, 17:45 at Haneda (HND), after sunset</dd><dt>Depart</dt><dd>Wed, Dec 2, 16:50 (departure airport not confirmed)</dd><dt>Time on the ground</dt><dd>7 nights, 6 full sightseeing days, 2 partial days</dd><dt>Daylight</dt><dd>Sunset is about 16:28-16:29 every day of the trip</dd><dt>Weather</dt><dd>Typical highs and lows: about 17/9 °C in November and 12/4 °C in December. These are long-term averages, not a forecast, so pack layers.</dd><dt>Food rules</dt><dd>No pork, no alcoholic drinks (cooking sake and mirin are fine)</dd><dt>Year</dt><dd>Assumed to be 2026; all dates and prices should be rechecked before booking.</dd></dl></div>
+</section>
+
+<section class="block" id="top-picks">
+  <div class="section-head"><h2>Top picks across all categories</h2><p>Every A-tier pick, one tap from its full details.</p></div>
+  <div class="pick-grid"><a class="pick" href="must-see.html#must-see-01"><img src="images/must-see/must-see-01-1.jpg" alt="Senso-ji and Asakusa" loading="lazy">
+  <span class="pick-body"><span class="pick-cat">Must-see</span>
+  <span class="pick-name">Senso-ji and Asakusa</span>
+  <span class="pick-meta">Free · 2-3 hours</span></span>
+</a><a class="pick" href="must-see.html#must-see-02"><img src="images/must-see/must-see-02-1.jpg" alt="Shibuya Crossing and commercial district" loading="lazy">
+  <span class="pick-body"><span class="pick-cat">Must-see</span>
+  <span class="pick-name">Shibuya Crossing and commercial district</span>
+  <span class="pick-meta">Free · 1.5-3 hours</span></span>
+</a><a class="pick" href="must-see.html#must-see-03"><img src="images/must-see/must-see-03-1.jpg" alt="Meiji Jingu, Harajuku and Omotesando contrast" loading="lazy">
+  <span class="pick-body"><span class="pick-cat">Must-see</span>
+  <span class="pick-name">Meiji Jingu, Harajuku and Omotesando contrast</span>
+  <span class="pick-meta">Free for core visit · 2.5-4 hours</span></span>
+</a><a class="pick" href="must-see.html#must-see-04"><img src="images/must-see/must-see-04-1.jpg" alt="Shinjuku Gyoen National Garden" loading="lazy">
+  <span class="pick-body"><span class="pick-cat">Must-see</span>
+  <span class="pick-name">Shinjuku Gyoen National Garden</span>
+  <span class="pick-meta">¥500 · 1.5-3 hours</span></span>
+</a><a class="pick" href="walking.html#walking-01"><img src="images/walking/walking-01-1.jpg" alt="Asakusa, Sumida and Skytree approach" loading="lazy">
+  <span class="pick-body"><span class="pick-cat">Walks &amp; hikes</span>
+  <span class="pick-name">Asakusa, Sumida and Skytree approach</span>
+  <span class="pick-meta">Free; tower excluded · 2.5-4 hours</span></span>
+</a><a class="pick" href="walking.html#walking-02"><img src="images/walking/walking-02-1.jpg" alt="Meiji Jingu, Harajuku and Shibuya" loading="lazy">
+  <span class="pick-body"><span class="pick-cat">Walks &amp; hikes</span>
+  <span class="pick-name">Meiji Jingu, Harajuku and Shibuya</span>
+  <span class="pick-meta">Free · 3-5 hours</span></span>
+</a><a class="pick" href="walking.html#walking-03"><img src="images/walking/walking-03-1.jpg" alt="Shinjuku Gyoen and commercial streets" loading="lazy">
+  <span class="pick-body"><span class="pick-cat">Walks &amp; hikes</span>
+  <span class="pick-name">Shinjuku Gyoen and commercial streets</span>
+  <span class="pick-meta">¥500 · 3-4.5 hours</span></span>
+</a><a class="pick" href="walking.html#walking-04"><img src="images/walking/walking-04-1.jpg" alt="Kamakura Hase, coast and Komachi" loading="lazy">
+  <span class="pick-body"><span class="pick-cat">Walks &amp; hikes</span>
+  <span class="pick-name">Kamakura Hase, coast and Komachi</span>
+  <span class="pick-meta">Free streets; two temples ¥700 · 4-6 hours</span></span>
+</a><a class="pick" href="walking.html#walking-05"><img src="images/walking/walking-05-1.jpg" alt="Takao Trail 1/cable-car alternative" loading="lazy">
+  <span class="pick-body"><span class="pick-cat">Walks &amp; hikes</span>
+  <span class="pick-name">Takao Trail 1/cable-car alternative</span>
+  <span class="pick-meta">Free trail; cable ¥490 one-way/¥980 return · 4-5 hours; cable-assisted 2.5-3</span></span>
+</a><a class="pick" href="walking.html#walking-06"><img src="images/walking/walking-06-1.jpg" alt="Ameyoko, Ueno and Yanaka Ginza" loading="lazy">
+  <span class="pick-body"><span class="pick-cat">Walks &amp; hikes</span>
+  <span class="pick-name">Ameyoko, Ueno and Yanaka Ginza</span>
+  <span class="pick-meta">Free · 3-4.5 hours</span></span>
+</a><a class="pick" href="activities.html#activities-01"><img src="images/activities/activities-01-1.jpg" alt="teamLab Borderless (choose one Tokyo teamLab)" loading="lazy">
+  <span class="pick-body"><span class="pick-cat">Activities</span>
+  <span class="pick-name">teamLab Borderless (choose one Tokyo teamLab)</span>
+  <span class="pick-meta">¥3,400-3,800 · 2-3 hours</span></span>
+</a><a class="pick" href="activities.html#activities-02"><img src="images/activities/activities-02-1.jpg" alt="SHIBUYA SKY (one skyline experience)" loading="lazy">
+  <span class="pick-body"><span class="pick-cat">Activities</span>
+  <span class="pick-name">SHIBUYA SKY (one skyline experience)</span>
+  <span class="pick-meta">¥2,800-3,400 · 1-1.5 hours</span></span>
+</a><a class="pick" href="activities.html#activities-03">
+  <span class="pick-body"><span class="pick-cat">Activities</span>
+  <span class="pick-name">Shinjuku sumo show with photo</span>
+  <span class="pick-meta">¥8,200-11,700 · 1.5 hours</span></span>
+</a><a class="pick" href="activities.html#activities-04">
+  <span class="pick-body"><span class="pick-cat">Activities</span>
+  <span class="pick-name">Asakusa sushi-making class</span>
+  <span class="pick-meta">¥8,500-12,600 · 1 hour 40 minutes</span></span>
+</a><a class="pick" href="activities.html#activities-05"><img src="images/activities/activities-05-2.jpg" alt="Guided Mt Fuji day tour (Kawaguchiko or Hakone type)" loading="lazy">
+  <span class="pick-body"><span class="pick-cat">Activities</span>
+  <span class="pick-name">Guided Mt Fuji day tour (Kawaguchiko or Hakone type)</span>
+  <span class="pick-meta">¥6,700-26,900 · 10-12 hours</span></span>
+</a><a class="pick" href="activities.html#activities-06">
+  <span class="pick-body"><span class="pick-cat">Activities</span>
+  <span class="pick-name">Samurai Ninja Museum guided experience</span>
+  <span class="pick-meta">¥3,200-3,500 · 1 hour</span></span>
+</a><a class="pick" href="food.html#food-01">
+  <span class="pick-body"><span class="pick-cat">Food</span>
+  <span class="pick-name">T&#x27;s Tantan golden sesame vegan ramen, Akihabara</span>
+  <span class="pick-meta">¥1,200-1,900 · 30-60 min</span></span>
+</a><a class="pick" href="food.html#food-02">
+  <span class="pick-body"><span class="pick-cat">Food</span>
+  <span class="pick-name">Honolu chicken paitan ramen, Ebisu</span>
+  <span class="pick-meta">¥1,200-2,000 · 35-65 min</span></span>
+</a><a class="pick" href="food.html#food-06"><img src="images/food/food-06-1.jpg" alt="Toraya Yoru no Ume yokan; optional wagashi and tea" loading="lazy">
+  <span class="pick-body"><span class="pick-cat">Food</span>
+  <span class="pick-name">Toraya Yoru no Ume yokan; optional wagashi and tea</span>
+  <span class="pick-meta">¥350-450 takeaway; ¥2,000-3,500 seated · 10-20 / 45-75 min</span></span>
+</a></div>
+</section>
+
+<section class="block" id="dates">
+  <h2>Dates that shape the plan</h2>
+  <div class="table-wrap"><table class="data-table"><thead><tr><th>When</th><th>What to know</th></tr></thead><tbody><tr><td><strong>Wed, Nov 25</strong></td><td>You land at 17:45. With immigration and transfers, plan only an easy evening. Rikugien&#x27;s evening light-up starts this day (Nov 25-Dec 6).</td></tr><tr><td><strong>Nov 25 - Dec 6</strong></td><td>Rikugien garden night illumination, 18:00-20:30 (last entry 19:30). Separate ticket: ¥1,000 advance or ¥1,200 same day.</td></tr><tr><td><strong>Mon, Nov 30</strong></td><td>Shinjuku Gyoen and the Tokyo National Museum are normally closed. Kiyomizu-dera&#x27;s night viewing ends.</td></tr><tr><td><strong>Tue, Dec 1</strong></td><td>Ghibli Museum is closed. The Tokyo Metropolitan Government&#x27;s south observatory is normally closed.</td></tr><tr><td><strong>Every day</strong></td><td>Sunset about 16:28. Meiji Jingu closes at 16:10 (November) or 16:00 (December).</td></tr><tr><td><strong>About 2 weeks before</strong></td><td>SHIBUYA SKY tickets open roughly two weeks ahead (about Nov 12-17 for Nov 26-Dec 1). Kawaguchiko buses release one calendar month ahead.</td></tr><tr><td><strong>Wed, Dec 2</strong></td><td>Flight at 16:50. Keep the morning light and nothing far away.</td></tr></tbody></table></div>
+  <p class="note">Closures and opening hours come from official pages checked on 2026-10-19 (Activities: 2026-10-19/20). Recheck before you go.</p>
+</section>
+
+<section class="block" id="day-trips">
+  <h2>Day trips from Tokyo at a glance</h2>
+  <div class="table-wrap"><table class="data-table"><thead><tr><th>Place</th><th>One-way time</th><th>Return cost per adult</th><th>Format</th><th>Verdict</th></tr></thead><tbody><tr><td>Kamakura (and Enoshima)</td><td>About 1 hour</td><td>¥2,200-2,700</td><td>Day trip</td><td>Best nearby town walk with temples, the Great Buddha and the coast.</td></tr><tr><td>Mount Takao</td><td>50-60 min</td><td>¥860 (+¥980 return cable car)</td><td>Day trip</td><td>Best mountain value; weather-dependent and busy in autumn.</td></tr><tr><td>Lake Kawaguchiko (Fuji views)</td><td>About 2 hours</td><td>¥4,400 by bus (¥5,900 with local pass)</td><td>Day trip</td><td>Only if the Fuji forecast is clear; a long day.</td></tr><tr><td>Hakone</td><td>80-100 min + mountain transfers</td><td>¥7,100 Freepass (¥9,500 with Romancecar)</td><td>Day trip or overnight</td><td>One big excursion; do not stack with other long trips.</td></tr><tr><td>Nikko</td><td>About 2 hours</td><td>¥6,000-9,000</td><td>Long day trip</td><td>For temples, not for late-autumn hiking.</td></tr><tr><td>Kyoto / Nara / Osaka</td><td>2 hr 10 min+ by Shinkansen</td><td>¥28,000-31,000 return</td><td>Overnight swap</td><td>Strongest cultural payoff but replaces Tokyo days; Nara and Osaka are best added from Kyoto.</td></tr></tbody></table></div>
+  <p class="note">Not all of these fit six full days. Choose Tokyo plus one or two nearby trips, or swap in a Kansai overnight. Costs are planning allowances, not quotes.</p>
+</section>
+
+<section class="block" id="cautions">
+  <div class="callout"><h2>Keep in mind</h2><ul><li><strong>Busy does not mean safe.</strong> The UK Foreign Office warns about touts, drink spiking and overcharging in popular nightlife areas (Kabukicho, Shibuya, Roppongi, Ikebukuro). Politely decline street invitations to bars.</li><li><strong>Mountain areas:</strong> bear sightings can occur near populated areas. Check the local trail notices before hiking.</li><li><strong>Food:</strong> no restaurant is certified. Use the ordering card on the food page and read ingredient labels.</li><li><strong>Review counts:</strong> Activities uses live Viator, GetYourGuide, Klook, TripAdvisor and Google counts (never added across platforms; Viator and TripAdvisor tour counts are one pool). The other categories only checked some Google-labelled counts, and where evidence was thin, confidence is capped at medium.</li><li><strong>Sources:</strong> Must-see, Walks and Food rest mostly on traveler diaries plus official venue pages, because Reddit and the booking sites were not readable then. Activities was redone with live listings, but Reddit stayed blocked and no video or podcast was watched or heard.</li></ul></div>
+</section>
+
+<section class="block" id="how-to-read">
+  <h2>How to read the shortlists</h2>
+  <div class="panel">
+    <ul>
+      <li><strong>A · Strongest fit:</strong> best value for your time and the most consistent traveler support. A picks show up to 3 photos.</li>
+      <li><strong>B · Worth it if it fits:</strong> good choices that depend on interests, weather or a longer trip. B picks show 1 photo.</li>
+      <li><strong>C · Conditional:</strong> only worth it for a specific reason. Description only, no photo.</li>
+      <li>Photos appear only when a free photo of the actual place exists. Where none does (for example a small class or a show), the card has no photo rather than a generic one.</li>
+      <li><strong>Confidence</strong> (high, medium, low) reflects how well traveler accounts agree and how settled the logistics are. It is not a safety guarantee.</li>
+      <li>Open <em>More details and sources</em> on any card for traveler evidence, access, crowds, seasonal fit and safety notes.</li>
+      <li><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span> means the <a href="more-ideas.html">More ideas</a> page has an idea at the same place, area or purpose. Each badged card links to it, and the rank was reviewed against it.</li>
+    </ul>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>Built from four research reports plus one page of ideas from memory. Must-see, Walks and Food were checked on 2026-10-19; Activities was redone on 2026-10-19/20 using live booking-site and Google listings. Prices are approximate JPY per adult, and hours, closures and tickets should be rechecked before booking. Nothing is booked yet.</p>
+    <p>Photos come from Wikimedia Commons under free licenses; see <a href="sources.html#photo-credits">Sources &amp; credits</a>.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
