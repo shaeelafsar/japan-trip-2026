@@ -65,9 +65,37 @@
     }, { passive: true });
   }
 
+  // To do checklist: ticks are saved in this browser only.
+  var boxes = document.querySelectorAll(".checklist input[data-id]");
+  if (boxes.length) {
+    var KEY = "japan-2026-todo";
+    var saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (err) { saved = {}; }
+    var tally = function (group) {
+      var all = group.querySelectorAll("input[data-id]");
+      var done = group.querySelectorAll("input[data-id]:checked").length;
+      var badge = group.querySelector(".tally");
+      badge.textContent = done + " of " + all.length;
+      badge.classList.toggle("done", done === all.length);
+    };
+    boxes.forEach(function (box) {
+      box.checked = saved[box.getAttribute("data-id")] === true;
+      box.addEventListener("change", function () {
+        if (box.checked) saved[box.getAttribute("data-id")] = true;
+        else delete saved[box.getAttribute("data-id")];
+        try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (err) { /* private mode: ticks last until reload */ }
+        tally(box.closest("details"));
+      });
+    });
+    document.querySelectorAll(".todo-group").forEach(tally);
+  }
+
   // Open the details panel when a link jumps to a card
-  if (location.hash) {
+  var openTarget = function () {
+    if (!location.hash) return;
     var target = document.getElementById(location.hash.slice(1));
     if (target && target.tagName === "DETAILS") target.open = true;
-  }
+  };
+  openTarget();
+  window.addEventListener("hashchange", openTarget);
 })();

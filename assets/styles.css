@@ -247,13 +247,30 @@ html { -webkit-text-size-adjust: 100%; }
   text-decoration: none; font-size: 0.9rem; font-weight: 600;
 }
 .pill.book { background: var(--cp-accent); border-color: var(--cp-accent); color: var(--cp-accent-fg); }
-.todo { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-.todo li {
-  display: grid; gap: 2px; margin: 0; padding: 12px 14px; background: var(--cp-surface);
-  border: 1px solid var(--cp-border); border-left: 5px solid var(--cp-accent); border-radius: 14px;
+.checklist { list-style: none; margin: 0; padding: 0 14px 6px; }
+.checklist li.check { margin: 0; padding: 4px 0 10px; border-top: 1px solid var(--cp-border); }
+.checklist li.check:first-child { border-top: 0; }
+.check label { display: grid; grid-template-columns: 28px 1fr; gap: 12px; align-items: start; min-height: 44px; padding: 8px 0 2px; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.check input { position: absolute; opacity: 0; width: 28px; height: 28px; margin: 0; }
+.check .box {
+  display: block; width: 26px; height: 26px; margin-top: 1px; border: 2px solid var(--cp-border-strong); border-radius: 8px; background: var(--cp-surface-soft);
 }
-.todo .when { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--cp-accent); }
-.todo .what p { margin: 0; }
+.check input:focus-visible + .box { outline: 2px solid var(--cp-accent); outline-offset: 2px; }
+.check input:checked + .box { background: var(--cp-accent); border-color: var(--cp-accent); }
+.check input:checked + .box::after {
+  content: ""; display: block; width: 7px; height: 13px; margin: 2px 0 0 8px; border: solid var(--cp-accent-fg); border-width: 0 3px 3px 0; transform: rotate(45deg);
+}
+.check input:checked ~ .what { color: var(--cp-text-muted); text-decoration: line-through; text-decoration-color: var(--cp-border-strong); }
+.check .what { line-height: 1.45; font-size: 0.95rem; }
+.check .links { margin: 4px 0 0 40px; }
+.todo-group > summary { flex-wrap: wrap; gap: 2px 10px; padding-right: 44px; }
+.todo-group .g-title { font-weight: 700; }
+.todo-group .g-when { font-size: 0.8rem; color: var(--jp-gold); }
+.todo-group .tally {
+  margin-left: auto; padding: 2px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700;
+  color: var(--cp-text-muted); background: var(--cp-surface-soft); border: 1px solid var(--cp-border);
+}
+.todo-group .tally.done { color: var(--cp-accent-fg); background: var(--cp-success); border-color: var(--cp-success); }
 .week { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .week li { margin: 0; }
 .week a {
@@ -334,7 +351,7 @@ details.acc[open] > summary::after { content: "\2212"; }
 
 /* Tokyo-night finishing touches */
 ::selection { background: var(--jp-vermilion); color: #fff; }
-.panel, .card, .category-card, .pick, .day, details.section, details.acc, .todo li, .week a {
+.panel, .card, .category-card, .pick, .day, details.section, details.acc, .week a {
   box-shadow: 0 10px 28px -16px rgba(0, 0, 0, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 .category-card:hover, .pick:hover, .week a:hover { box-shadow: 0 0 0 1px var(--cp-accent), 0 10px 28px -12px var(--jp-glow-pink); }
