@@ -1,221 +1,810 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#0f1220">
-<title>Home | Japan trip shortlist</title>
-<meta name="description" content="Traveler-trusted sights, walks, activities and food for a Nov 25 - Dec 2 Tokyo trip.">
-<style>
-:root {
-  color-scheme: dark;
-  --cp-bg: #090b14;
-  --cp-bg-elevated: #0f1220;
-  --cp-surface: #151a2c;
-  --cp-surface-soft: #1d2340;
-  --cp-border: #29304f;
-  --cp-border-strong: #4a5382;
-  --cp-text: #f0ecf6;
-  --cp-text-muted: #b4b9d4;
-  --cp-text-soft: #959bbd;
-  --cp-accent: #ff5c7a;
-  --cp-accent-hover: #ff7d94;
-  --cp-accent-soft: rgba(255, 92, 122, 0.14);
-  --cp-accent-fg: #16060c;
-  --cp-success: #4be3a3;
-  --cp-danger: #ff6b6b;
-  --cp-warning: #ffc857;
-  --cp-link: #5fd4f4;
-  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
-  --cp-overlay: rgba(9, 11, 20, 0.88);
-  --cp-panel: rgba(21, 26, 44, 0.72);
-  --cp-panel-strong: rgba(21, 26, 44, 0.96);
-  --cp-sheen: rgba(255, 255, 255, 0.04);
-  --cp-highlight: rgba(255, 92, 122, 0.14);
-  --jp-vermilion: #e63950;
-  --jp-gold: #f0c36a;
-  --jp-glow-pink: rgba(255, 92, 122, 0.20);
-  --jp-glow-cyan: rgba(95, 212, 244, 0.12);
-}
-</style>
-<link rel="stylesheet" href="assets/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Japan 2026 Itinerary (v2)</title>
+  <script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    const saved = localStorage.getItem("jp_v2_theme");
+    const theme =
+      param || saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "dark" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="container">
-    <a class="brand" href="index.html"><span class="seal" aria-hidden="true">旅</span><span class="brand-name"><b>Japan</b> trip shortlist</span></a>
-    <nav class="nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="itinerary.html">Itinerary</a><a href="must-see.html">Must-see</a><a href="walking.html">Walks &amp; hikes</a><a href="activities.html">Activities</a><a href="food.html">Food</a><a href="more-ideas.html">More ideas</a><a href="sources.html">Sources &amp; credits</a></nav>
+  <header class="top-nav">
+  <div class="top-nav-inner">
+    <div class="brand">
+      <span>🇯🇵 Japan 2026</span>
+      <span class="brand-badge">v2</span>
+    </div>
+    <nav class="nav-links">
+      <a class="nav-tab active" href="index.html">Itinerary</a>
+      <a class="nav-tab" href="checklist.html">Checklist</a>
+      <a class="nav-tab" href="about.html">About</a>
+      <button class="theme-btn" id="themeToggle" type="button">☀️/🌙</button>
+    </nav>
+  </div>
+  <div class="day-bar">
+    <div class="day-bar-inner">
+      <a class="day-pill" href="#overview">📊 Overview</a>
+      <a class="day-pill" href="#day-wed-25">Wed 25</a><a class="day-pill" href="#day-thu-26">Thu 26</a><a class="day-pill" href="#day-fri-27">Fri 27</a><a class="day-pill" href="#day-sat-28">Sat 28</a><a class="day-pill" href="#day-sun-29">Sun 29</a><a class="day-pill" href="#day-mon-30">Mon 30</a><a class="day-pill" href="#day-tue-1">Tue 1</a><a class="day-pill" href="#day-wed-2">Wed 2</a>
+    </div>
   </div>
 </header>
-<main class="container">
-<div class="hero">
-  <p class="eyebrow">Nov 25 - Dec 2, 2026</p>
-  <h1>Japan trip shortlist</h1>
-  <p class="lede">What traveler-trusted sources recommend in Tokyo and nearby, filtered to our trip: 2 adults, 7 nights, no pork and no alcoholic drinks. The shortlists are a menu of options. A draft day-by-day plan built from them is on the <a href="itinerary.html">Itinerary</a> page; a hotel is not chosen yet.</p>
-</div>
 
-<section class="block">
-  <h2>Explore the shortlists</h2>
-  <div class="category-grid"><a class="category-card wide" href="itinerary.html">
-  <h3>Itinerary (draft 5)</h3>
-  <p><span class="badge flag-good">Updated: Universal Studios Japan &amp; night karts</span></p>
-  <p>A short, phone-friendly day-by-day plan with photos, links and a To Do Before You Go checklist. Tokyo base, one guided Mt Fuji day, Universal Studios Japan in Osaka, one busy Sunday hike (Mt Takao), and Japan-only experiences: sundown street karts, sumo, sushi class, Samurai Ninja Museum and a matcha class. A tea-farm half-day, Kamakura and nights away (Osaka, Hakone, Kyoto and Nara) are optional swaps.</p>
-  <span class="count">8 days · transit times are estimates · nothing is booked</span>
-</a><a class="category-card" href="must-see.html">
-  <h3>Must-see sights</h3>
-  <p><span class="badge flag-good">Updated: iteration 2, 2026-10-19/20</span></p>
-  <p>Nature, architecture, history and culture that travelers rate most highly.</p>
-  <p><strong>Top picks:</strong> Meiji Jingu (with Harajuku if wanted); Senso-ji and Asakusa; Shinjuku Gyoen National Garden</p>
-  <span class="count">20 picks: 4 A · 9 B · 7 C</span>
-</a><a class="category-card" href="walking.html">
-  <h3>Walks and hikes</h3>
-  <p><span class="badge flag-good">Updated: iteration 2, 2026-10-19/20</span></p>
-  <p>City walks, garden strolls and hikes, from flat Tokyo streets to mountain trails.</p>
-  <p><strong>Top picks:</strong> Meiji Jingu, Yoyogi Park and Harajuku; Asakusa, Sumida riverside and Skytree approach; Mt Takao: Trail 1, cable car and Yakuo-in</p>
-  <span class="count">20 picks: 6 A · 6 B · 8 C</span>
-</a><a class="category-card" href="activities.html">
-  <h3>Tourist activities</h3>
-  <p><span class="badge flag-good">Updated: iteration 2, 2026-10-19/20</span></p>
-  <p>Paid experiences, shows, rides and excursions worth planning around.</p>
-  <p><strong>Top picks:</strong> teamLab Borderless (choose one Tokyo teamLab); SHIBUYA SKY (one skyline experience); Shinjuku sumo show with photo</p>
-  <span class="count">21 picks: 6 A · 9 B · 6 C</span>
-</a><a class="category-card" href="food.html">
-  <h3>Must-eat food</h3>
-  <p>Tourist-friendly places and foods that fit no pork and no alcoholic drinks.</p>
-  <p><strong>Top picks:</strong> T&#x27;s Tantan golden sesame vegan ramen, Akihabara; Honolu chicken paitan ramen, Ebisu; Toraya Yoru no Ume yokan; optional wagashi and tea</p>
-  <span class="count">16 picks: 3 A · 11 B · 2 C</span>
-</a><a class="category-card wide" href="more-ideas.html">
-  <h3>More ideas (from memory)</h3>
-  <p>Extra Must-see, Walks and Activities ideas. Most of the Activities ideas, including the Fuji day tour and go-karting, and all seven Walks ideas have since been researched on the Activities and Walks pages. The rest is unverified, so check live ratings.</p>
-  <p><strong>Top ideas:</strong> Tokyo Tower and Zojo-ji; Akihabara Electric Town; Mt. Fuji day tour from Tokyo</p>
-  <span class="count">21 ideas: 7 per category · no photos</span>
-</a></div>
-</section>
+  <main class="container">
+    <section class="hero">
+      <h1>Tokyo, Mt. Fuji &amp; Hakone (Wed Nov 25 – Wed Dec 2, 2026)</h1>
+      <p class="hero-sub">Productive daytime sightseeing, dedicated rest breaks between activities, and sunset/evening dress-up &amp; street-food hopping.</p>
+      <div class="pill-row">
+        <span class="stat-pill accent">2 Adults · Strictly No Pork &amp; No Alcohol</span>
+        <span class="stat-pill">Wake ~09:00 · Out 09:30–10:45 Most Days</span>
+        <span class="stat-pill">Weekday Coasters &amp; Gondolas · Weekend Markets</span>
+        <span class="stat-pill">1.5–3+ Hrs Dedicated Breaks Daily</span>
+      </div>
+    </section>
 
-<section class="block">
-  <h2>Trip snapshot</h2>
-  <div class="panel"><dl class="facts-table"><dt>Travelers</dt><dd>2 adults</dd><dt>Arrive</dt><dd>Wed, Nov 25, 17:45 at Haneda (HND), after sunset</dd><dt>Depart</dt><dd>Wed, Dec 2, 16:50 from Haneda (HND)</dd><dt>Time on the ground</dt><dd>7 nights, 6 full sightseeing days, 2 partial days</dd><dt>Daylight</dt><dd>Sunrise is about 06:30 and sunset about 16:30 every day of the trip</dd><dt>Weather</dt><dd>Typical highs and lows: about 17/10 °C in November and 12/5 °C in December (Japan Guide, from Japan Meteorological Agency data). These are long-term averages, not a forecast, so pack layers.</dd><dt>Food rules</dt><dd>No pork, no alcoholic drinks (cooking sake and mirin are fine)</dd><dt>Year</dt><dd>Assumed to be 2026; all dates and prices should be rechecked before booking.</dd></dl></div>
-</section>
+    <section class="info-card" id="overview" style="scroll-margin-top:112px;">
+      <h2>📊 8-Day Trip at a Glance</h2>
+      <p>Items in chronological scheduled order for each day—tap any day to jump to its photos and schedule below.</p>
+      <div class="table-wrap">
+        <table class="clean-table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Itinerary Items (In Scheduled Order)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+          <td class="glance-day">
+            <a href="#day-wed-25">Wed Nov 25</a>
+            <div class="glance-sub">Arrival</div>
+          </td>
+          <td class="glance-items">Shinjuku Skyscraper District → 7-Eleven / Lawson Late-Night Snack Run</td>
+        </tr><tr>
+          <td class="glance-day">
+            <a href="#day-thu-26">Thu Nov 26</a>
+            <div class="glance-sub">West Tokyo</div>
+          </td>
+          <td class="glance-items">Mt. Takao Cable Car → Trail 1 Summit &amp; Trail 4 Suspension Bridge Hike → Yakuo-in Mountain Temple → Shinjuku Omoide Yokocho Lantern Alleys &amp; Kabukicho</td>
+        </tr><tr>
+          <td class="glance-day">
+            <a href="#day-fri-27">Fri Nov 27</a>
+            <div class="glance-sub">Mt. Fuji</div>
+          </td>
+          <td class="glance-items">Lake Kawaguchiko → Mt. Fuji Panoramic Ropeway Gondola → Fuji-Q Highland Launch Coasters (Zokkon &amp; Takabisha) → Shinjuku &#x27;Hana-kin&#x27; (Flower Friday) Night Out</td>
+        </tr><tr>
+          <td class="glance-day">
+            <a href="#day-sat-28">Sat Nov 28</a>
+            <div class="glance-sub">Harajuku &amp; Shibuya</div>
+          </td>
+          <td class="glance-items">Meiji Jingu Forest Shrine → Takeshita Street &amp; Omotesando → Matcha Tea Ceremony Class → SHIBUYA SKY Rooftop Deck → Shibuya Scramble Crossing → Costumed Night Street Go-Karting → Ebisu Ramen &amp; Gyoza</td>
+        </tr><tr>
+          <td class="glance-day">
+            <a href="#day-sun-29">Sun Nov 29</a>
+            <div class="glance-sub">Asakusa, Akihabara &amp; Ueno</div>
+          </td>
+          <td class="glance-items">Samurai &amp; Ninja Museum → Hands-On Sushi-Making Class → Akihabara Car-Free Sunday Boulevard → Golden-Hour Kimono Dress-Up → Senso-ji Temple Lanterns &amp; Nakamise Street Stalls → Ueno Ameyoko Night Market → Live Sumo Show</td>
+        </tr><tr>
+          <td class="glance-day">
+            <a href="#day-mon-30">Mon Nov 30</a>
+            <div class="glance-sub">Hakone Loop</div>
+          </td>
+          <td class="glance-items">Odakyu Romancecar Scenic Train → Hakone Ropeway Gondola Over Owakudani Volcanic Valley → Lake Ashi Sightseeing Pirate Ship → Old Tokaido 400-Year Cedar Trail → Traditional Wooden Ryokan &amp; Private Open-Air Hot Spring</td>
+        </tr><tr>
+          <td class="glance-day">
+            <a href="#day-tue-1">Tue Dec 1</a>
+            <div class="glance-sub">Bullet Train &amp; Ginza</div>
+          </td>
+          <td class="glance-items">Tokaido Shinkansen Bullet Train → Tokyo Station Ramen Street &amp; Gransta Food Hall → Ginza &amp; Yurakucho Sunset Stroll → Charcoal-Grilled Unagi (Eel) Dinner → Marunouchi Holiday Illuminations</td>
+        </tr><tr>
+          <td class="glance-day">
+            <a href="#day-wed-2">Wed Dec 2</a>
+            <div class="glance-sub">Departure</div>
+          </td>
+          <td class="glance-items">Shinjuku Gyoen Autumn Landscape Garden → Isetan Depachika Underground Food Hall</td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-<section class="block" id="top-picks">
-  <div class="section-head"><h2>Top picks across all categories</h2><p>Every A-tier pick, one tap from its full details.</p></div>
-  <div class="pick-grid"><a class="pick" href="must-see.html#must-see-01"><img src="images/must-see/must-see-01-1.jpg" alt="Meiji Jingu (with Harajuku if wanted)" loading="lazy">
-  <span class="pick-body"><span class="pick-cat">Must-see</span>
-  <span class="pick-name">Meiji Jingu (with Harajuku if wanted)</span>
-  <span class="pick-meta">Free · 1-1.5 hours; 2.5-4 with Harajuku</span></span>
-</a><a class="pick" href="must-see.html#must-see-02"><img src="images/must-see/must-see-02-1.jpg" alt="Senso-ji and Asakusa" loading="lazy">
-  <span class="pick-body"><span class="pick-cat">Must-see</span>
-  <span class="pick-name">Senso-ji and Asakusa</span>
-  <span class="pick-meta">Free · 2-3 hours</span></span>
-</a><a class="pick" href="must-see.html#must-see-03"><img src="images/must-see/must-see-03-1.jpg" alt="Shinjuku Gyoen National Garden" loading="lazy">
-  <span class="pick-body"><span class="pick-cat">Must-see</span>
-  <span class="pick-name">Shinjuku Gyoen National Garden</span>
-  <span class="pick-meta">¥500 · 1.5-3 hours</span></span>
-</a><a class="pick" href="must-see.html#must-see-04"><img src="images/must-see/must-see-04-1.jpg" alt="Rikugien night illumination" loading="lazy">
-  <span class="pick-body"><span class="pick-cat">Must-see</span>
-  <span class="pick-name">Rikugien night illumination</span>
-  <span class="pick-meta">¥1,000 advance; ¥1,200 same day · 1-1.5 hours</span></span>
-</a><a class="pick" href="walking.html#walking-01"><img src="images/walking/walking-01-1.jpg" alt="Meiji Jingu, Yoyogi Park and Harajuku" loading="lazy">
-  <span class="pick-body"><span class="pick-cat">Walks &amp; hikes</span>
-  <span class="pick-name">Meiji Jingu, Yoyogi Park and Harajuku</span>
-  <span class="pick-meta">Free · 2.5-4 hours</span></span>
-</a><a class="pick" href="walking.html#walking-02"><img src="images/walking/walking-02-1.jpg" alt="Asakusa, Sumida riverside and Skytree approach" loading="lazy">
-  <span class="pick-body"><span class="pick-cat">Walks &amp; hikes</span>
-  <span class="pick-name">Asakusa, Sumida riverside and Skytree approach</span>
-  <span class="pick-meta">Free · 2.5-4 hours</span></span>
-</a><a class="pick" href="walking.html#walking-03"><img src="images/walking/walking-03-1.jpg" alt="Mt Takao: Trail 1, cable car and Yakuo-in" loading="lazy">
-  <span class="pick-body"><span class="pick-cat">Walks &amp; hikes</span>
-  <span class="pick-name">Mt Takao: Trail 1, cable car and Yakuo-in</span>
-  <span class="pick-meta">Trail free; cable car ¥490 each way · 3.5-5 hours on the mountain</span></span>
-</a><a class="pick" href="walking.html#walking-04"><img src="images/walking/walking-04-1.jpg" alt="Ueno Park, Ameyoko, Yanaka Ginza and Nezu Shrine" loading="lazy">
-  <span class="pick-body"><span class="pick-cat">Walks &amp; hikes</span>
-  <span class="pick-name">Ueno Park, Ameyoko, Yanaka Ginza and Nezu Shrine</span>
-  <span class="pick-meta">Free · 3-4.5 hours</span></span>
-</a><a class="pick" href="walking.html#walking-05"><img src="images/walking/walking-05-2.jpg" alt="Kamakura: Daibutsu hiking course, Great Buddha and Hase-dera" loading="lazy">
-  <span class="pick-body"><span class="pick-cat">Walks &amp; hikes</span>
-  <span class="pick-name">Kamakura: Daibutsu hiking course, Great Buddha and Hase-dera</span>
-  <span class="pick-meta">¥700 for two temples · 4-6 hours</span></span>
-</a><a class="pick" href="walking.html#walking-06"><img src="images/walking/walking-06-1.jpg" alt="Shinjuku Gyoen" loading="lazy">
-  <span class="pick-body"><span class="pick-cat">Walks &amp; hikes</span>
-  <span class="pick-name">Shinjuku Gyoen</span>
-  <span class="pick-meta">¥500 · 1.5-3 hours</span></span>
-</a><a class="pick" href="activities.html#activities-01"><img src="images/activities/activities-01-1.jpg" alt="teamLab Borderless (choose one Tokyo teamLab)" loading="lazy">
-  <span class="pick-body"><span class="pick-cat">Activities</span>
-  <span class="pick-name">teamLab Borderless (choose one Tokyo teamLab)</span>
-  <span class="pick-meta">¥3,400-3,800 · 2-3 hours</span></span>
-</a><a class="pick" href="activities.html#activities-02"><img src="images/activities/activities-02-1.jpg" alt="SHIBUYA SKY (one skyline experience)" loading="lazy">
-  <span class="pick-body"><span class="pick-cat">Activities</span>
-  <span class="pick-name">SHIBUYA SKY (one skyline experience)</span>
-  <span class="pick-meta">¥2,800-3,400 · 1-1.5 hours</span></span>
-</a><a class="pick" href="activities.html#activities-03">
-  <span class="pick-body"><span class="pick-cat">Activities</span>
-  <span class="pick-name">Shinjuku sumo show with photo</span>
-  <span class="pick-meta">¥8,200-11,700 · 1.5 hours</span></span>
-</a><a class="pick" href="activities.html#activities-04">
-  <span class="pick-body"><span class="pick-cat">Activities</span>
-  <span class="pick-name">Asakusa sushi-making class</span>
-  <span class="pick-meta">¥8,500-12,600 · 1 hour 40 minutes</span></span>
-</a><a class="pick" href="activities.html#activities-05"><img src="images/activities/activities-05-2.jpg" alt="Guided Mt Fuji day tour (Kawaguchiko or Hakone type)" loading="lazy">
-  <span class="pick-body"><span class="pick-cat">Activities</span>
-  <span class="pick-name">Guided Mt Fuji day tour (Kawaguchiko or Hakone type)</span>
-  <span class="pick-meta">¥6,700-26,900 · 10-12 hours</span></span>
-</a><a class="pick" href="activities.html#activities-06">
-  <span class="pick-body"><span class="pick-cat">Activities</span>
-  <span class="pick-name">Samurai Ninja Museum guided experience</span>
-  <span class="pick-meta">¥3,200-3,500 · 1 hour</span></span>
-</a><a class="pick" href="food.html#food-01">
-  <span class="pick-body"><span class="pick-cat">Food</span>
-  <span class="pick-name">T&#x27;s Tantan golden sesame vegan ramen, Akihabara</span>
-  <span class="pick-meta">¥1,200-1,900 · 30-60 min</span></span>
-</a><a class="pick" href="food.html#food-02">
-  <span class="pick-body"><span class="pick-cat">Food</span>
-  <span class="pick-name">Honolu chicken paitan ramen, Ebisu</span>
-  <span class="pick-meta">¥1,200-2,000 · 35-65 min</span></span>
-</a><a class="pick" href="food.html#food-06"><img src="images/food/food-06-1.jpg" alt="Toraya Yoru no Ume yokan; optional wagashi and tea" loading="lazy">
-  <span class="pick-body"><span class="pick-cat">Food</span>
-  <span class="pick-name">Toraya Yoru no Ume yokan; optional wagashi and tea</span>
-  <span class="pick-meta">¥350-450 takeaway; ¥2,000-3,500 seated · 10-20 / 45-75 min</span></span>
-</a></div>
-</section>
+    <div class="section-head">
+      <h2>🗓️ Day-by-Day Showcase &amp; Schedule</h2>
+      <span class="section-meta">Tap any photo to enlarge · Tap Maps or TikTok on any stop</span>
+    </div>
+    <section class="day-card" id="day-wed-25">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Wed Nov 25</div>
+              <h2 class="day-title">Arrival in Tokyo &amp; First Night in Shinjuku</h2>
+              <div class="day-corridor">📍 Haneda Airport → Shinjuku</div>
+            </div>
+            <span class="crowd-pill">Arrival Night · Zero Rush</span>
+          </div>
+          <div class="day-overview">Touch down at Haneda Airport (Tokyo&#x27;s closer city airport), take a direct bus straight into the neon skyscraper district of Shinjuku, grab hot late-night Japanese convenience-store snacks, and get a great night&#x27;s sleep.</div>
+          <div class="day-meta-bar">
+            <span>🌇 Sunset 16:29 · 🌡️ ~12°C evening</span>
+            <span>•</span>
+            <span>Land 17:45 · Hotel ~21:00 · 7-Eleven snack run · Early sleep</span>
+          </div>
+          <div class="day-gallery cols-2"><div class="photo-item" data-full="images/wed-shinjuku-skyscrapers.jpg" data-cap="Shinjuku Skyscrapers" data-credit="Kakidai (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Tokyo_Metropolitan_Government_Building_2024.jpg">
+              <img src="images/wed-shinjuku-skyscrapers.jpg" alt="Shinjuku Skyscrapers" loading="lazy" />
+              <div class="photo-cap">Shinjuku Skyscrapers</div>
+            </div><div class="photo-item" data-full="images/thu-shinjuku-night-3.jpg" data-cap="Shinjuku Neon Streets" data-credit="Basile Morin (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Kabukicho_red_gate_and_colorful_neon_street_signs_at_night,_Shinjuku,_Tokyo,_Japan.jpg">
+              <img src="images/thu-shinjuku-night-3.jpg" alt="Shinjuku Neon Streets" loading="lazy" />
+              <div class="photo-cap">Shinjuku Neon Streets</div>
+            </div></div>
+          <div class="schedule-heading">Timed Schedule</div>
+          <ul class="schedule-list">
+            <li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">17:45</span>
+                <span class="stop-name">Land at Haneda Airport (Tokyo&#x27;s closer city airport)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Clear immigration, baggage claim, and customs using your Visit Japan Web QR codes (~60–90 min total) and withdraw yen cash at a 7-Eleven ATM in the arrival lobby.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Haneda+Airport+Terminal+3" target="_blank" rel="noopener">📍 Maps</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">19:30</span>
+                <span class="stop-name">Direct Airport Limousine Bus or Train to Shinjuku (Tokyo&#x27;s Midtown-style skyscraper &amp; hotel hub)</span>
+                <span class="stop-phase">☕ Dedicated Rest</span>
+              </div>
+              <div class="stop-note">Sit back for a 50–65 minute ride right to Shinjuku Station / major Shinjuku hotels and check into your room.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Shinjuku+Station+West+Exit" target="_blank" rel="noopener">📍 Maps</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">21:00</span>
+                <span class="stop-name">7-Eleven / Lawson / FamilyMart Late-Night Snack Run (Japanese convenience stores)</span>
+                <span class="stop-phase">🏮 Sunset &amp; Night</span>
+              </div>
+              <div class="stop-note">Grab fresh salmon or tuna onigiri (seaweed rice triangles), tamago sando (fluffy egg-salad sandwiches), hot oden broth, and matcha desserts (use Google Lens to avoid pork/ham), then turn in early.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=7-Eleven+or+Lawson+near+Shinjuku+Station" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=7-Eleven+or+Lawson+near+Shinjuku+Station" target="_blank" rel="noopener">🎬 TikTok</a></div>
+            </li>
+          </ul>
+        </section><section class="day-card" id="day-thu-26">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Thu Nov 26</div>
+              <h2 class="day-title">Mt. Takao Autumn Mountain Hike, Afternoon Nap &amp; Omoide Yokocho Lantern Alleys</h2>
+              <div class="day-corridor">📍 West Corridor: Shinjuku ↔ Mt. Takao</div>
+            </div>
+            <span class="crowd-pill">Weekday = 5–15 Min Cable-Car Wait</span>
+          </div>
+          <div class="day-overview">Ride the mountain funicular up crimson-maple-covered Mt. Takao on a low-queue Thursday morning, hike across the forested Trail 4 suspension bridge to the 599m Mt. Fuji viewpoint with a 60-minute summit soba lunch break, nap at your hotel in the afternoon, and graze Shinjuku&#x27;s glowing Omoide Yokocho lantern skewer alleys at sunset.</div>
+          <div class="day-meta-bar">
+            <span>☀️ 06:28 – 🌇 16:29 · 🌡️ 15°/7°C (Takao ~12°C)</span>
+            <span>•</span>
+            <span>☀️ 09:30–14:15 Mountain Hike · 🛌 14:30–16:15 Hotel Nap · 🏮 16:30–19:00 Lantern Food-Hopping</span>
+          </div>
+          <div class="day-gallery"><div class="photo-item" data-full="images/thu-takao-cablecar.jpg" data-cap="Mt. Takao Cable Car" data-credit="Hanasakijijii (CC BY-SA 3.0)" data-url="https://commons.wikimedia.org/wiki/File:%E3%81%82%E3%81%8A%E3%81%B0%E5%8F%B7.jpg">
+              <img src="images/thu-takao-cablecar.jpg" alt="Mt. Takao Cable Car" loading="lazy" />
+              <div class="photo-cap">Mt. Takao Cable Car</div>
+            </div><div class="photo-item" data-full="images/thu-takao-fuji.jpg" data-cap="Mt. Fuji from Mt. Takao" data-credit="Asteiner (CC BY-SA 3.0)" data-url="https://commons.wikimedia.org/wiki/File:Fuji_from_Takao_1.JPG">
+              <img src="images/thu-takao-fuji.jpg" alt="Mt. Fuji from Mt. Takao" loading="lazy" />
+              <div class="photo-cap">Mt. Fuji from Mt. Takao</div>
+            </div><div class="photo-item" data-full="images/thu-takao-maples.jpg" data-cap="Mt. Takao Autumn Maples" data-credit="Guilhem Vellut from Annecy, France (CC BY 2.0)" data-url="https://commons.wikimedia.org/wiki/File:Temple_@_Mount_Takao_(11094731054).jpg">
+              <img src="images/thu-takao-maples.jpg" alt="Mt. Takao Autumn Maples" loading="lazy" />
+              <div class="photo-cap">Mt. Takao Autumn Maples</div>
+            </div><div class="photo-item" data-full="images/thu-yakuoin.jpg" data-cap="Yakuo-in Mountain Temple" data-credit="KENPEI (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Takaosan_Yakuouin_hondo.JPG">
+              <img src="images/thu-yakuoin.jpg" alt="Yakuo-in Mountain Temple" loading="lazy" />
+              <div class="photo-cap">Yakuo-in Mountain Temple</div>
+            </div><div class="photo-item" data-full="images/thu-takao-soba.jpg" data-cap="Mountain Buckwheat Soba" data-credit="くろふね (CC BY 4.0)" data-url="https://commons.wikimedia.org/wiki/File:%E3%81%A8%E3%82%8D%E3%82%8D%E3%81%9D%E3%81%B0%EF%BC%88%E9%AB%98%E5%B0%BE%E5%B1%B1%E8%95%8E%E9%BA%A6%E7%B4%85%E8%91%89%E5%B1%8B%EF%BC%8920221009-P1004526.jpg">
+              <img src="images/thu-takao-soba.jpg" alt="Mountain Buckwheat Soba" loading="lazy" />
+              <div class="photo-cap">Mountain Buckwheat Soba</div>
+            </div><div class="photo-item" data-full="images/thu-shinjuku-night-2.jpg" data-cap="Omoide Yokocho Lantern Alley" data-credit="Joli Rumi (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Omoide_Yokocho_in_Shinjuku_area,_Tokyo,_Japan.jpg">
+              <img src="images/thu-shinjuku-night-2.jpg" alt="Omoide Yokocho Lantern Alley" loading="lazy" />
+              <div class="photo-cap">Omoide Yokocho Lantern Alley</div>
+            </div></div>
+          <div class="schedule-heading">Timed Schedule</div>
+          <ul class="schedule-list">
+            <li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">09:30</span>
+                <span class="stop-name">Seated Keio Line Express from Shinjuku to Takaosanguchi (base of Mt. Takao, 50 min)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Direct 50-minute train from Keio Shinjuku Station (¥430 with Suica) straight to the mountain base.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Takaosanguchi+Station" target="_blank" rel="noopener">📍 Maps</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">10:30–12:15</span>
+                <span class="stop-name">Mt. Takao Cable Car Up + Trail 1 Summit &amp; Trail 4 Suspension Bridge Loop (beginner-moderate forest hike)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Ride the steep Cable Car funicular halfway up the mountain (short weekday wait!), walk the lively Trail 1 ridge through red autumn maples to the 599m summit overlooking Mt. Fuji, and loop back across the Trail 4 wooden suspension bridge (zero rock-climbing).</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Mount+Takao+Cable+Car+Takaosanguchi" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill primary" href="https://www.takaotozan.co.jp/timeprice/" target="_blank" rel="noopener">🎟️ Takao Cable Car</a></div>
+            </li><li class="schedule-bullet break-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">12:15–13:15</span>
+                <span class="stop-name">🍜 60-Min Dedicated Summit Sit-Down Break: Hot Buckwheat Soba &amp; Charcoal-Grilled Miso Dango</span>
+                <span class="stop-phase">☕ Dedicated Rest</span>
+              </div>
+              <div class="stop-note">Sit down at a mountain teahouse for hot tororo soba (buckwheat noodles with grated mountain yam in soy-bonito broth—confirm no pork) and charcoal-toasted sweet miso rice dumplings.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=tororo+soba+dango+Mount+Takao" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=tororo+soba+dango+Mount+Takao" target="_blank" rel="noopener">🎬 TikTok</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">13:15–14:30</span>
+                <span class="stop-name">Yakuo-in Mountain Temple Walk &amp; Cable Car Ride Down (back in Shinjuku by 14:30)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Stroll through cliffside Yakuo-in Temple&#x27;s carved tengu statues, ride the Cable Car down to save your legs for tomorrow, and take the seated Keio train back to Shinjuku.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Yakuo-in+Takaosan" target="_blank" rel="noopener">📍 Maps</a></div>
+            </li><li class="schedule-bullet break-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">14:30–16:15</span>
+                <span class="stop-name">🛌 1 Hr 45 Min Dedicated Hotel Rest in Shinjuku</span>
+                <span class="stop-phase">☕ Dedicated Rest</span>
+              </div>
+              <div class="stop-note">Protected afternoon rest window—shower, nap, and recharge until sunset (16:29).</div>
+              
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">16:30–19:00</span>
+                <span class="stop-name">Shinjuku Sunset &amp; Lantern Food-Hopping: Omoide Yokocho (&#x27;Memory Lane&#x27; skewer alleys) &amp; Kabukicho Neon</span>
+                <span class="stop-phase">🏮 Sunset &amp; Night</span>
+              </div>
+              <div class="stop-note">Walk 5 minutes from your hotel right after sunset into Omoide Yokocho&#x27;s glowing narrow lantern alleys and under the neon Kabukicho arch for charcoal-grilled chicken yakitori, wagyu skewers, and grilled scallops (show your no-pork card), then head to bed early before Friday.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Omoide+Yokocho+Shinjuku" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=chicken+yakitori+or+wagyu+skewers+near+Omoide+Yokocho+Shinjuku" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=chicken+yakitori+or+wagyu+skewers+near+Omoide+Yokocho+Shinjuku" target="_blank" rel="noopener">🎬 TikTok</a></div>
+            </li>
+          </ul>
+        </section><section class="day-card" id="day-fri-27">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Fri Nov 27</div>
+              <h2 class="day-title">Mt. Fuji Panoramic Ropeway, Lakeside Break &amp; Fuji-Q Highland Launch Coasters</h2>
+              <div class="day-corridor">📍 Mt. Fuji Corridor: Lake Kawaguchiko &amp; Fuji-Q Highland</div>
+            </div>
+            <span class="crowd-pill">Weekday Daytime = Shorter Coaster Lines</span>
+          </div>
+          <div class="day-overview">Head straight to the foot of snow-capped Mt. Fuji on a weekday Friday for the Anakeesta-style Mt. Fuji Panoramic Ropeway gondola over Lake Kawaguchiko, a 75-minute lakeside lunch break, and afternoon high-speed launch coasters (Zokkon motorbike coaster &amp; Takabisha) at Fuji-Q Highland—returning to Shinjuku right in time for &#x27;Flower Friday&#x27; evening dining.</div>
+          <div class="day-meta-bar">
+            <span>☀️ 06:30 – 🌇 16:28 · 🌡️ 11°/2°C at Lake Kawaguchiko</span>
+            <span>•</span>
+            <span>☀️ 08:15 Seated Coach · 10:15 Fuji Gondola · 🍜 11:45 Lunch Break · 🎢 13:00–16:30 Fuji-Q Coasters · 🏮 19:00 Friday-Night Shinjuku</span>
+          </div>
+          <div class="day-gallery"><div class="photo-item" data-full="images/fri-kawaguchiko-autumn.jpg" data-cap="Mt. Fuji &amp; Lake Kawaguchiko" data-credit="lumoplank (CC0)" data-url="https://commons.wikimedia.org/wiki/File:Kawaguchiko,_Part_III_-_Kawaguchiko6783.jpg">
+              <img src="images/fri-kawaguchiko-autumn.jpg" alt="Mt. Fuji &amp; Lake Kawaguchiko" loading="lazy" />
+              <div class="photo-cap">Mt. Fuji &amp; Lake Kawaguchiko</div>
+            </div><div class="photo-item" data-full="images/fri-ropeway-2.jpg" data-cap="Mt. Fuji Panoramic Ropeway" data-credit="sergejf (CC BY 2.0)" data-url="https://commons.wikimedia.org/wiki/File:Mt._Fuji_Panoramic_Ropeway.jpg">
+              <img src="images/fri-ropeway-2.jpg" alt="Mt. Fuji Panoramic Ropeway" loading="lazy" />
+              <div class="photo-cap">Mt. Fuji Panoramic Ropeway</div>
+            </div><div class="photo-item" data-full="images/fri-ropeway-1.jpg" data-cap="Lake View from the Gondola" data-credit="yosshi (CC BY-SA 2.0)" data-url="https://commons.wikimedia.org/wiki/File:Mt_Kachi_Kachi_Ropeway.jpg">
+              <img src="images/fri-ropeway-1.jpg" alt="Lake View from the Gondola" loading="lazy" />
+              <div class="photo-cap">Lake View from the Gondola</div>
+            </div><div class="photo-item" data-full="images/fri-fujiq-1.jpg" data-cap="Fuji-Q Highland &amp; Mt. Fuji" data-credit="lumoplank (CC0)" data-url="https://commons.wikimedia.org/wiki/File:Fujiyoshida_-_Fujiyoshida6762.jpg">
+              <img src="images/fri-fujiq-1.jpg" alt="Fuji-Q Highland &amp; Mt. Fuji" loading="lazy" />
+              <div class="photo-cap">Fuji-Q Highland &amp; Mt. Fuji</div>
+            </div><div class="photo-item" data-full="images/fri-fujiq-2.jpg" data-cap="Fuji-Q Launch Coaster" data-credit="Vanvelthem Cédric (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Japan_-_Fujiyama_-_Rollercoaster_next_to_Fujisan.jpg">
+              <img src="images/fri-fujiq-2.jpg" alt="Fuji-Q Launch Coaster" loading="lazy" />
+              <div class="photo-cap">Fuji-Q Launch Coaster</div>
+            </div><div class="photo-item" data-full="images/fri-fujiq-3.jpg" data-cap="Fuji-Q Roller Coasters" data-credit="Derek F. DiMatteo (CC BY 2.5)" data-url="https://commons.wikimedia.org/wiki/File:Eejanaika_coaster_FujiQ_1024.jpg">
+              <img src="images/fri-fujiq-3.jpg" alt="Fuji-Q Roller Coasters" loading="lazy" />
+              <div class="photo-cap">Fuji-Q Roller Coasters</div>
+            </div></div>
+          <div class="schedule-heading">Timed Schedule</div>
+          <ul class="schedule-list">
+            <li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">08:15–10:00</span>
+                <span class="stop-name">Seated Highway Coach from Busta Shinjuku to Lake Kawaguchiko (scenic lake at the foot of Mt. Fuji)</span>
+                <span class="stop-phase">☕ Dedicated Rest</span>
+              </div>
+              <div class="stop-note">Direct 1 hr 45 min reserved-seat highway bus from Shinjuku Expressway Bus Terminal (4F above Shinjuku South Exit). Grab hot coffee and nap on the coach as Mt. Fuji comes into view.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Shinjuku+Expressway+Bus+Terminal" target="_blank" rel="noopener">📍 Maps</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">10:15–11:45</span>
+                <span class="stop-name">Mt. Fuji Panoramic Ropeway (Anakeesta-style mountain gondola &amp; summit viewing deck on Mt. Tenjo)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Ride the 3-minute panoramic gondola up to the 1,075m Mt. Tenjo observation deck and snack house staring straight across Lake Kawaguchiko at snow-capped Mt. Fuji, with easy ridge paths at the top.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Mt.+Fuji+Panoramic+Ropeway+Kawaguchiko" target="_blank" rel="noopener">📍 Maps</a></div>
+            </li><li class="schedule-bullet break-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">11:45–13:00</span>
+                <span class="stop-name">🍜 75-Min Dedicated Lakeside Sit-Down Lunch Break &amp; 3-Min Train Hop to Fuji-Q</span>
+                <span class="stop-phase">☕ Dedicated Rest</span>
+              </div>
+              <div class="stop-note">Sit down by Lake Kawaguchiko for a hot bowl of vegetarian/seafood Hoto (thick flat udon noodles simmered in miso pumpkin broth—ask for no pork), then hop 1 train stop (3 minutes on the Fujikyu Railway) to Fuji-Q Highland Station.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=hoto+noodles+or+tempura+lunch+near+Kawaguchiko+Station" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=hoto+noodles+or+tempura+lunch+near+Kawaguchiko+Station" target="_blank" rel="noopener">🎬 TikTok</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">13:00–16:30</span>
+                <span class="stop-name">Fuji-Q Highland Launch Coasters (Zokkon motorbike multi-launch coaster &amp; Takabisha, with a 45-min cafe break)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Park entry is free; use pre-booked Priority Tickets (fast-passes) to ride Zokkon (2023 Hagrid&#x27;s-style motorcycle coaster with 4 high-speed launches and backwards track) and Takabisha (100 km/h linear-motor launch + 121° drop) or Fujiyama right in front of Mt. Fuji—with a dedicated 14:30–15:15 sit-down cafe &amp; warm crepe break between rides.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Fuji-Q+Highland" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill primary" href="https://www.fujiq.jp/en/" target="_blank" rel="noopener">🎟️ Fuji-Q Official Site</a></div>
+            </li><li class="schedule-bullet break-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">17:00–18:45</span>
+                <span class="stop-name">🚌 1 Hr 45 Min Seated Highway Coach Nap Back to Shinjuku</span>
+                <span class="stop-phase">☕ Dedicated Rest</span>
+              </div>
+              <div class="stop-note">Board the direct highway coach right outside the Fuji-Q Highland gate and rest all the way back to Shinjuku.</div>
+              
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">19:00</span>
+                <span class="stop-name">&#x27;Hana-kin&#x27; (Flower Friday) Dinner &amp; Food-Hopping near Shinjuku Station</span>
+                <span class="stop-phase">🏮 Sunset &amp; Night</span>
+              </div>
+              <div class="stop-note">Friday after 18:00 is Tokyo&#x27;s liveliest night out as office workers fill the streets. Grab sizzling wagyu teppanyaki, crispy chicken karaage, or sushi right around Shinjuku South/West Exit, then sleep in tomorrow morning!</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=wagyu+beef+or+sushi+dinner+near+Shinjuku+South+Exit" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=wagyu+beef+or+sushi+dinner+near+Shinjuku+South+Exit" target="_blank" rel="noopener">🎬 TikTok</a></div>
+            </li>
+          </ul>
+        </section><section class="day-card" id="day-sat-28">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Sat Nov 28</div>
+              <h2 class="day-title">Sleep-In Harajuku &amp; Shibuya Day + Costumed Night Street Go-Karting</h2>
+              <div class="day-corridor">📍 Harajuku → Omotesando → Shibuya → Ebisu (1.5-Mile Corridor)</div>
+            </div>
+            <span class="crowd-pill">Peak Saturday City Vibe · Timed Tickets</span>
+          </div>
+          <div class="day-overview">Sleep in after Friday&#x27;s Fuji trip, walk under Meiji Jingu&#x27;s giant cypress forest torii gates, whisk ceremonial matcha tea, take in the 360° open-air view from SHIBUYA SKY, and drive costumed street go-karts through neon-lit Shibuya Crossing and Omotesando at 17:00 before warming up with chicken ramen and gyoza in Ebisu.</div>
+          <div class="day-meta-bar">
+            <span>☀️ 06:31 – 🌇 16:28 · 🌡️ 15°/7°C</span>
+            <span>•</span>
+            <span>🛌 Sleep In (Leave 10:30) · ☀️ Meiji Jingu, Matcha &amp; SHIBUYA SKY · ☕ Two Breaks · 🏮 17:00 Night Go-Karts &amp; Ebisu Ramen</span>
+          </div>
+          <div class="day-gallery"><div class="photo-item" data-full="images/sat-meiji-torii.jpg" data-cap="Meiji Jingu Forest Torii" data-credit="Harajuku at English Wikipedia (Public domain)" data-url="https://commons.wikimedia.org/wiki/File:Meiji-jingu_torii.JPG">
+              <img src="images/sat-meiji-torii.jpg" alt="Meiji Jingu Forest Torii" loading="lazy" />
+              <div class="photo-cap">Meiji Jingu Forest Torii</div>
+            </div><div class="photo-item" data-full="images/sat-omotesando-trees.jpg" data-cap="Omotesando Boulevard" data-credit="Joe Mabel on Flickr as Joe Mabel from Seattle, US (CC BY-SA 3.0)" data-url="https://commons.wikimedia.org/wiki/File:Harajuku_-_Omotesando_01_(15555117880).jpg">
+              <img src="images/sat-omotesando-trees.jpg" alt="Omotesando Boulevard" loading="lazy" />
+              <div class="photo-cap">Omotesando Boulevard</div>
+            </div><div class="photo-item" data-full="images/sat-matcha-tea.jpg" data-cap="Matcha Tea Ceremony" data-credit="Atticus nguyen (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:A_Japanese_Tea_Ceremony%27s_Host_Preparing_Tea_-_Kyoto,_2023.jpg">
+              <img src="images/sat-matcha-tea.jpg" alt="Matcha Tea Ceremony" loading="lazy" />
+              <div class="photo-cap">Matcha Tea Ceremony</div>
+            </div><div class="photo-item" data-full="images/sat-shibuya-sky.jpg" data-cap="SHIBUYA SKY Rooftop" data-credit="Kakidai (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Shibuya_Scramble_Square_-_SHIBUYA_SKY_13.jpg">
+              <img src="images/sat-shibuya-sky.jpg" alt="SHIBUYA SKY Rooftop" loading="lazy" />
+              <div class="photo-cap">SHIBUYA SKY Rooftop</div>
+            </div><div class="photo-item" data-full="images/sat-shibuya-crossing.jpg" data-cap="Shibuya Scramble Crossing" data-credit="David Kernan (CC BY 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Shibuya_Crossing,_Aerial.jpg">
+              <img src="images/sat-shibuya-crossing.jpg" alt="Shibuya Scramble Crossing" loading="lazy" />
+              <div class="photo-cap">Shibuya Scramble Crossing</div>
+            </div><div class="photo-item" data-full="images/sat-street-karts.jpg" data-cap="Costumed Street Go-Karts" data-credit="Immanuelle (CC BY 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Mario_Kart_in_Tokyo_2.jpg">
+              <img src="images/sat-street-karts.jpg" alt="Costumed Street Go-Karts" loading="lazy" />
+              <div class="photo-cap">Costumed Street Go-Karts</div>
+            </div></div>
+          <div class="schedule-heading">Timed Schedule</div>
+          <ul class="schedule-list">
+            <li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">10:45–12:00</span>
+                <span class="stop-name">Meiji Jingu Forest Shrine (Shrine #1 of 2 — towering wooden torii gates inside a 170-acre forest)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Sleep in until 09:30–10:00, take the 4-minute JR Yamanote ride from Shinjuku to Harajuku, and walk flat gravel paths beneath 100-year-old evergreens and giant cypress gates to the main courtyard.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Meiji+Jingu+Tokyo" target="_blank" rel="noopener">📍 Maps</a></div>
+            </li><li class="schedule-bullet break-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">12:00–13:15</span>
+                <span class="stop-name">🥞 75-Min Dedicated Lunch &amp; Cafe Break: Takeshita Street Crepes &amp; Omotesando Boulevard</span>
+                <span class="stop-phase">☕ Dedicated Rest</span>
+              </div>
+              <div class="stop-note">Stroll down colorful Takeshita Street right outside Harajuku Station for fresh hot strawberry/custard crepes, then sit down for a relaxed lunch and coffee along tree-lined Omotesando Avenue.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Omotesando+Harajuku+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=cafe+or+lunch+near+Omotesando+Harajuku+Tokyo" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=cafe+or+lunch+near+Omotesando+Harajuku+Tokyo" target="_blank" rel="noopener">🎬 TikTok</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">13:15–14:15</span>
+                <span class="stop-name">Traditional Matcha Green-Tea Ceremony Class (seated cultural workshop)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">A calm, seated 60-minute session learning to whisk ceremonial-grade matcha green tea paired with seasonal wagashi (traditional sweet bean confections).</div>
+              
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">14:30–15:35</span>
+                <span class="stop-name">SHIBUYA SKY Open-Air Rooftop Deck (47 stories above Shibuya — Tokyo&#x27;s Empire State Building)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Timed ticket skips the box-office line. Step out onto the open-air 360° rooftop helipad deck in golden afternoon light looking straight down at Shibuya Crossing and across the skyline toward Mt. Fuji.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=SHIBUYA+SKY" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill primary" href="https://www.shibuya-scramble-square.com/sky/" target="_blank" rel="noopener">🎟️ SHIBUYA SKY Official Site</a></div>
+            </li><li class="schedule-bullet break-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">15:35–16:25</span>
+                <span class="stop-name">☕ 50-Min Dedicated Shibuya Sit-Down Break + Walk to Shibuya Annex</span>
+                <span class="stop-phase">☕ Dedicated Rest</span>
+              </div>
+              <div class="stop-note">Walk across iconic Shibuya Scramble Crossing (Tokyo&#x27;s Times Square), sit down at a cafe to warm up and put on your windproof layers and gloves, then walk 12 minutes up Dogenzaka to Street Kart Shibuya Annex.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Shibuya+Scramble+Crossing" target="_blank" rel="noopener">📍 Maps</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">16:30–18:00</span>
+                <span class="stop-name">Booked: Costumed Night Street Go-Karting (16:30 check-in / 17:00–18:00 full night neon drive)</span>
+                <span class="stop-phase">🏮 Sunset &amp; Night</span>
+              </div>
+              <div class="stop-note">Arrive 30 min early at 16:30 at Street Kart Shibuya Annex (10-11 Maruyama-cho 2F) with all 3 physical originals (1949 Geneva IDP + physical US license + physical passport) and closed-toe flat shoes. Pick a costume and roll out at 17:00—right after darkness falls—for a 1-hour guided drive through neon Shibuya Crossing, Omotesando&#x27;s holiday tree lights, and Harajuku. (If Saturday 17:00 is sold out on Viator, keep your Tuesday Dec 1 17:00 booking!)</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=STREET+KART+Shibuya+Annex+10-11+Maruyama-cho+Shibuya" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill primary" href="https://www.viator.com/tours/Tokyo/Official-Street-Go-Kart-in-Shibuya-Annex/d334-57331P11" target="_blank" rel="noopener">🎟️ Viator Booking (57331P11)</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">18:30</span>
+                <span class="stop-name">Post-Kart Ramen &amp; Gyoza Hop in Ebisu (relaxed upscale foodie neighborhood 1 stop south)</span>
+                <span class="stop-phase">🏮 Sunset &amp; Night</span>
+              </div>
+              <div class="stop-note">Hop 1 train stop (2 minutes) from Shibuya to Ebisu to warm up after your night drive with rich tori-paitan (creamy chicken broth) or yuzu-shio ramen and crispy pan-fried chicken/seafood gyoza.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=chicken+ramen+tori+paitan+near+Ebisu+Station+Tokyo" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=chicken+ramen+tori+paitan+near+Ebisu+Station+Tokyo" target="_blank" rel="noopener">🎬 TikTok</a></div>
+            </li>
+          </ul>
+        </section><section class="day-card" id="day-sun-29">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Sun Nov 29</div>
+              <h2 class="day-title">Samurai Museum, Sushi Class, Car-Free Akihabara, Sunset Kimono at Senso-ji &amp; Sumo</h2>
+              <div class="day-corridor">📍 East Corridor: Asakusa → Akihabara → Ueno Ameyoko</div>
+            </div>
+            <span class="crowd-pill">Sunday Car-Free Boulevard + Sunset Lanterns</span>
+          </div>
+          <div class="day-overview">Spend Sunday daytime trying on samurai armor, throwing real ninja stars, shaping your own sushi for lunch, and walking down the middle of Akihabara&#x27;s Sunday-only car-free boulevard—then dress in silk kimono at golden hour as Senso-ji&#x27;s giant red lanterns and 5-story pagoda light up, graze Ueno Ameyoko&#x27;s open-air night stalls, and finish with a seated Live Sumo Dinner Show.</div>
+          <div class="day-meta-bar">
+            <span>☀️ 06:32 – 🌇 16:28 · 🌡️ 15°/7°C</span>
+            <span>•</span>
+            <span>☀️ 10:30–14:30 Samurai, Sushi &amp; Car-Free Akihabara · ☕ 14:30 Break · 🏮 15:00–20:00 Sunset Kimono, Senso-ji, Ameyoko &amp; Sumo</span>
+          </div>
+          <div class="day-gallery"><div class="photo-item" data-full="images/sun-samurai-armor.jpg" data-cap="Samurai Armor Experience" data-credit="Pierre André Leclercq (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Tokyo,_Mus%C3%A9e_national_.-_Samurai_do-maru.jpg">
+              <img src="images/sun-samurai-armor.jpg" alt="Samurai Armor Experience" loading="lazy" />
+              <div class="photo-cap">Samurai Armor Experience</div>
+            </div><div class="photo-item" data-full="images/sun-sushi-making.jpg" data-cap="Sushi-Making Class" data-credit="City Foodsters (CC BY 2.0)" data-url="https://commons.wikimedia.org/wiki/File:Kasugodai_(Baby_red_snapper)_(16220715963).jpg">
+              <img src="images/sun-sushi-making.jpg" alt="Sushi-Making Class" loading="lazy" />
+              <div class="photo-cap">Sushi-Making Class</div>
+            </div><div class="photo-item" data-full="images/sun-akihabara-1.jpg" data-cap="Akihabara Car-Free Sunday" data-credit="Ximonic (Simo Räsänen) (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Akihabara_Main_Street_open_for_pedestrians,_Chiyoda,_Tokyo,_2024_May.jpg">
+              <img src="images/sun-akihabara-1.jpg" alt="Akihabara Car-Free Sunday" loading="lazy" />
+              <div class="photo-cap">Akihabara Car-Free Sunday</div>
+            </div><div class="photo-item" data-full="images/sun-sensoji-night.jpg" data-cap="Senso-ji Temple at Night" data-credit="Kakidai (CC BY-SA 3.0)" data-url="https://commons.wikimedia.org/wiki/File:Sensoji_at_night.JPG">
+              <img src="images/sun-sensoji-night.jpg" alt="Senso-ji Temple at Night" loading="lazy" />
+              <div class="photo-cap">Senso-ji Temple at Night</div>
+            </div><div class="photo-item" data-full="images/sun-nakamise-2.jpg" data-cap="Nakamise Street Stalls" data-credit="そらみみ (CC BY-SA 3.0)" data-url="https://commons.wikimedia.org/wiki/File:Nakamise_Street_heading_for_Sensoji_Temple.jpg">
+              <img src="images/sun-nakamise-2.jpg" alt="Nakamise Street Stalls" loading="lazy" />
+              <div class="photo-cap">Nakamise Street Stalls</div>
+            </div><div class="photo-item" data-full="images/sun-sumo-show.jpg" data-cap="Live Sumo Show" data-credit="Hikosaemon from Tokyo, Japan (CC BY 2.0)" data-url="https://commons.wikimedia.org/wiki/File:Sumo_-Tokyo_2011_09_17_a.jpg">
+              <img src="images/sun-sumo-show.jpg" alt="Live Sumo Show" loading="lazy" />
+              <div class="photo-cap">Live Sumo Show</div>
+            </div></div>
+          <div class="schedule-heading">Timed Schedule</div>
+          <ul class="schedule-list">
+            <li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">10:30–11:30</span>
+                <span class="stop-name">Samurai &amp; Ninja Museum in Asakusa (hands-on armor &amp; throwing stars)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Start the morning in historic Asakusa with a 60-minute interactive English tour where you try on samurai helmets/armor, hold replica katanas, and compete at throwing real metal ninja stars (shuriken).</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Samurai+Ninja+Museum+Asakusa" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill primary" href="https://www.viator.com/tours/Asakusa/Samurai-Experience-and-Guided-Tour-of-Samurai-Ninja-Museum/d59194-51440P80" target="_blank" rel="noopener">🎟️ Viator Samurai &amp; Ninja Museum</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">11:45–13:15</span>
+                <span class="stop-name">Hands-On Sushi-Making Class (seated culinary workshop + your lunch)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Learn to season sushi rice and shape your own nigiri and sushi rolls with a local instructor right in Asakusa, then sit down and eat everything you made for lunch (skip the optional sake add-on).</div>
+              <div class="action-row"><a class="btn-pill primary" href="https://www.viator.com/tours/Asakusa/Temari-Sushi-Experience/d59194-217172P1" target="_blank" rel="noopener">🎟️ Viator Sushi Class</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">13:30–14:30</span>
+                <span class="stop-name">Akihabara Sunday-Only &#x27;Hokoten&#x27; Car-Free Boulevard (Tokyo&#x27;s neon arcade &amp; electronics avenue)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Every Sunday from 13:00 to 17:00 (weather permitting), Akihabara closes its main 6-lane boulevard (Chuo-dori) to all cars so pedestrians can walk right down the middle of the street past multi-story GiGO arcades and electronics towers.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Akihabara+Chuo-dori+Tokyo" target="_blank" rel="noopener">📍 Maps</a></div>
+            </li><li class="schedule-bullet break-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">14:30–15:00</span>
+                <span class="stop-name">☕ 30-Min Dedicated Cafe Sit-Down Break Back in Asakusa</span>
+                <span class="stop-phase">☕ Dedicated Rest</span>
+              </div>
+              <div class="stop-note">Hop 5 minutes back to Asakusa and sit down with a warm drink before your golden-hour kimono stroll.</div>
+              
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">15:00–16:45</span>
+                <span class="stop-name">Golden-Hour Kimono Dress-Up + Senso-ji Sunset Lanterns (Temple #2 of 2) &amp; Nakamise Street Snacks</span>
+                <span class="stop-phase">🏮 Sunset &amp; Night</span>
+              </div>
+              <div class="stop-note">Dress in traditional silk kimono in the cool late afternoon, stroll 250-meter Nakamise-dori for warm melonpan (crispy sweet bread), fresh senbei rice crackers, and matcha sweets, and watch Tokyo&#x27;s oldest 645 AD Buddhist temple (Senso-ji), giant red Kaminarimon lantern, and 5-story pagoda light up at sunset (16:28).</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Senso-ji+Asakusa+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill primary" href="https://www.viator.com/tours/Asakusa/Tea-Ceremony-and-Kimono-Experience-Tokyo-Maikoya/d59194-51440P108" target="_blank" rel="noopener">🎟️ Kimono Rental (Maikoya)</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">17:00–18:10</span>
+                <span class="stop-name">Ueno Ameyoko Open-Air Night Market Food-Hopping (bustling stalls under the train tracks, 5 min away)</span>
+                <span class="stop-phase">🏮 Sunset &amp; Night</span>
+              </div>
+              <div class="stop-note">Hop 3 stops (5 min on the Ginza Line) to Ueno Ameyoko after dark when the open-air market alleys glow under the elevated train tracks. Graze on hot takoyaki (octopus balls), grilled seafood skewers, and candied fruit skewers (skip pork menchi-katsu).</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Ameyoko+Market+Ueno+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=street+food+stalls+Ameyoko+Ueno+Tokyo" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=street+food+stalls+Ameyoko+Ueno+Tokyo" target="_blank" rel="noopener">🎬 TikTok</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">18:30–20:15</span>
+                <span class="stop-name">Seated Live Sumo Show &amp; Chicken Chanko Hot-Pot Dinner (evening show as Sunday streets quiet down)</span>
+                <span class="stop-phase">🏮 Sunset &amp; Night</span>
+              </div>
+              <div class="stop-note">Right as Sunday evening foot traffic winds down, sit back for a 90-minute live sumo demonstration with former professional rikishi (sumo wrestlers)—including rules explanation, practice bouts, a chance to challenge a wrestler in the ring, and a hearty chicken chanko-nabe hot-pot dinner.</div>
+              <div class="action-row"><a class="btn-pill primary" href="https://www.viator.com/tours/Tokyo/Tokyo-Shinjuku-Sumo-Show-Experience-with-Photo-and-Drinks/d334-5610033P1" target="_blank" rel="noopener">🎟️ Viator Sumo Show</a></div>
+            </li>
+          </ul>
+        </section><section class="day-card" id="day-mon-30">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Mon Nov 30</div>
+              <h2 class="day-title">Hakone Volcanic Gondola, Lake Ashi Cruise, Cedar Trail &amp; 1-Night Wooden Ryokan</h2>
+              <div class="day-corridor">📍 Hakone National Park Loop (85 Min from Shinjuku)</div>
+            </div>
+            <span class="crowd-pill">Weekday = Short Gondola &amp; Boat Lines</span>
+          </div>
+          <div class="day-overview">Soar 130 meters above the steaming sulfur vents of Owakudani on the Hakone Ropeway gondola, sail across volcanic Lake Ashi on a tall-masted sightseeing ship, walk beneath 400-year-old giant cedars along the ancient Old Tokaido trail, and spend Monday night in a traditional wooden Ryokan with tatami mats, yukata robes, and a private open-air hot-spring bath.</div>
+          <div class="day-meta-bar">
+            <span>☀️ 06:33 – 🌇 16:28 · 🌡️ 11°/3°C in Hakone</span>
+            <span>•</span>
+            <span>☀️ 10:00 Scenic Train · 11:45 Volcanic Gondola &amp; Lake Ship · ☕ 13:35 Lakeside Break · 🌲 14:30 Cedar Trail · 🏮 16:00 Wooden Ryokan &amp; Hot Spring</span>
+          </div>
+          <div class="day-gallery"><div class="photo-item" data-full="images/mon-ropeway-2.jpg" data-cap="Hakone Ropeway Gondola" data-credit="Joli Rumi (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:A_view_of_Owakudani_and_ropeway,_Hakone,_Japan4.jpg">
+              <img src="images/mon-ropeway-2.jpg" alt="Hakone Ropeway Gondola" loading="lazy" />
+              <div class="photo-cap">Hakone Ropeway Gondola</div>
+            </div><div class="photo-item" data-full="images/mon-ropeway-1.jpg" data-cap="Owakudani Volcanic Valley" data-credit="Joli Rumi (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:A_view_of_Owakudani_and_ropeway,_Hakone,_Japan.jpg">
+              <img src="images/mon-ropeway-1.jpg" alt="Owakudani Volcanic Valley" loading="lazy" />
+              <div class="photo-cap">Owakudani Volcanic Valley</div>
+            </div><div class="photo-item" data-full="images/mon-ashi-1.jpg" data-cap="Lake Ashi Sightseeing Ship" data-credit="Joli Rumi (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Pirate-themed_sightseeing_Cruise_at_Lake_Ashi,_Hakone,_Japan.jpg">
+              <img src="images/mon-ashi-1.jpg" alt="Lake Ashi Sightseeing Ship" loading="lazy" />
+              <div class="photo-cap">Lake Ashi Sightseeing Ship</div>
+            </div><div class="photo-item" data-full="images/mon-cedar-1.jpg" data-cap="Old Tokaido Cedar Trail" data-credit="Quercus acuta (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Old_Tokaido_-_Hakone.jpg">
+              <img src="images/mon-cedar-1.jpg" alt="Old Tokaido Cedar Trail" loading="lazy" />
+              <div class="photo-cap">Old Tokaido Cedar Trail</div>
+            </div><div class="photo-item" data-full="images/mon-ryokan-1.jpg" data-cap="Traditional Wooden Ryokan" data-credit="Mx. Granger (CC0)" data-url="https://commons.wikimedia.org/wiki/File:Ryokan_Matsumae_in_Nara.jpg">
+              <img src="images/mon-ryokan-1.jpg" alt="Traditional Wooden Ryokan" loading="lazy" />
+              <div class="photo-cap">Traditional Wooden Ryokan</div>
+            </div><div class="photo-item" data-full="images/mon-ryokan-3.jpg" data-cap="Open-Air Hot Spring Bath" data-credit="Markmark28 (CC BY-SA 3.0)" data-url="https://commons.wikimedia.org/wiki/File:Tsurunoyu_onsen_rotenburo2.JPG">
+              <img src="images/mon-ryokan-3.jpg" alt="Open-Air Hot Spring Bath" loading="lazy" />
+              <div class="photo-cap">Open-Air Hot Spring Bath</div>
+            </div></div>
+          <div class="schedule-heading">Timed Schedule</div>
+          <ul class="schedule-list">
+            <li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">10:00–11:25</span>
+                <span class="stop-name">Odakyu Romancecar Panoramic Express from Shinjuku to Hakone-Yumoto (bring only a 1-night backpack)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Leave your big suitcases stored at your Shinjuku hotel and ride the reserved-seat Odakyu Romancecar (85 minutes direct from Shinjuku) into the mountains of Hakone.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Hakone-Yumoto+Station" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill primary" href="https://www.odakyu.jp/english/romancecar/" target="_blank" rel="noopener">🎟️ Odakyu Romancecar</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">11:45–13:00</span>
+                <span class="stop-name">Hakone Ropeway Gondola Over Owakudani Volcanic Valley (with a 30-min summit snack &amp; viewing break)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Ride the Swiss-built panoramic gondola 130 meters above the steaming sulfur vents of Owakudani crater valley with views of Mt. Fuji. Step out at Owakudani Summit Station for a 30-minute viewing break and taste the famous black volcanic hot-spring eggs (kuro-tamago).</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Owakudani+Hakone+Ropeway" target="_blank" rel="noopener">📍 Maps</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">13:00–13:35</span>
+                <span class="stop-name">Lake Ashi Sightseeing Pirate Ship Cruise (from Togendai to Moto-Hakone)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Ride the ropeway down to the lakeshore and board the tall-masted sightseeing ship for a peaceful 35-minute cruise across volcanic Lake Ashi past the red lakeside torii gate of Hakone Shrine.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Lake+Ashi+Sightseeing+Cruise+Moto-Hakone" target="_blank" rel="noopener">📍 Maps</a></div>
+            </li><li class="schedule-bullet break-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">13:35–14:30</span>
+                <span class="stop-name">☕ 55-Min Dedicated Lakeside Bakery &amp; Cafe Sit-Down Lunch Break at Moto-Hakone</span>
+                <span class="stop-phase">☕ Dedicated Rest</span>
+              </div>
+              <div class="stop-note">Protected 55-minute sit-down lunch and warm drink break right on the Lake Ashi waterfront (such as Bakery &amp; Table Hakone or a lakeside soba cafe) before starting the forest walk.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=bakery+cafe+or+soba+lunch+Moto-Hakone+Lake+Ashi" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=bakery+cafe+or+soba+lunch+Moto-Hakone+Lake+Ashi" target="_blank" rel="noopener">🎬 TikTok</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">14:30–15:20</span>
+                <span class="stop-name">Old Tokaido Highway Cedar Avenue Trail (easy-moderate 45-min walk under 400-year-old giant cedars)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Walk a preserved section of the ancient feudal highway between Edo (Tokyo) and Kyoto, shaded by over 400 towering 400-year-old Japanese cedar trees alongside Lake Ashi—flat-to-gentle terrain, zero climbing.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Old+Tokaido+Cedar+Avenue+Hakone" target="_blank" rel="noopener">📍 Maps</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">16:00 Onward</span>
+                <span class="stop-name">Check into Traditional Wooden Ryokan (tatami straw floors, yukata robes, private open-air hot spring &amp; kaiseki dinner)</span>
+                <span class="stop-phase">🏮 Sunset &amp; Night</span>
+              </div>
+              <div class="stop-note">Arrive right before sunset (16:28). Change into your yukata (cotton kimono), slide open the shoji paper screens, soak in a private open-air hot-spring bath (rotenburo) listening to the mountain stream, and enjoy a multi-course wagyu &amp; seafood dinner (confirm no pork when booking) before sleeping on plush futons on tatami mats.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=traditional+ryokan+with+private+open+air+onsen+Hakone" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=traditional+ryokan+with+private+open+air+onsen+Hakone" target="_blank" rel="noopener">🎬 TikTok</a></div>
+            </li>
+          </ul>
+        </section><section class="day-card" id="day-tue-1">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Tue Dec 1</div>
+              <h2 class="day-title">33-Min Shinkansen Bullet Train, Tokyo Station Ramen Street, Afternoon Nap &amp; Ginza Lights</h2>
+              <div class="day-corridor">📍 Odawara → Tokyo Station → Ginza &amp; Marunouchi</div>
+            </div>
+            <span class="crowd-pill">175-mph Bullet Train + Holiday Lights</span>
+          </div>
+          <div class="day-overview">Enjoy a relaxed morning hot-spring soak at your Hakone Ryokan, ride the 175-mph Tokaido Shinkansen Bullet Train for 33 minutes straight into Tokyo Station, feast at Tokyo Ramen Street &amp; Gransta food hall, take a full 2.5-hour afternoon nap, and celebrate your final evening with charcoal-grilled unagi (eel) in Ginza and a night stroll under 1.2 million champagne-gold lights in Marunouchi.</div>
+          <div class="day-meta-bar">
+            <span>☀️ 06:34 – 🌇 16:28 · 🌡️ 14°/6°C</span>
+            <span>•</span>
+            <span>☀️ 09:00 Ryokan Morning · 🚄 11:30 Bullet Train · 🍜 12:15 Tokyo Station Ramen Street/Gransta · 🛌 14:15–16:45 Hotel Nap · 🏮 17:15 Ginza Eel &amp; Lights</span>
+          </div>
+          <div class="day-gallery"><div class="photo-item" data-full="images/tue-shinkansen-1.jpg" data-cap="Shinkansen Bullet Train" data-credit="電車(新幹線)でゴー！ (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Tokaido_Shinkansen_N700S_in_Tokyo_Station_-1.jpg">
+              <img src="images/tue-shinkansen-1.jpg" alt="Shinkansen Bullet Train" loading="lazy" />
+              <div class="photo-cap">Shinkansen Bullet Train</div>
+            </div><div class="photo-item" data-full="images/tue-shinkansen-3.jpg" data-cap="Tokaido Shinkansen" data-credit="電車(新幹線)でゴー！ (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Tokaido_Shinkansen_N700S_%26_N700A_in_Tokyo_Station.jpg">
+              <img src="images/tue-shinkansen-3.jpg" alt="Tokaido Shinkansen" loading="lazy" />
+              <div class="photo-cap">Tokaido Shinkansen</div>
+            </div><div class="photo-item" data-full="images/tue-tokyosta-2.jpg" data-cap="Tokyo Station at Night" data-credit="Kakidai (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:2024_Tokyo_Station_Marunouchi_Building_at_night_().jpg">
+              <img src="images/tue-tokyosta-2.jpg" alt="Tokyo Station at Night" loading="lazy" />
+              <div class="photo-cap">Tokyo Station at Night</div>
+            </div><div class="photo-item" data-full="images/tue-unagi-eel.jpg" data-cap="Charcoal-Grilled Unagi (Eel)" data-credit="Miyuki Meinaka (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Hitsumabushi_by_Daikantei.jpg">
+              <img src="images/tue-unagi-eel.jpg" alt="Charcoal-Grilled Unagi (Eel)" loading="lazy" />
+              <div class="photo-cap">Charcoal-Grilled Unagi (Eel)</div>
+            </div><div class="photo-item" data-full="images/tue-marunouchi-lights-1.jpg" data-cap="Marunouchi Holiday Lights" data-credit="Guilhem Vellut from Annecy, France (CC BY 2.0)" data-url="https://commons.wikimedia.org/wiki/File:Christmas_Iluminations_@_Marunouchi_(11547109004).jpg">
+              <img src="images/tue-marunouchi-lights-1.jpg" alt="Marunouchi Holiday Lights" loading="lazy" />
+              <div class="photo-cap">Marunouchi Holiday Lights</div>
+            </div><div class="photo-item" data-full="images/tue-marunouchi-lights-2.jpg" data-cap="Marunouchi Winter Walk" data-credit="Guilhem Vellut from Annecy, France (CC BY 2.0)" data-url="https://commons.wikimedia.org/wiki/File:Christmas_Iluminations_@_Marunouchi_(11547080595).jpg">
+              <img src="images/tue-marunouchi-lights-2.jpg" alt="Marunouchi Winter Walk" loading="lazy" />
+              <div class="photo-cap">Marunouchi Winter Walk</div>
+            </div></div>
+          <div class="schedule-heading">Timed Schedule</div>
+          <ul class="schedule-list">
+            <li class="schedule-bullet break-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">09:00–11:00</span>
+                <span class="stop-name">Unhurried Ryokan Breakfast, Morning Hot-Spring Soak &amp; Short Hop to Odawara Station</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Enjoy a traditional Japanese breakfast and one last morning soak in the hot spring at your Ryokan, then take the 15-minute train/taxi down to Odawara Shinkansen Station.</div>
+              
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">11:30–12:03</span>
+                <span class="stop-name">Tokaido Shinkansen Bullet Train from Odawara to Tokyo Station (33 minutes at up to 175 mph)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Experience Japan&#x27;s world-famous N700S Shinkansen Bullet Train on a smooth, effortless 33-minute ride directly into the heart of Tokyo Station—getting the full bucket-list bullet-train experience without a 6-hour round trip to Osaka.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Odawara+Station+Shinkansen" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill primary" href="https://smart-ex.jp/en/index.php" target="_blank" rel="noopener">🎟️ Smart EX Shinkansen</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">12:15–13:45</span>
+                <span class="stop-name">Tokyo Station Ramen Street &amp; Gransta Food Hall (spotless, upscale indoor food-stall &amp; chef concourse)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Right inside Tokyo Station where your Bullet Train arrives: stroll counter-to-counter through Gransta and Tokyo Ramen Street—8 of Japan&#x27;s most celebrated ramen shops plus gourmet wagyu bento counters, crispy fried seafood tempura, sushi bowls, and artisan desserts in a spotless department-store concourse (choose chicken/shoyu/seafood or vegan ramen; avoid pork tonkotsu).</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+Ramen+Street+Tokyo+Station" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+Ramen+Street+or+Gransta+food+hall+inside+Tokyo+Station" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Tokyo+Ramen+Street+or+Gransta+food+hall+inside+Tokyo+Station" target="_blank" rel="noopener">🎬 TikTok</a></div>
+            </li><li class="schedule-bullet break-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">14:15–16:45</span>
+                <span class="stop-name">🛌 2.5-Hour Dedicated Hotel Rest in Shinjuku</span>
+                <span class="stop-phase">☕ Dedicated Rest</span>
+              </div>
+              <div class="stop-note">Drop your overnight backpack at your Shinjuku hotel and enjoy a full 2.5-hour afternoon nap before your final night out. (Note: if you kept your 17:00 Shibuya Night Go-Kart booking on Tue Dec 1 instead of moving it to Sat Nov 28, head to Shibuya at 15:50 for your 16:30 kart check-in!)</div>
+              
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">17:15–19:00</span>
+                <span class="stop-name">Ginza &amp; Yurakucho Sunset Food Stroll + Charcoal-Grilled Unagi (Freshwater Eel Over Rice) Dinner</span>
+                <span class="stop-phase">🏮 Sunset &amp; Night</span>
+              </div>
+              <div class="stop-note">Stroll past the glowing brick railway arches at Yurakucho and upscale Ginza for a celebratory final dinner of charcoal-grilled unagi (freshwater eel glazed in sweet soy tare over steamed rice, or hitsumabushi—confirm no alcohol/mirin issue if strict).</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Ginza+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=unagi+hitsumabushi+charcoal+grilled+eel+near+Ginza+Tokyo" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=unagi+hitsumabushi+charcoal+grilled+eel+near+Ginza+Tokyo" target="_blank" rel="noopener">🎬 TikTok</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">19:00–20:30</span>
+                <span class="stop-name">Marunouchi Nakadori Holiday Illuminations &amp; Red-Brick Tokyo Station Night Walk</span>
+                <span class="stop-phase">🏮 Sunset &amp; Night</span>
+              </div>
+              <div class="stop-note">Finish your last evening walking down tree-lined Marunouchi Nakadori Avenue under 1.2 million champagne-gold winter lights and past the illuminated 1914 red-brick facade of Tokyo Station.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Marunouchi+Naka-dori+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill primary" href="https://www.marunouchi.com/en/pickup/event/10727/" target="_blank" rel="noopener">🎟️ Marunouchi Illumination Info</a></div>
+            </li>
+          </ul>
+        </section><section class="day-card" id="day-wed-2">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Wed Dec 2</div>
+              <h2 class="day-title">Shinjuku Gyoen Autumn Garden, Isetan Depachika Food Hall &amp; Afternoon Flight</h2>
+              <div class="day-corridor">📍 Shinjuku → Haneda Airport (16:50 Flight)</div>
+            </div>
+            <span class="crowd-pill">Relaxed Departure Morning</span>
+          </div>
+          <div class="day-overview">Spend a calm final morning strolling under crimson autumn maples and pond bridges in Shinjuku Gyoen right beside your hotel, take a 30-minute coffee break, graze freshly fried tempura and wagyu snacks at Isetan&#x27;s famous luxury basement food hall, and catch your direct 12:15 bus to Haneda for your 16:50 flight home.</div>
+          <div class="day-meta-bar">
+            <span>☀️ 06:35 – 🌇 16:28 · 🌡️ 13°/5°C</span>
+            <span>•</span>
+            <span>☀️ 09:00 Garden Walk · ☕ 10:00 Coffee Break · 🍱 10:30 Isetan Food Hall · 🚌 12:15 Bus to Haneda</span>
+          </div>
+          <div class="day-gallery"><div class="photo-item" data-full="images/wed-gyoen-pavilion.jpg" data-cap="Shinjuku Gyoen Pavilion" data-credit="Terabita34 (CC BY-SA 4.0)" data-url="https://commons.wikimedia.org/wiki/File:Shinjuku_Gyoen_autumn_season.jpg">
+              <img src="images/wed-gyoen-pavilion.jpg" alt="Shinjuku Gyoen Pavilion" loading="lazy" />
+              <div class="photo-cap">Shinjuku Gyoen Pavilion</div>
+            </div><div class="photo-item" data-full="images/wed-gyoen-maples.jpg" data-cap="Shinjuku Gyoen Autumn Maples" data-credit="nesnad (CC BY-SA 3.0)" data-url="https://commons.wikimedia.org/wiki/File:Autumn_leaves_-_Shinjuku_gyoen_-_nov_2016.jpg">
+              <img src="images/wed-gyoen-maples.jpg" alt="Shinjuku Gyoen Autumn Maples" loading="lazy" />
+              <div class="photo-cap">Shinjuku Gyoen Autumn Maples</div>
+            </div><div class="photo-item" data-full="images/wed-tempura-bowl.jpg" data-cap="Fresh Tempura Rice Bowl" data-credit="Jimmy Yao (CC BY-SA 2.0)" data-url="https://commons.wikimedia.org/wiki/File:Tendon_in_Tokyo.jpg">
+              <img src="images/wed-tempura-bowl.jpg" alt="Fresh Tempura Rice Bowl" loading="lazy" />
+              <div class="photo-cap">Fresh Tempura Rice Bowl</div>
+            </div></div>
+          <div class="schedule-heading">Timed Schedule</div>
+          <ul class="schedule-list">
+            <li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">09:00–10:00</span>
+                <span class="stop-name">Shinjuku Gyoen National Garden (58-hectare imperial landscape garden in late-autumn maple color)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Leave your packed bags with the hotel bell desk and enter right at 09:00 opening (¥500) for a flat, peaceful 60-minute walk across wooden pond bridges, Japanese tea pavilions, and late-November red maples.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Shinjuku+Gyoen+National+Garden" target="_blank" rel="noopener">📍 Maps</a></div>
+            </li><li class="schedule-bullet break-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">10:00–10:30</span>
+                <span class="stop-name">☕ 30-Min Dedicated Coffee &amp; Pastry Sit-Down Break</span>
+                <span class="stop-phase">☕ Dedicated Rest</span>
+              </div>
+              <div class="stop-note">Sit down at a cafe right between Shinjuku Gyoen and Isetan before the department store doors open at 10:00.</div>
+              
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">10:30–11:50</span>
+                <span class="stop-name">Isetan Shinjuku &#x27;Depachika&#x27; (luxury underground food-stall hall for prepared foods, tempura &amp; gifts)</span>
+                <span class="stop-phase">🏮 Sunset &amp; Night</span>
+              </div>
+              <div class="stop-note">Walk stall-to-stall through Isetan&#x27;s gleaming basement food hall sampling freshly fried shrimp/vegetable tempura, wagyu croquettes (confirm no pork), fruit daifuku mochi, and boxed matcha/yokan gifts to pack in your carry-on.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Isetan+Shinjuku" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Isetan+Shinjuku+depachika+food+hall+tempura+sweets" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Isetan+Shinjuku+depachika+food+hall+tempura+sweets" target="_blank" rel="noopener">🎬 TikTok</a></div>
+            </li><li class="schedule-bullet">
+              <div class="bullet-top">
+                <span class="stop-time">12:15</span>
+                <span class="stop-name">Airport Limousine Bus from Shinjuku to Haneda Terminal 3 (arriving ~13:30 for 16:50 flight)</span>
+                <span class="stop-phase">☀️ Daytime</span>
+              </div>
+              <div class="stop-note">Pick up your bags at the hotel, board the direct Airport Limousine Bus (~60 min), and arrive at Haneda Terminal 3 with plenty of time for tax-free airport shopping before your 16:50 flight home.</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Haneda+Airport+Terminal+3" target="_blank" rel="noopener">📍 Maps</a></div>
+            </li>
+          </ul>
+        </section>
+  </main>
 
-<section class="block" id="dates">
-  <h2>Dates that shape the plan</h2>
-  <div class="table-wrap"><table class="data-table"><thead><tr><th>When</th><th>What to know</th></tr></thead><tbody><tr><td><strong>Wed, Nov 25</strong></td><td>You land at 17:45. With immigration and transfers, plan only an easy evening. Rikugien&#x27;s evening light-up starts this day (Nov 25-Dec 6).</td></tr><tr><td><strong>Nov 25 - Dec 6</strong></td><td>Rikugien garden night illumination, 18:00-20:30 (last entry 19:30). Separate ticket: ¥1,000 advance or ¥1,200 same day.</td></tr><tr><td><strong>Oct 31 - Dec 6</strong></td><td>Mt Takao Trail 6 is uphill-only all day (official notice). Come down by Trail 1 or the cable car.</td></tr><tr><td><strong>Fri, Nov 27</strong></td><td>Imperial Palace East Gardens are closed (they close Mondays and Fridays).</td></tr><tr><td><strong>Mon, Nov 30</strong></td><td>Shinjuku Gyoen, the Tokyo National Museum (whose Toyokan closes for the month), the Imperial East Gardens, the Takao Visitor Center and the Inokashira Park zoo are closed. Kiyomizu-dera&#x27;s night viewing ends.</td></tr><tr><td><strong>Tue, Dec 1</strong></td><td>Ghibli Museum is closed. The Tokyo Metropolitan Government&#x27;s south observatory is closed.</td></tr><tr><td><strong>Every day</strong></td><td>Sunset about 16:30. Meiji Jingu closes at 16:10 (November) or 16:00 (December).</td></tr><tr><td><strong>About 2 weeks before</strong></td><td>SHIBUYA SKY tickets open roughly two weeks ahead (about Nov 12-17 for Nov 26-Dec 1). Book the guided Fuji tour as soon as you pick a date.</td></tr><tr><td><strong>Wed, Dec 2</strong></td><td>Flight at 16:50. Keep the morning light and nothing far away.</td></tr></tbody></table></div>
-  <p class="note">Closures and opening hours come from official pages checked on 2026-10-19 (Food: 2026-10-19; Walks, Activities and Must-see: 2026-10-19/20). Recheck before you go.</p>
-</section>
-
-<section class="block" id="day-trips">
-  <h2>Day trips from Tokyo at a glance</h2>
-  <div class="table-wrap"><table class="data-table"><thead><tr><th>Place</th><th>One-way time</th><th>Return cost per adult</th><th>Format</th><th>Verdict</th></tr></thead><tbody><tr><td>Kamakura (and Enoshima)</td><td>About 1 hour</td><td>¥2,200-2,700</td><td>Day trip</td><td>Best nearby temple day: the Great Buddha and Hase-dera. The itinerary skips the forest trail because it is not guided.</td></tr><tr><td>Mount Takao</td><td>50-60 min</td><td>¥860 (+¥980 return cable car)</td><td>Day trip</td><td>Best hill walk near Tokyo; bear notice, Trail 6 uphill-only, busy in autumn.</td></tr><tr><td>Mount Mitake (Okutama)</td><td>About 95 min + bus</td><td>About ¥3,960 with the cable car</td><td>Day trip</td><td>Weak pick: the worst bear data in the report and an early dusk.</td></tr><tr><td>Lake Kawaguchiko and Mt Fuji</td><td>About 2 hours</td><td>Guided tour about ¥7,400-26,900</td><td>Guided day tour</td><td>Go with a guide only. Needs a clear forecast; a long day (see the Itinerary).</td></tr><tr><td>Hakone</td><td>80-100 min + mountain transfers</td><td>¥7,100 Freepass (¥9,500 with Romancecar)</td><td>Day trip or overnight</td><td>One big excursion; do not stack with other long trips.</td></tr><tr><td>Nikko</td><td>About 2 hours</td><td>¥6,000-9,000</td><td>Long day trip</td><td>For temples, not for late-autumn hiking.</td></tr><tr><td>Kyoto / Nara / Osaka</td><td>2 hr 10 min+ by Shinkansen</td><td>¥28,000-31,000 return</td><td>Overnight swap</td><td>Strongest cultural payoff but replaces Tokyo days; Nara and Osaka are best added from Kyoto.</td></tr></tbody></table></div>
-  <p class="note">Not all of these fit six full days. Choose Tokyo plus one or two nearby trips, or swap in a Kansai overnight. Costs are planning allowances, not quotes.</p>
-</section>
-
-<section class="block" id="cautions">
-  <div class="callout"><h2>Keep in mind</h2><ul><li><strong>Busy does not mean safe.</strong> The UK Foreign Office warns about touts, drink spiking and overcharging in popular nightlife areas (Kabukicho, Shibuya, Roppongi, Ikebukuro). Politely decline street invitations to bars.</li><li><strong>Bears near Tokyo's hills:</strong> a bear was filmed about 70 m off Mt Takao Trail 1 in August (local alert level 1), and the Mitake and Okutama area logged 33 incidents in 30 days. Hike in daylight, in a group, with a bell or radio, and check the local notices before any wooded trail. This is a risk flag, not a safety guarantee.</li><li><strong>Food:</strong> no restaurant is certified. Use the ordering card on the food page and read ingredient labels.</li><li><strong>Review counts:</strong> Activities, Must-see and Walks use live Google Maps, TripAdvisor and (where they exist) Viator, GetYourGuide, Klook and AllTrails counts, never added across platforms (Viator and TripAdvisor tour counts are one pool). Food only checked some Google-labelled counts, and where evidence was thin, confidence is capped at medium.</li><li><strong>Sources:</strong> Food rests mostly on traveler diaries plus official venue pages, because Reddit and the booking sites were not readable then. Walks, Activities and Must-see were redone with live listings and official pages, but Reddit stayed blocked and no video or podcast was watched or heard.</li></ul></div>
-</section>
-
-<section class="block" id="how-to-read">
-  <h2>How to read the shortlists</h2>
-  <div class="panel">
-    <ul>
-      <li><strong>A · Strongest fit:</strong> best value for your time and the most consistent traveler support. A picks show up to 3 photos.</li>
-      <li><strong>B · Worth it if it fits:</strong> good choices that depend on interests, weather or a longer trip. B picks show 1 photo.</li>
-      <li><strong>C · Conditional:</strong> only worth it for a specific reason. Description only, no photo.</li>
-      <li>Photos appear only when a free photo of the actual place exists. Where none does (for example a small class or a show), the card has no photo rather than a generic one.</li>
-      <li><strong>Confidence</strong> (high, medium, low) reflects how well traveler accounts agree and how settled the logistics are. It is not a safety guarantee.</li>
-      <li>Open <em>More details and sources</em> on any card for traveler evidence, access, crowds, seasonal fit and safety notes.</li>
-      <li><span class="badge memory-overlap" title="A More ideas entry covers the same place, area or purpose. The rank was reviewed against it.">Sonnet Memory Overlap</span> means the <a href="more-ideas.html">More ideas</a> page has an idea at the same place, area or purpose. Each badged card links to it, and the rank was reviewed against it.</li>
-    </ul>
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-box">
+      <img id="lbImg" src="" alt="" />
+      <div class="lightbox-meta">
+        <div>
+          <strong id="lbCap"></strong><br />
+          <span id="lbCred"></span> · <a id="lbLink" href="#" target="_blank" rel="noopener">Wikimedia Commons source</a>
+        </div>
+        <button class="theme-btn" id="lbClose" type="button">Close ✕</button>
+      </div>
+    </div>
   </div>
-</section>
-</main>
-<footer class="site-footer">
-  <div class="container">
-    <p>Built from four research reports plus one page of ideas from memory, and a draft itinerary built from them. Food was checked on 2026-10-19; Walks, Activities and Must-see were redone on 2026-10-19/20 using live Google, TripAdvisor, AllTrails, booking-site and official-page data. Prices are approximate JPY per adult, and hours, closures and tickets should be rechecked before booking. Nothing is booked yet.</p>
-    <p>Photos come from Wikimedia Commons under free licenses; see <a href="sources.html#photo-credits">Sources &amp; credits</a>.</p>
-  </div>
-</footer>
-<script src="assets/site.js"></script>
+
+  <script>
+    // Theme toggle
+    document.getElementById("themeToggle").addEventListener("click", () => {
+      const cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", cur);
+      localStorage.setItem("jp_v2_theme", cur);
+    });
+
+    // Photo lightbox
+    const lb = document.getElementById("lightbox");
+    const lbImg = document.getElementById("lbImg");
+    const lbCap = document.getElementById("lbCap");
+    const lbCred = document.getElementById("lbCred");
+    const lbLink = document.getElementById("lbLink");
+    document.querySelectorAll(".photo-item").forEach((el) => {
+      el.addEventListener("click", () => {
+        lbImg.src = el.getAttribute("data-full");
+        lbCap.textContent = el.getAttribute("data-cap");
+        lbCred.textContent = el.getAttribute("data-credit");
+        lbLink.href = el.getAttribute("data-url");
+        lb.classList.add("open");
+      });
+    });
+    document.getElementById("lbClose").addEventListener("click", () => lb.classList.remove("open"));
+    lb.addEventListener("click", (e) => {
+      if (e.target === lb) lb.classList.remove("open");
+    });
+  </script>
 </body>
 </html>

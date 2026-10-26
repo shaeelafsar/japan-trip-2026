@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Before You Go Checklist — Japan 2026 (v2)</title>
+  <script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    const saved = localStorage.getItem("jp_v2_theme");
+    const theme =
+      param || saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "dark" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-nav">
+  <div class="top-nav-inner">
+    <div class="brand">
+      <span>🇯🇵 Japan 2026</span>
+      <span class="brand-badge">v2</span>
+    </div>
+    <nav class="nav-links">
+      <a class="nav-tab" href="index.html">Itinerary</a>
+      <a class="nav-tab active" href="checklist.html">Checklist</a>
+      <a class="nav-tab" href="about.html">About</a>
+      <button class="theme-btn" id="themeToggle" type="button">☀️/🌙</button>
+    </nav>
+  </div>
+  
+</header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Before You Go: Bookings, Prep &amp; Dining Card</h1>
+      <p class="hero-sub">Check off each item as you go—your progress is saved automatically in your browser on this device.</p>
+      <div class="pill-row">
+        <span class="stat-pill accent" id="chkProgress">0 / 12 completed</span>
+        <span class="stat-pill">1949 Geneva IDP Required for Karts</span>
+        <span class="stat-pill">SHIBUYA SKY Opens 14 Days Ahead</span>
+      </div>
+    </section>
+
+    <div class="chef-card">
+      <div class="chef-card-title">🪪 Show This Card at Any Restaurant or Food Stall (Strictly No Pork &amp; No Alcohol)</div>
+      <div class="chef-jp">豚肉・ベーコン・ハム・ラード・豚骨スープ、およびアルコール（お酒・みりん）は一切食べられません。鶏肉・牛肉・魚介類・野菜の料理をお願いします。</div>
+      <div class="chk-detail">English meaning: "We cannot consume any pork, bacon, ham, lard, pork-bone broth (tonkotsu), or alcohol. Chicken, beef, seafood, and vegetable dishes are great."</div>
+    </div>
+
+    <details class="chk-group" open>
+          <summary>
+            <span>1. Booked &amp; Priority Reservations (Do Now)</span>
+            <span class="chk-badge">Action Now</span>
+          </summary>
+          <div class="chk-list">
+            <label class="chk-item" data-chk-id="chk-kart">
+              <input type="checkbox" data-chk="chk-kart" />
+              <div>
+                <div class="chk-title">Booked: Costumed Night Street Go-Karting (Shibuya Annex, 17:00 drive / 16:30 check-in)</div>
+                <div class="chk-detail">Currently booked for Tue Dec 1 at 17:00 (Viator 57331P11, 10-11 Maruyama-cho 2F). Free changes/cancellation up to 24 hrs ahead—switch to Sat Nov 28 at 17:00 if available so you do it while already in Shibuya on Saturday night, or keep Tue Dec 1 at 17:00.</div>
+                <div class="action-row"><a class="btn-pill" href="https://www.viator.com/tours/Tokyo/Official-Street-Go-Kart-in-Shibuya-Annex/d334-57331P11" target="_blank" rel="noopener">🔗 Viator Listing (57331P11)</a></div>
+              </div>
+            </label><label class="chk-item" data-chk-id="chk-idp">
+              <input type="checkbox" data-chk="chk-idp" />
+              <div>
+                <div class="chk-title">Get 1949 Geneva International Driving Permits (IDP) at AAA ($20 each)</div>
+                <div class="chk-detail">Mandatory for both drivers. Street Kart Shibuya Annex requires all 3 physical originals at check-in: (1) 1949 Geneva IDP booklet, (2) physical US driver&#x27;s license, and (3) physical passport—plus closed-toe flat shoes. No digital copies accepted.</div>
+                <div class="action-row"><a class="btn-pill" href="https://www.aaa.com/vacation/idpf.html" target="_blank" rel="noopener">🔗 AAA IDP Application</a></div>
+              </div>
+            </label><label class="chk-item" data-chk-id="chk-hotels">
+              <input type="checkbox" data-chk="chk-hotels" />
+              <div>
+                <div class="chk-title">Book Shinjuku Base Hotel + 1-Night Traditional Wooden Ryokan in Hakone (Mon Nov 30)</div>
+                <div class="chk-detail">Stay in Shinjuku (South/West exit area) as your main base, and book 1 night (Mon Nov 30 -&gt; Tue Dec 1) at a traditional wooden Ryokan in Hakone with tatami floors, yukata robes, private open-air hot-spring bath (rotenburo), and a no-pork wagyu/seafood dinner. Leave your large suitcases at your Tokyo hotel and bring only a 1-night backpack to Hakone.</div>
+                <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=traditional+ryokan+private+onsen+Hakone" target="_blank" rel="noopener">🔗 Search Hakone Ryokans (Google Maps)</a></div>
+              </div>
+            </label><label class="chk-item" data-chk-id="chk-fujiq">
+              <input type="checkbox" data-chk="chk-fujiq" />
+              <div>
+                <div class="chk-title">Book Fri Nov 27 Shinjuku &lt;-&gt; Kawaguchiko/Fuji-Q Highway Coach + Coaster Fast-Passes</div>
+                <div class="chk-detail">Reserve round-trip highway bus seats from Busta Shinjuku (08:15 outbound to Kawaguchiko, ~17:00 return from Fuji-Q Highland). Fuji-Q gate entry is free; buy Priority Tickets (fast-passes) for Zokkon (multi-launch motorbike coaster) and Takabisha so you skip standby queues.</div>
+                <div class="action-row"><a class="btn-pill" href="https://www.fujiq.jp/en/" target="_blank" rel="noopener">🔗 Fuji-Q Official Site</a><a class="btn-pill" href="https://highway-buses.jp/course/kawaguchiko.php" target="_blank" rel="noopener">🔗 Highway Bus Reservations</a></div>
+              </div>
+            </label><label class="chk-item" data-chk-id="chk-sun-classes">
+              <input type="checkbox" data-chk="chk-sun-classes" />
+              <div>
+                <div class="chk-title">Book Sun Nov 29 Asakusa Experiences &amp; Evening Sumo Show</div>
+                <div class="chk-detail">Reserve: (1) 10:30 Samurai &amp; Ninja Museum, (2) 11:45 Sushi-Making Class (lunch), (3) ~15:00 Asakusa Late-Afternoon Kimono Rental, and (4) 18:30 Live Sumo Show with Chicken Hot-Pot Dinner.</div>
+                <div class="action-row"><a class="btn-pill" href="https://www.viator.com/tours/Asakusa/Samurai-Experience-and-Guided-Tour-of-Samurai-Ninja-Museum/d59194-51440P80" target="_blank" rel="noopener">🔗 Samurai &amp; Ninja Museum</a><a class="btn-pill" href="https://www.viator.com/tours/Asakusa/Temari-Sushi-Experience/d59194-217172P1" target="_blank" rel="noopener">🔗 Sushi Class</a><a class="btn-pill" href="https://www.viator.com/tours/Asakusa/Tea-Ceremony-and-Kimono-Experience-Tokyo-Maikoya/d59194-51440P108" target="_blank" rel="noopener">🔗 Kimono &amp; Tea (Maikoya)</a><a class="btn-pill" href="https://www.viator.com/tours/Tokyo/Tokyo-Shinjuku-Sumo-Show-Experience-with-Photo-and-Drinks/d334-5610033P1" target="_blank" rel="noopener">🔗 Sumo Show</a></div>
+              </div>
+            </label><label class="chk-item" data-chk-id="chk-trains">
+              <input type="checkbox" data-chk="chk-trains" />
+              <div>
+                <div class="chk-title">Book Mon Nov 30 Odakyu Romancecar + Tue Dec 1 Shinkansen Bullet Train</div>
+                <div class="chk-detail">Mon Nov 30 (~10:00): Reserved panoramic seats on the Odakyu Romancecar (Shinjuku -&gt; Hakone-Yumoto, 85 min) + Hakone Freepass (covers Hakone Ropeway gondola &amp; Lake Ashi ship). Tue Dec 1 (~11:30): Reserved seats on the 175-mph Tokaido Shinkansen Bullet Train (Odawara -&gt; Tokyo Station, 33 min).</div>
+                <div class="action-row"><a class="btn-pill" href="https://www.odakyu.jp/english/romancecar/" target="_blank" rel="noopener">🔗 Odakyu Romancecar &amp; Freepass</a><a class="btn-pill" href="https://smart-ex.jp/en/index.php" target="_blank" rel="noopener">🔗 Smart EX (Shinkansen)</a></div>
+              </div>
+            </label>
+          </div>
+        </details><details class="chk-group" open>
+          <summary>
+            <span>2. Two Weeks Out (Mid-November)</span>
+            <span class="chk-badge">Nov 11–18</span>
+          </summary>
+          <div class="chk-list">
+            <label class="chk-item" data-chk-id="chk-sky">
+              <input type="checkbox" data-chk="chk-sky" />
+              <div>
+                <div class="chk-title">Book SHIBUYA SKY Timed Ticket (Sat Nov 28, ~14:15–15:30 Afternoon/Sunset Slot)</div>
+                <div class="chk-detail">Tickets release 14 days ahead at midnight Japan time (10:00 AM US Eastern the day before—so check on Nov 13/14 for Sat Nov 28).</div>
+                <div class="action-row"><a class="btn-pill" href="https://www.shibuya-scramble-square.com/sky/" target="_blank" rel="noopener">🔗 SHIBUYA SKY Official Tickets</a></div>
+              </div>
+            </label><label class="chk-item" data-chk-id="chk-vjw">
+              <input type="checkbox" data-chk="chk-vjw" />
+              <div>
+                <div class="chk-title">Complete Visit Japan Web (Immigration &amp; Customs QR Codes)</div>
+                <div class="chk-detail">Register both travelers online and screenshot the QR codes so you breeze through Haneda arrival on Wed Nov 25.</div>
+                <div class="action-row"><a class="btn-pill" href="https://www.digital.go.jp/en/policies/visit_japan_web" target="_blank" rel="noopener">🔗 Visit Japan Web</a></div>
+              </div>
+            </label><label class="chk-item" data-chk-id="chk-suica">
+              <input type="checkbox" data-chk="chk-suica" />
+              <div>
+                <div class="chk-title">Add Suica IC Card to Apple Wallet on Both iPhones + Set Up eSIM</div>
+                <div class="chk-detail">Add Suica directly in Apple Wallet (Wallet -&gt; &#x27;+&#x27; -&gt; Transit Card -&gt; Japan -&gt; Suica) and load ~¥5,000 each with a Mastercard/Amex. Install an eSIM (Airalo or Ubigi) before flying.</div>
+                <div class="action-row"><a class="btn-pill" href="https://support.apple.com/en-us/108772" target="_blank" rel="noopener">🔗 Apple Wallet Suica Guide</a><a class="btn-pill" href="https://www.airalo.com/japan-esim" target="_blank" rel="noopener">🔗 Airalo Japan eSIM</a></div>
+              </div>
+            </label>
+          </div>
+        </details><details class="chk-group">
+          <summary>
+            <span>3. Packing &amp; 48-Hour Weather Check</span>
+            <span class="chk-badge">Nov 23–30</span>
+          </summary>
+          <div class="chk-list">
+            <label class="chk-item" data-chk-id="chk-weather">
+              <input type="checkbox" data-chk="chk-weather" />
+              <div>
+                <div class="chk-title">48-Hour Clear-Sky Check: Thu Nov 26 (Mt Takao) vs. Fri Nov 27 (Mt Fuji / Fuji-Q)</div>
+                <div class="chk-detail">Both Thursday and Friday are low-queue weekdays. Check the Mt Fuji / Kawaguchiko cloud forecast 48 hours ahead—if Thursday is crystal-clear at Mt Fuji and Friday looks cloudy/rainy, you can swap Thursday and Friday.</div>
+                <div class="action-row"><a class="btn-pill" href="https://www.takaotozan.co.jp/timeprice/" target="_blank" rel="noopener">🔗 Takao Cable Car Info</a></div>
+              </div>
+            </label><label class="chk-item" data-chk-id="chk-pack">
+              <input type="checkbox" data-chk="chk-pack" />
+              <div>
+                <div class="chk-title">Pack Warm Layers, Windproof Jacket, Gloves &amp; Broken-In Sneakers</div>
+                <div class="chk-detail">Late November Tokyo highs average 15°C (59°F) and lows 7°C (45°F), while Mt Fuji, Hakone, and Mt Takao are 4–7°C colder. Bring warm gloves and a windproof jacket for the 17:00 night go-karts and Fuji-Q coasters, plus closed-toe flat shoes.</div>
+                
+              </div>
+            </label><label class="chk-item" data-chk-id="chk-meds-cash">
+              <input type="checkbox" data-chk="chk-meds-cash" />
+              <div>
+                <div class="chk-title">Withdraw ~¥15,000–¥20,000 Cash at a 7-Eleven ATM &amp; Check Medications</div>
+                <div class="chk-detail">Most places take tap-to-pay/Suica, but temple stalls and mountain snack stands take cash (7-Eleven ATMs accept US debit cards with low fees). Never bring banned stimulants (like Adderall) or meat products into Japan.</div>
+                <div class="action-row"><a class="btn-pill" href="https://www.ncd.mhlw.go.jp/en/application2.html" target="_blank" rel="noopener">🔗 Japan Medication Rules (MHLW)</a></div>
+              </div>
+            </label>
+          </div>
+        </details>
+  </main>
+
+  <script>
+    document.getElementById("themeToggle").addEventListener("click", () => {
+      const cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", cur);
+      localStorage.setItem("jp_v2_theme", cur);
+    });
+
+    const boxes = document.querySelectorAll("input[data-chk]");
+    const prog = document.getElementById("chkProgress");
+    function updateChecklist() {
+      let done = 0;
+      boxes.forEach((b) => {
+        const key = "jp_v2_" + b.getAttribute("data-chk");
+        const checked = localStorage.getItem(key) === "1";
+        b.checked = checked;
+        b.closest(".chk-item").classList.toggle("done", checked);
+        if (checked) done++;
+      });
+      if (prog) prog.textContent = `${done} / ${boxes.length} completed (saved on this device)`;
+    }
+    boxes.forEach((b) => {
+      b.addEventListener("change", () => {
+        const key = "jp_v2_" + b.getAttribute("data-chk");
+        localStorage.setItem(key, b.checked ? "1" : "0");
+        updateChecklist();
+      });
+    });
+    updateChecklist();
+  </script>
+</body>
+</html>
