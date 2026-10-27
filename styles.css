@@ -65,7 +65,7 @@ body {
   background: var(--cp-bg);
   color: var(--cp-text);
   font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: 1.55;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -77,7 +77,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Sticky Top Navigation (includes Day Jump Bar so they never overlap on mobile) */
+/* Sticky Top Navigation */
 .top-nav {
   position: sticky;
   top: 0;
@@ -149,7 +149,7 @@ a:hover {
   cursor: pointer;
 }
 
-/* Day Jump Bar nested inside sticky header */
+/* Day Jump Bar */
 .day-bar {
   background: var(--cp-bg-elevated);
   border-top: 1px solid var(--cp-border);
@@ -192,19 +192,19 @@ a:hover {
   background: var(--cp-surface);
   border: 1px solid var(--cp-border);
   border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
   box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
 }
 .hero h1 {
-  margin: 0 0 8px;
-  font-size: 1.55rem;
+  margin: 0 0 6px;
+  font-size: 1.5rem;
   line-height: 1.25;
 }
 .hero-sub {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   color: var(--cp-text-soft);
-  font-size: 0.96rem;
+  font-size: 0.94rem;
 }
 .pill-row {
   display: flex;
@@ -216,7 +216,7 @@ a:hover {
   border: 1px solid var(--cp-border);
   border-radius: 0.625rem;
   padding: 4px 10px;
-  font-size: 0.82rem;
+  font-size: 0.81rem;
   color: var(--cp-text-soft);
   font-weight: 600;
 }
@@ -233,14 +233,14 @@ a:hover {
   justify-content: space-between;
   gap: 12px;
   flex-wrap: wrap;
-  margin: 28px 0 12px;
+  margin: 24px 0 12px;
 }
 .section-head h2 {
   margin: 0;
-  font-size: 1.28rem;
+  font-size: 1.24rem;
 }
 .section-meta {
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   color: var(--cp-text-muted);
 }
 
@@ -254,10 +254,10 @@ a:hover {
   box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
 }
 .chk-group summary {
-  padding: 14px 16px;
+  padding: 13px 16px;
   cursor: pointer;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.98rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -277,13 +277,13 @@ a:hover {
 }
 .chk-list {
   border-top: 1px solid var(--cp-border);
-  padding: 8px 16px 14px;
+  padding: 6px 16px 12px;
 }
 .chk-item {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  padding: 10px 0;
+  padding: 9px 0;
   border-bottom: 1px solid var(--cp-border);
 }
 .chk-item:last-child {
@@ -303,13 +303,13 @@ a:hover {
 }
 .chk-title {
   font-weight: 600;
-  font-size: 0.94rem;
-  margin-bottom: 4px;
+  font-size: 0.92rem;
+  margin-bottom: 3px;
 }
 .chk-detail {
-  font-size: 0.86rem;
+  font-size: 0.85rem;
   color: var(--cp-text-soft);
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 /* Chef Card Box */
@@ -317,32 +317,32 @@ a:hover {
   background: var(--cp-bg-elevated);
   border: 1px solid var(--cp-accent);
   border-radius: 16px;
-  padding: 16px;
-  margin: 16px 0 24px;
+  padding: 14px 16px;
+  margin: 14px 0 20px;
 }
 .chef-card-title {
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   color: var(--cp-accent);
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 .chef-jp {
-  font-size: 1.08rem;
+  font-size: 1.05rem;
   font-weight: 700;
   background: var(--cp-surface);
   border: 1px solid var(--cp-border);
   border-radius: 0.625rem;
-  padding: 10px 12px;
-  margin: 8px 0;
+  padding: 9px 12px;
+  margin: 6px 0;
 }
 
-/* Day Card: Overview -> Top Showcase Gallery -> Bulleted Schedule Below */
+/* Day Card */
 .day-card {
   background: var(--cp-surface);
   border: 1px solid var(--cp-border);
   border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 24px;
+  padding: 18px 20px;
+  margin-bottom: 20px;
   scroll-margin-top: 112px;
   box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
 }
@@ -352,22 +352,22 @@ a:hover {
   justify-content: space-between;
   gap: 12px;
   flex-wrap: wrap;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 .day-date {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--cp-accent);
 }
 .day-title {
-  margin: 2px 0 4px;
-  font-size: 1.28rem;
+  margin: 2px 0 3px;
+  font-size: 1.22rem;
   line-height: 1.3;
 }
 .day-corridor {
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   color: var(--cp-text-muted);
 }
 .crowd-pill {
@@ -376,37 +376,37 @@ a:hover {
   border: 1px solid var(--cp-accent);
   padding: 4px 10px;
   border-radius: 0.625rem;
-  font-size: 0.78rem;
+  font-size: 0.77rem;
   font-weight: 700;
 }
 .day-overview {
-  margin: 10px 0 12px;
-  font-size: 0.95rem;
+  margin: 8px 0 10px;
+  font-size: 0.92rem;
   color: var(--cp-text);
   background: var(--cp-bg-elevated);
   border-left: 3px solid var(--cp-accent);
-  padding: 10px 14px;
+  padding: 8px 12px;
   border-radius: 0 0.625rem 0.625rem 0;
 }
 .day-meta-bar {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 8px 12px;
+  padding: 7px 11px;
   background: var(--cp-surface-soft);
   border: 1px solid var(--cp-border);
   border-radius: 0.625rem;
-  font-size: 0.82rem;
+  font-size: 0.81rem;
   color: var(--cp-text-soft);
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
-/* Top Showcase Photo Gallery inside each Day Card */
+/* Top Showcase Photo Gallery */
 .day-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 .day-gallery.cols-2 {
   grid-template-columns: repeat(2, 1fr);
@@ -429,36 +429,36 @@ a:hover {
   display: block;
 }
 .photo-cap {
-  padding: 7px 10px;
-  font-size: 0.8rem;
+  padding: 6px 8px;
+  font-size: 0.79rem;
   font-weight: 600;
   color: var(--cp-text);
   text-align: center;
   line-height: 1.25;
 }
 
-/* Bulleted Timed Schedule Underneath the Photos */
+/* Bulleted Timed Schedule */
 .schedule-heading {
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--cp-text-muted);
-  margin: 0 0 8px;
+  margin: 0 0 7px;
 }
 .schedule-list {
   margin: 0;
   padding-left: 20px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 7px;
 }
 .schedule-bullet {
-  padding: 8px 12px;
+  padding: 8px 11px;
   border-radius: 0.625rem;
   background: var(--cp-bg-elevated);
   border: 1px solid var(--cp-border);
-  font-size: 0.91rem;
+  font-size: 0.9rem;
 }
 .schedule-bullet.break-bullet {
   background: var(--cp-highlight);
@@ -469,12 +469,12 @@ a:hover {
   align-items: baseline;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 .stop-time {
   font-family: Consolas, "Courier New", Courier, monospace;
   font-weight: 700;
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   color: var(--cp-accent);
   background: var(--cp-surface);
   border: 1px solid var(--cp-border);
@@ -482,7 +482,7 @@ a:hover {
   border-radius: 0.625rem;
 }
 .stop-phase {
-  font-size: 0.74rem;
+  font-size: 0.73rem;
   font-weight: 600;
   color: var(--cp-text-muted);
 }
@@ -492,8 +492,8 @@ a:hover {
 }
 .stop-note {
   color: var(--cp-text-soft);
-  font-size: 0.86rem;
-  margin: 2px 0 6px;
+  font-size: 0.85rem;
+  margin: 2px 0 5px;
 }
 .action-row {
   display: flex;
@@ -507,7 +507,7 @@ a:hover {
   gap: 4px;
   padding: 3px 9px;
   border-radius: 0.625rem;
-  font-size: 0.76rem;
+  font-size: 0.75rem;
   font-weight: 600;
   background: var(--cp-surface);
   border: 1px solid var(--cp-border);
@@ -524,23 +524,23 @@ a:hover {
   border-color: var(--cp-accent);
 }
 
-/* Tables & Cards for About Page */
+/* Info Cards & Tables */
 .info-card {
   background: var(--cp-surface);
   border: 1px solid var(--cp-border);
   border-radius: 16px;
-  padding: 18px;
-  margin-bottom: 20px;
+  padding: 16px 18px;
+  margin-bottom: 18px;
   box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
 }
 .info-card h2 {
-  margin: 0 0 10px;
-  font-size: 1.2rem;
+  margin: 0 0 8px;
+  font-size: 1.16rem;
 }
 .info-card p {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   color: var(--cp-text-soft);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
 .table-wrap {
   overflow-x: auto;
@@ -548,12 +548,12 @@ a:hover {
 .clean-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.88rem;
+  font-size: 0.86rem;
 }
 .clean-table th,
 .clean-table td {
   text-align: left;
-  padding: 10px 12px;
+  padding: 8px 10px;
   border-bottom: 1px solid var(--cp-border);
   vertical-align: top;
 }
@@ -568,17 +568,17 @@ a:hover {
 }
 .glance-day a {
   font-weight: 700;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
 .glance-sub {
-  font-size: 0.76rem;
+  font-size: 0.75rem;
   color: var(--cp-text-muted);
   margin-top: 2px;
 }
 .glance-items {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--cp-text);
-  line-height: 1.5;
+  line-height: 1.45;
 }
 .grid-2 {
   display: grid;
@@ -593,13 +593,13 @@ a:hover {
 }
 .mini-box h3 {
   margin: 0 0 6px;
-  font-size: 0.96rem;
+  font-size: 0.94rem;
   color: var(--cp-accent);
 }
 .mini-box ul {
   margin: 0;
   padding-left: 18px;
-  font-size: 0.86rem;
+  font-size: 0.85rem;
   color: var(--cp-text-soft);
 }
 .mini-box li {
@@ -682,6 +682,6 @@ a:hover {
   }
   .stack-mobile td {
     border-bottom: none;
-    padding: 4px 0;
+    padding: 3px 0;
   }
 }
