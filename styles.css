@@ -279,23 +279,11 @@ a:hover {
   border-top: 1px solid var(--cp-border);
   padding: 6px 16px 12px;
 }
-.chk-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 9px 0;
-  border-bottom: 1px solid var(--cp-border);
-}
-.chk-item:last-child {
-  border-bottom: none;
-}
 .chk-item input[type="checkbox"] {
   width: 18px;
   height: 18px;
-  margin-top: 3px;
   accent-color: var(--cp-accent);
   cursor: pointer;
-  flex-shrink: 0;
 }
 .chk-item.done .chk-title {
   text-decoration: line-through;
