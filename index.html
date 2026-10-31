@@ -11,6 +11,11 @@
     const theme =
       param || saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "dark" : "dark");
     document.documentElement.setAttribute("data-theme", theme);
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js").catch(() => {});
+      });
+    }
   })();
 </script>
   <link rel="stylesheet" href="styles.css" />
@@ -163,12 +168,12 @@
             </li><li class="schedule-bullet">
               <div class="bullet-top">
                 <span class="stop-time">20:45</span>
-                <span class="stop-name">Downstairs 7-Eleven &amp; Shibuya Stream Riverwalk Snack Run</span>
+                <span class="stop-name">Night-1 Grocery &amp; Breakfast Stock-Up: LIFE Supermarket Shibuya Higashi (2-Min Walk, Open Till Midnight) + 1F 7-Eleven</span>
                 <span class="stop-phase">🏮 Sunset &amp; Night</span>
               </div>
-              <div class="stop-note">Stock your in-room 2-door freezer-fridge and microwave at the 1st-floor 7-Eleven (salmon or tuna rice balls, egg-salad sandwiches, hot pastries, and fruit) or grab a warm meal 2 minutes away along the Shibuya Stream riverwalk.</div>
-              <div class="stop-req"><strong>📋 Required:</strong> Nothing (walk right in and pay with Suica, Apple Pay, credit card, or cash).</div>
-              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=7-Eleven+or+Shibuya+Stream+restaurants+near+JR-East+Hotel+Mets+Shibuya" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=7-Eleven+or+Shibuya+Stream+restaurants+near+JR-East+Hotel+Mets+Shibuya" target="_blank" rel="noopener">🎬 TikTok</a></div>
+              <div class="stop-note">Walk 2 minutes east across Meiji-dori to LIFE Supermarket Shibuya Higashi (1-26-22 Higashi, open until 24:00 midnight) or Tokyu Store Shibuya Sakura Stage 2F (3-min walk, open until 22:00) to stock your in-room 2-door freezer-fridge and microwave for the next 5 mornings: Meiji 100% whole milk (with top carton notch) or Morinaga Creap dairy creamer, Starbucks Via / Blendy coffee sticks, Pasco Chojuku English muffins, Kiri cream cheese, plain Greek/Bulgaria yogurt (no gelatin), strawberries/bananas, salted boiled eggs, and frozen Nissui Yaki-Onigiri.</div>
+              <div class="stop-req"><strong>📋 Required:</strong> Nothing (walk right in and pay with Suica, Apple Pay, credit card, or cash; request free plates &amp; cutlery at JR Mets 3F front desk).</div>
+              <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=LIFE+Supermarket+Shibuya+Higashi+1-26-22+Higashi+Shibuya" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=LIFE+Supermarket+Shibuya+Higashi+or+Shibuya+Stream+restaurants" target="_blank" rel="noopener">🍽️ Nearby Food</a><a class="btn-pill" href="https://www.tiktok.com/search?q=LIFE+Supermarket+Shibuya+Higashi+or+Shibuya+Stream+restaurants" target="_blank" rel="noopener">🎬 TikTok</a><a class="btn-pill primary" href="tips.html#grocery-guide" target="_blank" rel="noopener">🎟️ Safe Grocery List</a></div>
             </li>
           </ul>
         </section><section class="day-card" id="day-thu-26">

@@ -11,6 +11,11 @@
     const theme =
       param || saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "dark" : "dark");
     document.documentElement.setAttribute("data-theme", theme);
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js").catch(() => {});
+      });
+    }
   })();
 </script>
   <link rel="stylesheet" href="styles.css" />
@@ -52,193 +57,350 @@
     <details class="chk-group" open>
           <summary>
             <span>📋 Remaining To-Do List (Chronological)</span>
-            <span class="chk-badge">14 Remaining</span>
+            <span class="chk-badge">15 Remaining</span>
           </summary>
-          <div class="chk-list">
-            <label class="chk-item" data-chk-id="chk-shinkansen">
-              <input type="checkbox" data-chk="chk-shinkansen" />
-              <div>
-                <div class="chk-title">Sat Oct 31 @ 8:00 PM CDT: Book Shinkansen Bullet Train (Tue Dec 1, ~11:30 AM Odawara → Tokyo)</div>
+          <div class="table-wrap">
+            <table class="clean-table stack-mobile">
+              <thead>
+                <tr>
+                  <th style="width:42px;text-align:center;">✓</th>
+                  <th>Checklist Item</th>
+                  <th style="width:165px;">Due Date</th>
+                  <th style="width:130px;">Completed Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="chk-item" data-chk-id="chk-shinkansen">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-shinkansen" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
+                <div class="chk-title">Book Shinkansen Bullet Train (Tue Dec 1, ~11:30 AM Odawara → Tokyo)</div>
                 <div class="chk-detail">Reserve 2 Ordinary Car seats — Car 12, Seats D &amp; E (Mt. Fuji side).</div>
                 <div class="action-row"><a class="btn-pill" href="https://smart-ex.jp/en/index.php" target="_blank" rel="noopener">🔗 Smart EX</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-tue-replace">
-              <input type="checkbox" data-chk="chk-tue-replace" />
-              <div>
-                <div class="chk-title">Decide Tue Dec 1 Afternoon Plan (14:40–17:30 After Samurai Museum)</div>
-                <div class="chk-detail">Pick teamLab Planets (~$28/pp) OR Kappabashi Knife Town + Yanaka Ginza / Shibuya PARCO ($0 entry).</div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Sat Oct 31, 8:00 PM CDT</td>
+              <td class="chk-comp-cell" data-comp-for="chk-shinkansen" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-tue-replace">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-tue-replace" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
+                <div class="chk-title">Decide Tue Dec 1 Afternoon Plan (14:35–17:30 After Samurai Museum)</div>
+                <div class="chk-detail">Pick Option A: teamLab Planets (~$32/pp, open now) OR Option B+D: Kappabashi Knife Town + Early Shibuya PARCO/Donki ($0 entry).</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.teamlab.art/e/planets/" target="_blank" rel="noopener">🔗 teamLab Planets</a><a class="btn-pill" href="https://www.kappabashi.or.jp/en/" target="_blank" rel="noopener">🔗 Kappabashi</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-apps-mine">
-              <input type="checkbox" data-chk="chk-apps-mine" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-tue-replace" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-apps-mine">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-apps-mine" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">Your iPhone: Install Smart EX, GO Taxi (Verify SMS in US), Payke &amp; Suica Eng</div>
                 <div class="chk-detail">Register GO Taxi with your US number now; use Payke to scan food barcodes; use Suica Eng to copy your 17-digit JE... Suica ID for Smart EX.</div>
                 <div class="action-row"><a class="btn-pill" href="https://apps.apple.com/us/app/go-taxi-app-for-japan/id1254341709" target="_blank" rel="noopener">🔗 GO Taxi</a><a class="btn-pill" href="https://apps.apple.com/us/app/payke-shopping-in-japan/id1040751212" target="_blank" rel="noopener">🔗 Payke Scanner</a><a class="btn-pill" href="https://smart-ex.jp/en/entraining/exapp/" target="_blank" rel="noopener">🔗 Smart EX App</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-org-mine">
-              <input type="checkbox" data-chk="chk-org-mine" />
-              <div>
-                <div class="chk-title">Your iPhone: Screenshot &amp; Heart (♡) Chef Card + Set Up &#x27;🇯🇵 JAPAN&#x27; Home Screen, Offline QR Album &amp; Shared Note</div>
-                <div class="chk-detail">Heart the No-Pork Chef Card in Photos, add this site to Home Screen, save all booking QRs into 1 offline album, bookmark live EMot URL, and verify Suica Express Transit is ON.</div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-apps-mine" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-offline-site-mine">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-offline-site-mine" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
+                <div class="chk-title">Your iPhone: Save Full Trip Website Offline (Safari &#x27;Save to Files&#x27; + Reading List + Home Screen)</div>
+                <div class="chk-detail">In Safari, open Itinerary, Checklist &amp; Tips → tap Share → Save to Files → &#x27;On My iPhone&#x27; (as Web Archive/PDF) + &#x27;Add to Reading List&#x27; so the entire site works in Airplane Mode.</div>
+                <div class="action-row"><a class="btn-pill" href="tips.html#phone-organization" target="_blank" rel="noopener">🔗 See Offline Site Steps</a></div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-offline-site-mine" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-org-mine">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-org-mine" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
+                <div class="chk-title">Your iPhone: Screenshot &amp; Heart (♡) Chef Card + Build Offline &#x27;🇯🇵 Japan QR&#x27; Photo Album &amp; Shared Note</div>
+                <div class="chk-detail">Heart the No-Pork Chef Card in Photos, save all booking QRs in chronological order into 1 offline album, pin the shared Note, and verify Suica Express Transit is ON.</div>
                 <div class="action-row"><a class="btn-pill" href="tips.html#phone-organization" target="_blank" rel="noopener">🔗 See Phone Setup Guide</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-suica-wife">
-              <input type="checkbox" data-chk="chk-suica-wife" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-org-mine" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-suica-wife">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-suica-wife" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">Wife&#x27;s iPhone: Add Apple Wallet Suica, Load ¥8,700 (~$57) &amp; Verify Express Transit ON</div>
                 <div class="chk-detail">Wallet → &#x27;+&#x27; → Transit Card → Japan → Suica → Load ¥8,700 (do outside 12:00–2:00 PM CDT).</div>
                 <div class="action-row"><a class="btn-pill" href="https://support.apple.com/en-us/108772" target="_blank" rel="noopener">🔗 Apple Suica Guide</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-esim-wife">
-              <input type="checkbox" data-chk="chk-esim-wife" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-suica-wife" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-esim-wife">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-esim-wife" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">Wife&#x27;s iPhone: Verify T-Mobile Plan Tier (Free 5G vs. $18 Airalo 10GB eSIM)</div>
                 <div class="chk-detail">Go5G Plus/Next &amp; Magenta MAX include free 5G; older plans throttle to 256kbps (get $18 Airalo eSIM).</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.airalo.com/japan-esim" target="_blank" rel="noopener">🔗 Airalo Japan ($18)</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-translate-offline-wife">
-              <input type="checkbox" data-chk="chk-translate-offline-wife" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-esim-wife" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-translate-offline-wife">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-translate-offline-wife" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">Wife&#x27;s iPhone: Download Offline Japanese (Google Translate) &amp; Offline Maps (Tokyo + Fuji/Hakone)</div>
                 <div class="chk-detail">Download Japanese (90MB) in Google Translate + save Tokyo and Mt. Fuji/Hakone offline in Google Maps.</div>
                 <div class="action-row"><a class="btn-pill" href="https://apps.apple.com/us/app/google-translate/id414706506" target="_blank" rel="noopener">🔗 Google Translate</a><a class="btn-pill" href="https://apps.apple.com/us/app/google-maps/id585027354" target="_blank" rel="noopener">🔗 Google Maps</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-apps-wife">
-              <input type="checkbox" data-chk="chk-apps-wife" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-translate-offline-wife" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-apps-wife">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-apps-wife" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">Wife&#x27;s iPhone: Install GO Taxi (Verify SMS in US), Payke &amp; Klook/Viator</div>
                 <div class="chk-detail">Register GO Taxi on her phone in the US + install Payke barcode scanner for checking snacks.</div>
                 <div class="action-row"><a class="btn-pill" href="https://apps.apple.com/us/app/go-taxi-app-for-japan/id1254341709" target="_blank" rel="noopener">🔗 GO Taxi</a><a class="btn-pill" href="https://apps.apple.com/us/app/payke-shopping-in-japan/id1040751212" target="_blank" rel="noopener">🔗 Payke Scanner</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-org-wife">
-              <input type="checkbox" data-chk="chk-org-wife" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-apps-wife" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-offline-site-wife">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-offline-site-wife" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
+                <div class="chk-title">Wife&#x27;s iPhone: Save Full Trip Website Offline (Safari &#x27;Save to Files&#x27; + Reading List + Home Screen)</div>
+                <div class="chk-detail">On her iPhone in Safari, save Itinerary, Checklist &amp; Tips to &#x27;On My iPhone&#x27; in Files + Reading List + Add to Home Screen so she has a 100% offline copy.</div>
+                <div class="action-row"><a class="btn-pill" href="tips.html#phone-organization" target="_blank" rel="noopener">🔗 See Offline Site Steps</a></div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-offline-site-wife" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-org-wife">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-org-wife" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">Wife&#x27;s iPhone: AirDrop Chef Card &amp; Offline QR Album + Set Up &#x27;🇯🇵 JAPAN&#x27; Home Screen &amp; Shared Note</div>
-                <div class="chk-detail">Heart the No-Pork Chef Card in her Photos, AirDrop the offline QR album, add this site to her Home Screen, and join the shared Apple Note.</div>
+                <div class="chk-detail">Heart the No-Pork Chef Card in her Photos, AirDrop the offline QR album, and accept the shared Apple Note.</div>
                 <div class="action-row"><a class="btn-pill" href="tips.html#phone-organization" target="_blank" rel="noopener">🔗 See Phone Setup Guide</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-sky">
-              <input type="checkbox" data-chk="chk-sky" />
-              <div>
-                <div class="chk-title">Fri Nov 13 @ 9:00 AM CST: Book SHIBUYA SKY Sunset Ticket (Sat Nov 28, 15:30–16:00 Entry)</div>
-                <div class="chk-detail">Opens 14 days out at midnight JST. Grab the 15:30–16:00 window for the 16:28 sunset.</div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-org-wife" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-sky">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-sky" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
+                <div class="chk-title">Book SHIBUYA SKY Sunset Ticket (Sat Nov 28, 15:30–16:00 Entry, ¥3,400/pp)</div>
+                <div class="chk-detail">Opens strictly 14 days out at midnight JST. Grab the 15:30–16:00 window for the 16:28 sunset.</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.shibuya-scramble-square.com/sky/ticket/" target="_blank" rel="noopener">🔗 SHIBUYA SKY</a><a class="btn-pill" href="https://www.klook.com/en-US/activity/70672-shibuya-sky-tokyo/" target="_blank" rel="noopener">🔗 Klook</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-fujiq-pass">
-              <input type="checkbox" data-chk="chk-fujiq-pass" />
-              <div>
-                <div class="chk-title">Tue Nov 24 @ 8:30 AM CST: Book Fuji-Q Priority Passes (Fri Nov 27 — Zokkon &amp; Takabisha)</div>
-                <div class="chk-detail">Opens 3 days out. Buy skip-the-line passes for Zokkon (13:00–14:00) and Takabisha (14:00–15:00).</div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Fri Nov 13, 9:00 AM CST</td>
+              <td class="chk-comp-cell" data-comp-for="chk-sky" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-fujiq-pass">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-fujiq-pass" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
+                <div class="chk-title">Book Fuji-Q Priority Passes (Fri Nov 27 — Zokkon 13:00 &amp; Takabisha 14:00, ¥2,600/ride)</div>
+                <div class="chk-detail">Opens strictly 3 days out at 18:00 JST (3:00 AM CST / 8:30 AM CST reminder).</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.fujiq.jp/en/ticket/priority.html" target="_blank" rel="noopener">🔗 Fuji-Q Priority</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-vjw">
-              <input type="checkbox" data-chk="chk-vjw" />
-              <div>
-                <div class="chk-title">Nov 19–24: Complete Visit Japan Web QR Codes (Immigration &amp; Customs for Both Travelers)</div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Tue Nov 24, 3:00 AM CST</td>
+              <td class="chk-comp-cell" data-comp-for="chk-fujiq-pass" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-vjw">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-vjw" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
+                <div class="chk-title">Complete Visit Japan Web QR Codes (Immigration &amp; Customs for Both Travelers)</div>
                 <div class="chk-detail">Register both travelers online and save screenshots of the two QR codes into your offline Japan album.</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.digital.go.jp/en/policies/visit_japan_web" target="_blank" rel="noopener">🔗 Visit Japan Web</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-weather">
-              <input type="checkbox" data-chk="chk-weather" />
-              <div>
-                <div class="chk-title">Nov 23 (48-Hr Check): Check Mt. Fuji Clear-Sky Forecast (Thu Nov 26 Takao vs. Fri Nov 27 Fuji)</div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Nov 19–24, 2026</td>
+              <td class="chk-comp-cell" data-comp-for="chk-vjw" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-weather">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-weather" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
+                <div class="chk-title">Check 48-Hr Mt. Fuji Clear-Sky Forecast (Thu Nov 26 Takao vs. Fri Nov 27 Fuji)</div>
                 <div class="chk-detail">Highway bus tickets can be refunded online up until 08:05 AM on Fri Nov 27 if weather calls for swapping Thu &amp; Fri.</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.takaotozan.co.jp/timeprice/" target="_blank" rel="noopener">🔗 Takao Cable Car</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-pack">
-              <input type="checkbox" data-chk="chk-pack" />
-              <div>
-                <div class="chk-title">Nov 24 (Final Pack): Pack Physical Credit Card Ending in 9554, Passports, Warm Layers &amp; Check Meds</div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Mon Nov 23, 2026</td>
+              <td class="chk-comp-cell" data-comp-for="chk-weather" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-pack">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-pack" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
+                <div class="chk-title">Pack Physical Credit Card Ending in 9554, Passports, Warm Layers &amp; Check Meds</div>
                 <div class="chk-detail">Physical card 9554 is required for Romancecar #00058; pack gloves/windproof jacket for Fuji/Hakone; turn ON Data Roaming on landing &amp; withdraw ¥15,000 cash at Haneda 7-Eleven ATM.</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.ncd.mhlw.go.jp/en/application2.html" target="_blank" rel="noopener">🔗 MHLW Medication Rules</a></div>
-              </div>
-            </label>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Tue Nov 24, 2026</td>
+              <td class="chk-comp-cell" data-comp-for="chk-pack" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-grocery-stockup">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-grocery-stockup" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
+                <div class="chk-title">Night-1 Grocery Stock-Up at LIFE Supermarket Shibuya Higashi (2-Min Walk, Open Till Midnight)</div>
+                <div class="chk-detail">Stock your JR Mets room fridge/freezer &amp; microwave with milk/Morinaga Creap, Pasco English muffins, plain Greek/Bulgaria yogurt, fruit, boiled eggs &amp; frozen Yaki-Onigiri.</div>
+                <div class="action-row"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=LIFE+Supermarket+Shibuya+Higashi+1-26-22+Higashi" target="_blank" rel="noopener">🔗 LIFE Shibuya Higashi Map</a><a class="btn-pill" href="tips.html#grocery-guide" target="_blank" rel="noopener">🔗 See Safe Shopping List</a></div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Wed Nov 25, 8:45 PM JST</td>
+              <td class="chk-comp-cell" data-comp-for="chk-grocery-stockup" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr>
+              </tbody>
+            </table>
           </div>
         </details><details class="chk-group">
           <summary>
             <span>✅ 100% Completed &amp; Purchased Archive (Tap to View)</span>
             <span class="chk-badge">11 Done ✅</span>
           </summary>
-          <div class="chk-list">
-            <label class="chk-item" data-chk-id="chk-suica-mine">
-              <input type="checkbox" data-chk="chk-suica-mine" />
-              <div>
+          <div class="table-wrap">
+            <table class="clean-table stack-mobile">
+              <thead>
+                <tr>
+                  <th style="width:42px;text-align:center;">✓</th>
+                  <th>Checklist Item</th>
+                  <th style="width:165px;">Due Date</th>
+                  <th style="width:130px;">Completed Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="chk-item" data-chk-id="chk-suica-mine">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-suica-mine" data-default-comp="Oct 28, 2026" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">✅ Your iPhone Suica: Loaded ¥8,700 (~$57) in Apple Wallet</div>
                 <div class="chk-detail">Purchased &amp; loaded ¥8,700 on your iPhone.</div>
                 
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-esim-mine">
-              <input type="checkbox" data-chk="chk-esim-mine" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-suica-mine" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);">Oct 28, 2026</td>
+            </tr><tr class="chk-item" data-chk-id="chk-esim-mine">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-esim-mine" data-default-comp="Oct 30, 2026" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">✅ Your iPhone 5G Plan Verified: Xfinity Premium Unlimited Includes 10GB 5G + Talk/Text ($0 Extra)</div>
                 <div class="chk-detail">Confirmed included on your existing Xfinity Mobile plan.</div>
                 
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-translate-offline-mine">
-              <input type="checkbox" data-chk="chk-translate-offline-mine" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-esim-mine" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);">Oct 30, 2026</td>
+            </tr><tr class="chk-item" data-chk-id="chk-translate-offline-mine">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-translate-offline-mine" data-default-comp="Oct 30, 2026" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">✅ Your iPhone Offline Downloads: Offline Japanese (Google Translate) + Tokyo &amp; Mt. Fuji/Hakone Maps</div>
                 <div class="chk-detail">Downloaded on your iPhone in Google Translate &amp; Google Maps.</div>
                 
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-romancecar">
-              <input type="checkbox" data-chk="chk-romancecar" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-translate-offline-mine" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);">Oct 30, 2026</td>
+            </tr><tr class="chk-item" data-chk-id="chk-romancecar">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-romancecar" data-default-comp="Oct 30, 2026" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">✅ Mon Nov 30 (10:00–11:27): Odakyu Romancecar &#x27;Hakone 3 (GSE)&#x27; (Car 03, Seats 9C &amp; 9D · #00058) + EMot 2-Day Group Freepass</div>
                 <div class="chk-detail">Both tickets purchased &amp; paid (¥2,300 Romancecar #00058 + EMot 2-Day Group Freepass from Shinjuku).</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.emot-tickets.jp/" target="_blank" rel="noopener">🔗 EMot Freepass</a><a class="btn-pill" href="https://www.web-odakyu.com/e-romancecar/?language=en" target="_blank" rel="noopener">🔗 e-Romancecar</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-hotel-shinjuku">
-              <input type="checkbox" data-chk="chk-hotel-shinjuku" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Oct 30, 2026</td>
+              <td class="chk-comp-cell" data-comp-for="chk-romancecar" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);">Oct 30, 2026</td>
+            </tr><tr class="chk-item" data-chk-id="chk-hotel-shinjuku">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-hotel-shinjuku" data-default-comp="Oct 28, 2026" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">✅ Tokyo Hotels: JR-East Hotel Mets Shibuya Residential Style (Nov 25–30, $1,213) + lyf Shibuya (Dec 1–2, $194)</div>
                 <div class="chk-detail">Both Shibuya hotel reservations booked and confirmed ($1,407 total with tax).</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.hotelmets.jp/en/shibuya/stay.html" target="_blank" rel="noopener">🔗 JR Mets Shibuya</a><a class="btn-pill" href="https://www.discoverasr.com/en/lyf/japan/lyf-shibuya-tokyo" target="_blank" rel="noopener">🔗 lyf Shibuya</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-hotel-ryokan">
-              <input type="checkbox" data-chk="chk-hotel-ryokan" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-hotel-shinjuku" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);">Oct 28, 2026</td>
+            </tr><tr class="chk-item" data-chk-id="chk-hotel-ryokan">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-hotel-ryokan" data-default-comp="Oct 30, 2026" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">✅ Hakone Ryokan: Mizunoto Suikanosho Hinoki Balcony Room (Mon Nov 30–Tue Dec 1, $380) + Backup Canceled</div>
                 <div class="chk-detail">Mizunoto booked ($380 w/ tax) and Susukinohara backup hold ($224) canceled.</div>
                 <div class="action-row"><a class="btn-pill" href="https://dormy-hotels.com/resort/hotels/mizunoto/rooms/" target="_blank" rel="noopener">🔗 Mizunoto Rooms</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-fuji-bus">
-              <input type="checkbox" data-chk="chk-fuji-bus" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-hotel-ryokan" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);">Oct 30, 2026</td>
+            </tr><tr class="chk-item" data-chk-id="chk-fuji-bus">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-fuji-bus" data-default-comp="Oct 27, 2026" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">✅ Fri Nov 27: Mt. Fuji Highway Coaches — 08:15 Outbound (Bus 1151) &amp; 16:18 Return (Bus 1118)</div>
                 <div class="chk-detail">Both highway bus reservations booked on highwaybus.com.</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.highwaybus.com/gp/inbound/inbPlanList?lineId=110&amp;onStationCd=001&amp;offStationCd=064&amp;lang=EN" target="_blank" rel="noopener">🔗 highwaybus.com</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-sun-sushi">
-              <input type="checkbox" data-chk="chk-sun-sushi" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Oct 27, 2026</td>
+              <td class="chk-comp-cell" data-comp-for="chk-fuji-bus" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);">Oct 27, 2026</td>
+            </tr><tr class="chk-item" data-chk-id="chk-sun-sushi">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-sun-sushi" data-default-comp="Oct 27, 2026" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">✅ Sun Nov 29 (12:00–13:20): Hands-On Sushi-Making Class in Asakusa</div>
                 <div class="chk-detail">Booked &amp; paid on Viator (217172P1).</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.viator.com/tours/Asakusa/Temari-Sushi-Experience/d59194-217172P1" target="_blank" rel="noopener">🔗 Viator 217172P1</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-sun-kimono">
-              <input type="checkbox" data-chk="chk-sun-kimono" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-sun-sushi" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);">Oct 27, 2026</td>
+            </tr><tr class="chk-item" data-chk-id="chk-sun-kimono">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-sun-kimono" data-default-comp="Oct 27, 2026" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">✅ Sun Nov 29 (13:30–15:45): Maikoya Asakusa Silk Kimono + Matcha Tea Ceremony ($105)</div>
                 <div class="chk-detail">Booked &amp; paid on Viator (51440P108).</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.viator.com/tours/Asakusa/Tea-Ceremony-and-Kimono-Experience-Tokyo-Maikoya/d59194-51440P108" target="_blank" rel="noopener">🔗 Viator 51440P108</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-sun-sumo">
-              <input type="checkbox" data-chk="chk-sun-sumo" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-sun-kimono" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);">Oct 27, 2026</td>
+            </tr><tr class="chk-item" data-chk-id="chk-sun-sumo">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-sun-sumo" data-default-comp="Oct 27, 2026" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">✅ Sun Nov 29 (17:30–19:15): Seated Live Sumo Show &amp; Chicken Hot-Pot Dinner (Shinjuku)</div>
                 <div class="chk-detail">Booked &amp; paid on Viator (5610033P1).</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.viator.com/tours/Tokyo/Tokyo-Shinjuku-Sumo-Show-Experience-with-Photo-and-Drinks/d334-5610033P1" target="_blank" rel="noopener">🔗 Viator 5610033P1</a></div>
-              </div>
-            </label><label class="chk-item" data-chk-id="chk-tue-samurai">
-              <input type="checkbox" data-chk="chk-tue-samurai" />
-              <div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-sun-sumo" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);">Oct 27, 2026</td>
+            </tr><tr class="chk-item" data-chk-id="chk-tue-samurai">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-tue-samurai" data-default-comp="Oct 27, 2026" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
                 <div class="chk-title">✅ Tue Dec 1 (13:30–14:30): Samurai &amp; Ninja Museum Guided Tour in Asakusa ($45)</div>
                 <div class="chk-detail">Booked &amp; paid on Viator (51440P80).</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.viator.com/tours/Asakusa/Samurai-Experience-and-Guided-Tour-of-Samurai-Ninja-Museum/d59194-51440P80" target="_blank" rel="noopener">🔗 Viator 51440P80</a></div>
-              </div>
-            </label>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
+              <td class="chk-comp-cell" data-comp-for="chk-tue-samurai" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);">Oct 27, 2026</td>
+            </tr>
+              </tbody>
+            </table>
           </div>
         </details>
   </main>
@@ -261,18 +423,32 @@
     function updateChecklist() {
       let done = 0;
       boxes.forEach((b) => {
-        const key = "jp_v2_" + b.getAttribute("data-chk");
+        const id = b.getAttribute("data-chk");
+        const key = "jp_v2_" + id;
+        const dateKey = "jp_v2_date_" + id;
         const checked = localStorage.getItem(key) === "1";
         b.checked = checked;
         b.closest(".chk-item").classList.toggle("done", checked);
+        const compCell = document.querySelector(`[data-comp-for="${id}"]`);
+        if (compCell) {
+          const defComp = b.getAttribute("data-default-comp") || "";
+          const savedComp = localStorage.getItem(dateKey) || "";
+          compCell.textContent = checked ? (defComp || savedComp || "Oct 31, 2026") : "";
+        }
         if (checked) done++;
       });
       if (prog) prog.textContent = `${done} / ${boxes.length} completed (saved on this device)`;
     }
     boxes.forEach((b) => {
       b.addEventListener("change", () => {
-        const key = "jp_v2_" + b.getAttribute("data-chk");
+        const id = b.getAttribute("data-chk");
+        const key = "jp_v2_" + id;
+        const dateKey = "jp_v2_date_" + id;
         localStorage.setItem(key, b.checked ? "1" : "0");
+        if (b.checked && !b.getAttribute("data-default-comp")) {
+          const today = new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+          localStorage.setItem(dateKey, today);
+        }
         updateChecklist();
       });
     });

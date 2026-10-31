@@ -11,6 +11,11 @@
     const theme =
       param || saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "dark" : "dark");
     document.documentElement.setAttribute("data-theme", theme);
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js").catch(() => {});
+      });
+    }
   })();
 </script>
   <link rel="stylesheet" href="styles.css" />
@@ -228,9 +233,10 @@
           </ul>
         </div>
         <div class="mini-box">
-          <h3>🏠 2. One Dedicated "'🇯🇵 JAPAN" Home Screen + Web App</h3>
+          <h3>🏠 2. Save Full Website Offline + One "'🇯🇵 JAPAN" Home Screen</h3>
           <ul>
-            <li><strong>Add This Trip Site to Your Home Screen:</strong> Open <code>https://shaeelafsar.github.io/japan-trip-2026/</code> in Safari → tap <strong>Share</strong> → <strong>Add to Home Screen</strong>. It launches like a native app with your full schedule, booking numbers, and Japanese Chef Card.</li>
+            <li><strong>100% Offline Website Backup (Do on Both iPhones):</strong> Open each tab of this site in Safari → tap <strong>Share</strong> → tap <strong>Options</strong> (at top) → select <strong>Web Archive</strong> (or <strong>PDF</strong>) → tap <strong>Save to Files → On My iPhone</strong>, AND tap <strong>Add to Reading List</strong>. Plus, this site includes an automatic offline Service Worker cache so once opened in Safari, all pages &amp; photos stay cached in Airplane Mode!</li>
+            <li><strong>Add Web App Icon to Home Screen:</strong> In Safari → tap <strong>Share</strong> → <strong>Add to Home Screen</strong>.</li>
             <li><strong>Create 1 Single "'🇯🇵 JAPAN" Page:</strong> Drag 8 icons onto one dedicated Home Screen page on both phones: <strong>Google Maps, Google Translate, Apple Wallet, Camera, Photos, Japan 2026 Web App, GO Taxi, and Payke</strong>.</li>
           </ul>
         </div>
@@ -260,6 +266,46 @@
               </ul>
             </li>
             <li><strong>Calling Each Other in Japan:</strong> Always call each other via <strong>FaceTime Audio, WhatsApp Call, or iMessage Audio</strong> (uses data = $0) rather than standard cellular voice so T-Mobile doesn't charge per-minute roaming voice fees.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-card" id="grocery-guide">
+      <h2>6. Shibuya Grocery Stores &amp; 100% Pork/Alcohol-Free Room Breakfast List</h2>
+      <p>Your <strong>JR-East Hotel Mets Shibuya (Residential Style)</strong> room includes a private <strong>microwave, 2-door refrigerator-freezer, electric kettle, and mugs</strong>, plus <strong>free rental plates &amp; cutlery at the 3F front desk</strong> and a <strong>free 3F freshly brewed espresso/tea lounge</strong>. Stock up on Night 1 (Wed Nov 25 at 20:45) at these verified stores right outside the hotel:</p>
+      <div class="grid-2">
+        <div class="mini-box">
+          <h3>🛒 1. Closest Supermarkets to JR Mets Shibuya</h3>
+          <ul>
+            <li><strong>LIFE Supermarket Shibuya Higashi (`ライフ 渋谷東店`, 2–3 min walk, Open `09:30–24:00` Midnight):</strong> <code>1-26-22 Higashi</code> (just 180m east across Meiji-dori). Massive multi-floor supermarket with full dairy/creamer aisle, fresh fruit, bakery, and frozen microwavable meals—perfect for your Night-1 arrival at 20:45!</li>
+            <li><strong>Tokyu Store (`渋谷サクラステージ 2F`, 3 min walk, Open `08:00–22:00` Weekdays):</strong> Directly across the JR New South Gate deck; right next to <strong>Kaldi Coffee Farm</strong> (`10:00–21:00`, imported coffee &amp; Western snacks).</li>
+            <li><strong>DEAN &amp; DELUCA (`Shibuya Stream 2F`, 2 min walk, `07:00–22:00`) &amp; 1F 7-Eleven (`24 Hours` downstairs):</strong> Easy early-morning pastries or 24-hour grab-and-go.</li>
+          </ul>
+        </div>
+        <div class="mini-box">
+          <h3>☕ 2. Coffee &amp; Creamer (Real Dairy vs. Half-and-Half)</h3>
+          <ul>
+            <li><strong>Morinaga Creap (`森永 クリープ` — Yellow Cap):</strong> Japan's only <strong>100% pure dairy powder creamer</strong> (zero vegetable oil or animal emulsifiers).</li>
+            <li><strong>Sujahta Premium Pods (`スジャータ 褐色の恋人`):</strong> Rich liquid coffee creamer pods.</li>
+            <li><strong>100% Pure Whole Milk (`明治おいしい牛乳` / `よつ葉牛乳`):</strong> Look for the <strong>half-moon notch cut into the top edge of the carton</strong> (Japanese law reserves that notch strictly for 100% pure cow's milk). Mix with a small carton of <strong>Takanashi 35% Fresh Cream (`タカナシ純生クリーム`)</strong> for true US-style rich half-and-half!</li>
+            <li><strong>Instant Coffee Sticks:</strong> <strong>Starbucks Via</strong>, <strong>AGF Blendy Stick</strong>, or <strong>UCC The Blend 114/117</strong> (or grab free brewed espresso from the 3F hotel lounge).</li>
+          </ul>
+        </div>
+        <div class="mini-box">
+          <h3>🥐 3. Safe Room Breakfast Staples (Zero Pork / Zero Gelatin)</h3>
+          <ul>
+            <li><strong>Bread &amp; Muffins:</strong> <strong>Pasco Chojuku (`パスコ 超熟`)</strong> English Muffins or 6-slice shokupan toast (uses butter/veg oil—100% free of lard shortening). Pair with <strong>Kiri Cream Cheese</strong> or <strong>Yotsuba Salted Butter</strong>.</li>
+            <li><strong>Yogurt (⚠️ Gelatin Rule):</strong> Buy <strong>Plain Greek / Bulgaria Yogurt</strong> (<strong>Morinaga Partheno Plain `パルテノ`</strong>, <strong>Meiji Bulgaria LB81 Plain</strong>, or <strong>Danone Oikos Plain</strong>) + fresh <strong>strawberries (`いちご`), bananas, or Mikan oranges</strong>. <em>Avoid pre-mixed fruit-on-the-bottom yogurts, which often use pork gelatin (`ゼラチン`).</em></li>
+            <li><strong>Protein &amp; Granola:</strong> 7-Eleven <strong>Salted Soft-Boiled Eggs (`味付き半熟ゆでたまご` — seasoned only with salt, zero mirin)</strong> and <strong>Calbee Frugra Granola (`フルグラ`)</strong>.</li>
+          </ul>
+        </div>
+        <div class="mini-box">
+          <h3>🍱 4. Safe Microwavable Meals &amp; 5-Second Label Check</h3>
+          <ul>
+            <li><strong>Safe Chilled Onigiri (Heat 20s in Microwave):</strong> <strong>Red Salmon (`紅しゃけ`)</strong>, <strong>Tuna Mayo (`ツナマヨ`)</strong>, <strong>Salted (`塩むすび`)</strong>, or <strong>Plum (`梅`)</strong>.</li>
+            <li><strong>Safe Frozen Microwave Meals (Pull-Out Freezer):</strong> <strong>Nissui Frozen Grilled Soy Rice Balls (`焼きおにぎり`)</strong> (90s in microwave; bonito/soy dashi, zero pork) and <strong>TableMark Frozen Sanuki Udon</strong> + <strong>Higashimaru Udon Soup Powder</strong> (bonito/kelp/soy, zero pork or alcohol).</li>
+            <li><strong>5-Second Label Check (Or Scan Barcode with Payke):</strong> Check the bottom allergy box (`一部に〇〇を含む`) and reject if you see <strong>`豚肉` (Pork)</strong>, <strong>`ゼラチン` (Gelatin)</strong>, <strong>`ラード` (Lard)</strong>, <strong>`みりん` (Mirin)</strong>, <strong>`料理酒/清酒` (Cooking Sake)</strong>, or <strong>`酒精` (Alcohol)</strong>.</li>
           </ul>
         </div>
       </div>
