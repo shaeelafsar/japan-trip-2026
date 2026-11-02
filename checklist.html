@@ -44,14 +44,14 @@
       <p class="hero-sub">One clean list of what is left to do—all completed bookings are tucked into the archive drawer below.</p>
       <div class="pill-row">
         <span class="stat-pill accent" id="chkProgress">18 / 27 completed</span>
-        <span class="stat-pill">⏭️ Tonight (Sat Oct 31 @ 8 PM CDT): Book Shinkansen</span>
+        <span class="stat-pill">⏭️ Next Action (Mon Nov 9): Agoda 2:00 PM Pickup Follow-Up</span>
       </div>
     </section>
 
     <div class="chef-card">
-      <div class="chef-card-title">🪪 Show This Card at Any Restaurant or Food Stall (Strictly No Pork &amp; No Alcohol)</div>
-      <div class="chef-jp">豚肉・ベーコン・ハム・ラード・豚骨スープ、およびアルコール（お酒・みりん）は一切食べられません。鶏肉・牛肉・魚介類・野菜の料理をお願いします。</div>
-      <div class="chk-detail">"We cannot consume any pork, bacon, ham, lard, pork-bone broth (tonkotsu), or alcohol. Chicken, beef, seafood, and vegetable dishes are great."</div>
+      <div class="chef-card-title">🪪 Polite Restaurant &amp; Food Stall Card (No Pork &amp; No Alcohol)</div>
+      <div class="chef-jp">恐れ入りますが、豚肉（ベーコン・ハム・豚骨出汁・ラード等）とアルコール（お酒）を控えております。鶏肉・牛肉・魚介・野菜の料理をご案内いただけますと幸いです。ありがとうございます！</div>
+      <div class="chk-detail">"Excuse us for the trouble, but we kindly refrain from pork (bacon, ham, pork broth, lard, etc.) and alcohol. We would be so grateful if you could guide us to chicken, beef, seafood, or vegetable dishes. Thank you very much!"</div>
     </div>
 
     <details class="chk-group" open>
@@ -403,7 +403,7 @@
 
     localStorage.removeItem("jp_v2_chk-kart");
     localStorage.removeItem("jp_v2_chk-idp");
-    const defaultBooked = ["chk-tue-replace", "chk-suica-mine", "chk-esim-mine", "chk-translate-offline-mine", "chk-romancecar", "chk-hotel-shinjuku", "chk-hotel-ryokan", "chk-fuji-bus", "chk-sun-sushi", "chk-sun-sumo", "chk-sun-kimono", "chk-sat-matcha", "chk-tue-samurai"];
+    const defaultBooked = ["chk-tue-replace", "chk-suica-mine", "chk-suica-wife", "chk-esim-mine", "chk-apps-mine", "chk-apps-wife", "chk-translate-offline-mine", "chk-translate-offline-wife", "chk-agoda-hnd-pickup", "chk-departure-transport", "chk-shinkansen", "chk-romancecar", "chk-hotel-shinjuku", "chk-hotel-ryokan", "chk-fuji-bus", "chk-sun-sushi", "chk-sun-sumo", "chk-sun-kimono", "chk-sat-matcha", "chk-tue-samurai"];
     defaultBooked.forEach((id) => {
       localStorage.setItem("jp_v2_" + id, "1");
     });
