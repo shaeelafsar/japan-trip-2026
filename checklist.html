@@ -57,7 +57,7 @@
     <details class="chk-group" open>
           <summary>
             <span>📋 Remaining To-Do List (Sorted by Due Date → Logical Execution Order)</span>
-            <span class="chk-badge">9 Remaining</span>
+            <span class="chk-badge">8 Remaining</span>
           </summary>
           <div class="table-wrap">
             <table class="clean-table">
@@ -70,18 +70,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr class="chk-item" data-chk-id="chk-agoda-followup">
-              <td style="width:42px;text-align:center;vertical-align:middle;">
-                <input type="checkbox" data-chk="chk-agoda-followup" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
-              </td>
-              <td>
-                <div class="chk-title">Follow Up on Agoda Departure Transfer Time Change (Wed Dec 2: Confirm 2:40 PM → 2:00 PM)</div>
-                <div class="chk-detail">Verify Agoda Support confirmed moving your Wed Dec 2 lyf Shibuya → Haneda T3 pickup from 2:40 PM to 2:00 PM (14:00) and sent an updated voucher; follow up if no response.</div>
-                <div class="action-row"><a class="btn-pill" href="https://www.agoda.com/" target="_blank" rel="noopener">🔗 Agoda Bookings</a></div>
-              </td>
-              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Mon Nov 9, 2026</td>
-              <td class="chk-comp-cell" data-comp-for="chk-agoda-followup" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
-            </tr><tr class="chk-item" data-chk-id="chk-sky">
+                <tr class="chk-item" data-chk-id="chk-sky">
               <td style="width:42px;text-align:center;vertical-align:middle;">
                 <input type="checkbox" data-chk="chk-sky" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
               </td>
@@ -176,7 +165,7 @@
         </details><details class="chk-group">
           <summary>
             <span>✅ 100% Completed &amp; Purchased Archive (Sorted by Due Date → Completed Date)</span>
-            <span class="chk-badge">18 Done ✅</span>
+            <span class="chk-badge">19 Done ✅</span>
           </summary>
           <div class="table-wrap">
             <table class="clean-table">
@@ -222,6 +211,17 @@
               </td>
               <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Oct 31, 2026</td>
               <td class="chk-comp-cell" data-comp-for="chk-shinkansen" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);">Nov 2, 2026</td>
+            </tr><tr class="chk-item" data-chk-id="chk-agoda-followup">
+              <td style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-agoda-followup" data-default-comp="Nov 11, 2026" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td>
+                <div class="chk-title">✅ Wed Dec 2: Agoda Departure Transfer Time Change Confirmed (2:40 PM → 2:00 PM)</div>
+                <div class="chk-detail">Confirmed by Agoda Support—Wed Dec 2 lyf Shibuya Tokyo → Haneda T3 private transfer pickup is officially updated to 2:00 PM (14:00).</div>
+                <div class="action-row"><a class="btn-pill" href="https://www.agoda.com/" target="_blank" rel="noopener">🔗 Agoda Bookings</a></div>
+              </td>
+              <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Nov 9, 2026</td>
+              <td class="chk-comp-cell" data-comp-for="chk-agoda-followup" style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-success);">Nov 11, 2026</td>
             </tr><tr class="chk-item" data-chk-id="chk-sun-kimono">
               <td style="width:42px;text-align:center;vertical-align:middle;">
                 <input type="checkbox" data-chk="chk-sun-kimono" data-default-comp="Oct 27, 2026" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
@@ -337,8 +337,8 @@
                 <input type="checkbox" data-chk="chk-departure-transport" data-default-comp="Nov 2, 2026" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
               </td>
               <td>
-                <div class="chk-title">✅ Wed Dec 2 (2:00 PM Requested): Departure Airport Transport — Agoda Private Transfer (lyf Shibuya Tokyo → Haneda T3, $55)</div>
-                <div class="chk-detail">Booked &amp; paid on Agoda ($55 private transfer from lyf Shibuya Tokyo to Haneda Terminal 3, 2 Adults; 2:00 PM pickup requested).</div>
+                <div class="chk-title">✅ Wed Dec 2 (2:00 PM Confirmed): Departure Airport Transport — Agoda Private Transfer (lyf Shibuya Tokyo → Haneda T3, $55)</div>
+                <div class="chk-detail">Booked, paid &amp; 2:00 PM (14:00) pickup confirmed on Agoda ($55 private transfer from lyf Shibuya Tokyo to Haneda Terminal 3, 2 Adults).</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.agoda.com/" target="_blank" rel="noopener">🔗 Agoda Bookings</a></div>
               </td>
               <td style="white-space:nowrap;font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">N/A</td>
@@ -403,7 +403,7 @@
 
     localStorage.removeItem("jp_v2_chk-kart");
     localStorage.removeItem("jp_v2_chk-idp");
-    const defaultBooked = ["chk-tue-replace", "chk-suica-mine", "chk-suica-wife", "chk-esim-mine", "chk-apps-mine", "chk-apps-wife", "chk-translate-offline-mine", "chk-translate-offline-wife", "chk-agoda-hnd-pickup", "chk-departure-transport", "chk-shinkansen", "chk-romancecar", "chk-hotel-shinjuku", "chk-hotel-ryokan", "chk-fuji-bus", "chk-sun-sushi", "chk-sun-sumo", "chk-sun-kimono", "chk-sat-matcha", "chk-tue-samurai"];
+    const defaultBooked = ["chk-tue-replace", "chk-suica-mine", "chk-suica-wife", "chk-esim-mine", "chk-apps-mine", "chk-apps-wife", "chk-translate-offline-mine", "chk-translate-offline-wife", "chk-agoda-hnd-pickup", "chk-departure-transport", "chk-agoda-followup", "chk-shinkansen", "chk-romancecar", "chk-hotel-shinjuku", "chk-hotel-ryokan", "chk-fuji-bus", "chk-sun-sushi", "chk-sun-sumo", "chk-sun-kimono", "chk-sat-matcha", "chk-tue-samurai"];
     defaultBooked.forEach((id) => {
       localStorage.setItem("jp_v2_" + id, "1");
     });
