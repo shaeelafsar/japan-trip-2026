@@ -67,6 +67,8 @@ body {
   font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -563,17 +565,20 @@ a:hover {
   font-weight: 700;
 }
 .glance-day {
-  white-space: nowrap;
-  width: 118px;
+  width: 165px;
+  white-space: normal;
 }
 .glance-day a {
   font-weight: 700;
   font-size: 0.9rem;
+  white-space: nowrap;
 }
 .glance-sub {
   font-size: 0.75rem;
   color: var(--cp-text-muted);
   margin-top: 2px;
+  white-space: normal;
+  line-height: 1.3;
 }
 .glance-items {
   font-size: 0.88rem;
@@ -590,6 +595,8 @@ a:hover {
   border: 1px solid var(--cp-border);
   border-radius: 0.625rem;
   padding: 12px;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 .mini-box h3 {
   margin: 0 0 6px;
@@ -649,39 +656,117 @@ a:hover {
 @media (max-width: 640px) {
   .top-nav-inner { padding: 8px 12px; gap: 6px; }
   .brand { font-size: 0.95rem; }
-  .nav-tab { padding: 5px 9px; font-size: 0.8rem; }
+  .nav-links { width: 100%; justify-content: space-between; gap: 4px; }
+  .nav-tab { padding: 5px 8px; font-size: 0.78rem; text-align: center; flex: 1 1 auto; }
   .theme-btn { padding: 5px 8px; font-size: 0.76rem; }
-  .day-bar { top: 47px; }
-  .day-bar-inner { padding: 6px 12px; gap: 6px; }
-  .day-pill { padding: 5px 10px; font-size: 0.8rem; }
+  .day-bar { white-space: normal; overflow-x: hidden; }
+  .day-bar-inner { padding: 6px 10px; gap: 5px; flex-wrap: wrap; }
+  .day-pill { padding: 4px 8px; font-size: 0.76rem; }
   .container { padding: 14px 12px 48px; }
   .hero { padding: 14px; }
-  .hero h1 { font-size: 1.25rem; }
+  .hero h1 { font-size: 1.22rem; }
   .hero-sub { font-size: 0.88rem; }
+  .stat-pill { font-size: 0.77rem; white-space: normal; line-height: 1.35; }
   .day-card, .info-card { padding: 14px; }
-  .day-title { font-size: 1.1rem; }
-  .day-gallery { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-  .photo-item img { height: 120px; }
-  .photo-cap { font-size: 0.75rem; padding: 6px 6px; }
+  .day-title { font-size: 1.08rem; }
+  .day-gallery, .day-gallery.cols-2 { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .photo-item img { height: 115px; }
+  .photo-cap { font-size: 0.74rem; padding: 6px 6px; }
   .schedule-list { padding-left: 0; list-style: none; }
   .schedule-bullet { padding: 10px; }
-  .btn-pill { padding: 5px 10px; font-size: 0.78rem; }
-  .glance-day { width: 92px; padding: 8px 8px; }
-  .glance-items { font-size: 0.84rem; padding: 8px 8px; }
+  .btn-pill { padding: 5px 10px; font-size: 0.77rem; }
+  .grid-2 { grid-template-columns: 1fr; }
+  .table-wrap { overflow-x: visible; }
   .stack-mobile thead { display: none; }
   .stack-mobile, .stack-mobile tbody, .stack-mobile tr, .stack-mobile td {
     display: block;
     width: 100%;
+    min-width: 0;
   }
   .stack-mobile tr {
     border: 1px solid var(--cp-border);
     border-radius: 0.625rem;
     margin-bottom: 10px;
-    padding: 8px 10px;
+    padding: 10px 12px;
     background: var(--cp-bg-elevated);
   }
   .stack-mobile td {
     border-bottom: none;
     padding: 3px 0;
+  }
+  .stack-mobile td[data-label]::before {
+    content: attr(data-label) ": ";
+    font-weight: 700;
+    color: var(--cp-text-muted);
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .glance-day {
+    width: 100%;
+    padding: 0 0 6px !important;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--cp-border) !important;
+    display: flex !important;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .glance-sub { margin-top: 0; }
+  .glance-items { font-size: 0.85rem; padding: 4px 0 0 !important; }
+  .chk-group summary { padding: 12px 14px; font-size: 0.92rem; }
+  .chk-table thead { display: none; }
+  .chk-table, .chk-table tbody { display: block; width: 100%; padding: 8px 10px; }
+  .chk-table tr.chk-item {
+    display: grid;
+    grid-template-columns: 26px minmax(0, 1fr);
+    gap: 4px 10px;
+    border: 1px solid var(--cp-border);
+    border-radius: 0.625rem;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    background: var(--cp-bg-elevated);
+  }
+  .chk-table td {
+    border-bottom: none;
+    padding: 0;
+    min-width: 0;
+  }
+  .chk-table td.chk-check-cell {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    width: 26px !important;
+    padding-top: 2px;
+    text-align: left !important;
+  }
+  .chk-table td.chk-main-cell {
+    grid-column: 2;
+    width: 100%;
+  }
+  .chk-table td.chk-due-cell {
+    grid-column: 2;
+    white-space: normal !important;
+    font-size: 0.79rem !important;
+    margin-top: 4px;
+    padding-top: 5px;
+    border-top: 1px dashed var(--cp-border);
+  }
+  .chk-table td.chk-due-cell::before {
+    content: "📅 Due: ";
+    color: var(--cp-text-muted);
+    font-weight: 700;
+  }
+  .chk-table td.chk-comp-cell {
+    grid-column: 2;
+    white-space: normal !important;
+    font-size: 0.79rem !important;
+  }
+  .chk-table td.chk-comp-cell:not(:empty)::before {
+    content: "✅ Completed: ";
+    font-weight: 700;
+  }
+  .chk-table td.chk-comp-cell:empty {
+    display: none;
   }
 }
