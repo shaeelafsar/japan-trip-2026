@@ -613,6 +613,95 @@ a:hover {
   margin-bottom: 4px;
 }
 
+/* Device-Only Offline QR Wallet */
+.qr-wallet {
+  background: var(--cp-surface);
+  border: 2px solid var(--cp-accent);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
+}
+.qr-wallet-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.qr-wallet-title {
+  font-weight: 700;
+  color: var(--cp-accent);
+  font-size: 1rem;
+}
+.qr-privacy-pill {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 0.625rem;
+  background: var(--cp-accent-soft);
+  color: var(--cp-accent);
+  border: 1px solid var(--cp-accent);
+}
+.qr-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+.qr-slot {
+  background: var(--cp-bg-elevated);
+  border: 1px solid var(--cp-border);
+  border-radius: 0.625rem;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.qr-slot-title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--cp-text);
+}
+.qr-slot-sub {
+  font-size: 0.78rem;
+  color: var(--cp-text-soft);
+}
+.qr-preview-box {
+  background: var(--cp-surface);
+  border: 1px dashed var(--cp-border-strong);
+  border-radius: 0.625rem;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.qr-preview-box img {
+  max-width: 100%;
+  max-height: 240px;
+  object-fit: contain;
+  display: block;
+  border-radius: 6px;
+}
+.qr-empty-msg {
+  font-size: 0.8rem;
+  color: var(--cp-text-muted);
+  padding: 12px;
+}
+.qr-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.qr-file-input {
+  display: none;
+}
+
 /* Lightbox Modal */
 .lightbox {
   position: fixed;
@@ -675,7 +764,7 @@ a:hover {
   .schedule-list { padding-left: 0; list-style: none; }
   .schedule-bullet { padding: 10px; }
   .btn-pill { padding: 5px 10px; font-size: 0.77rem; }
-  .grid-2 { grid-template-columns: 1fr; }
+  .grid-2, .qr-grid { grid-template-columns: 1fr; }
   .table-wrap { overflow-x: visible; }
   .stack-mobile thead { display: none; }
   .stack-mobile, .stack-mobile tbody, .stack-mobile tr, .stack-mobile td {
