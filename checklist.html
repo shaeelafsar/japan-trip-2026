@@ -18,7 +18,7 @@
     }
   })();
 </script>
-  <link rel="stylesheet" href="styles.css?v=16" />
+  <link rel="stylesheet" href="styles.css?v=17" />
 </head>
 <body>
   <header class="top-nav">
@@ -29,6 +29,7 @@
     </div>
     <nav class="nav-links">
       <a class="nav-tab" href="index.html">Itinerary</a>
+      <a class="nav-tab" href="halal.html">Halal Food</a>
       <a class="nav-tab active" href="checklist.html">Checklist</a>
       <a class="nav-tab" href="tips.html">Tips &amp; Tricks</a>
       <a class="nav-tab" href="about.html">About</a>
@@ -43,8 +44,8 @@
       <h1>Pre-Trip Checklist, Offline QR Wallet &amp; Restaurant Card</h1>
       <p class="hero-sub">One clean list of what is left to do—plus your private device-only QR wallet and restaurant dietary card.</p>
       <div class="pill-row">
-        <span class="stat-pill accent" id="chkProgress">21 / 29 completed</span>
-        <span class="stat-pill">⏭️ Next: #1 T-Mobile Pass (Now–Nov 15) · #2–#3 Load QR Wallet + Backup Album (Nov 14–16) · #4–#5 Offline Site (By Nov 22) · #6 Fuji-Q (Tue Flight) · #7–#8 Optional Tax-Free (Only If Buying US Take-Home Gifts)</span>
+        <span class="stat-pill accent" id="chkProgress">21 / 31 completed</span>
+        <span class="stat-pill">⏭️ Next: #1 T-Mobile Pass (Now–Nov 15) · #2–#3 Load QR Wallet + Backup Album (Nov 14–16) · #4 Viator vs Klook/Agoda Price Audit (Nov 16–18) · #5 Message Mizunoto &amp; Sumo on Meals (Nov 16–19) · #6–#7 Offline Site (By Nov 22) · #8 Fuji-Q (Tue Flight)</span>
       </div>
     </section>
 
@@ -102,7 +103,7 @@
     <details class="chk-group" open>
           <summary>
             <span>📋 Remaining To-Do List (Sorted by Priority &amp; Due Date → Logical Execution Order)</span>
-            <span class="chk-badge">8 Remaining</span>
+            <span class="chk-badge">10 Remaining</span>
           </summary>
           <div class="table-wrap">
             <table class="clean-table chk-table">
@@ -148,13 +149,35 @@
               </td>
               <td class="chk-due-cell" style="font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Sat Nov 14 – Mon Nov 16, 2026</td>
               <td class="chk-comp-cell" data-comp-for="chk-org-wife" style="font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-viator-price-audit">
+              <td class="chk-check-cell" style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-viator-price-audit" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td class="chk-main-cell">
+                <div class="chk-title">#4. Audit &amp; Compare Your 4 Existing Viator Bookings vs. Klook / Agoda / Direct Operator Rates (Free-Cancellation Savings Check)</div>
+                <div class="chk-detail">All 4 of your Viator bookings allow 100% free cancellation up to 24 hours before the activity, and Viator often marks up USD reseller rates by 15%–35% vs. Klook, Agoda Activities (use promo code ACTFORYOU26), or booking direct in Yen! Compare these 4 exact dates/times before canceling anything (always lock the cheaper replacement first, then cancel Viator): (1) Sat Nov 28 @ 12:00 PM — Asakusa Temari Sushi Class (Viator 217172P1), (2) Sun Nov 29 @ 1:30 PM — Maikoya Asakusa Silk Kimono + Matcha Tea (Viator 51440P108 — also check mai-ko.com direct &amp; Klook), (3) Sun Nov 29 @ 5:30 PM — Shinjuku Live Sumo Show &amp; Chicken Hot-Pot (Viator 5610033P1 — compare on Klook/Agoda), and (4) Tue Dec 1 @ 1:30 PM — Samurai &amp; Ninja Museum Asakusa (Viator 51440P80 — also check mai-ko.com/samurai direct &amp; Klook).</div>
+                <div class="action-row"><a class="btn-pill" href="https://www.klook.com/en-US/city/28-tokyo-things-to-do/" target="_blank" rel="noopener">🔗 Klook Tokyo Activities</a><a class="btn-pill" href="https://www.agoda.com/activities/" target="_blank" rel="noopener">🔗 Agoda Activities</a><a class="btn-pill" href="https://mai-ko.com/" target="_blank" rel="noopener">🔗 Maikoya Direct (Kimono &amp; Samurai)</a><a class="btn-pill" href="https://www.viator.com/" target="_blank" rel="noopener">🔗 Viator Bookings</a></div>
+              </td>
+              <td class="chk-due-cell" style="font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Mon Nov 16 – Wed Nov 18, 2026</td>
+              <td class="chk-comp-cell" data-comp-for="chk-viator-price-audit" style="font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
+            </tr><tr class="chk-item" data-chk-id="chk-halal-meal-messages">
+              <td class="chk-check-cell" style="width:42px;text-align:center;vertical-align:middle;">
+                <input type="checkbox" data-chk="chk-halal-meal-messages" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
+              </td>
+              <td class="chk-main-cell">
+                <div class="chk-title">#5. Message Mizunoto Ryokan (Agoda) &amp; Shinjuku Sumo Show (Viator) on Meal Plan &amp; Halal / Seafood Options</div>
+                <div class="chk-detail">(1) Hakone Mizunoto Ryokan (Mon Nov 30, $380 on Agoda): Your current reservation is Room-Only (no paid Kaiseki dinner booked, though it includes free 22:30 Yonaki Soba soy ramen). Send a quick message on Agoda to ask if they offer a Seafood / No-Pork / Halal-friendly dinner option you can add (or if you should stick to Lake Ashi / Gora dining), AND ask whether the complimentary 22:30 Yonaki Soba broth is fish/kelp/chicken-based with zero pork. (2) Sun Nov 29 Shinjuku Sumo Show (17:30, Viator 5610033P1): Send a message in the Viator app confirming your 2 seats need the No-Pork / Muslim-friendly Chicken Chanko-Nabe (or Seafood/Vegetarian) preparation.</div>
+                <div class="action-row"><a class="btn-pill" href="https://www.agoda.com/" target="_blank" rel="noopener">🔗 Agoda Bookings (Mizunoto)</a><a class="btn-pill" href="https://www.viator.com/tours/Tokyo/Tokyo-Shinjuku-Sumo-Show-Experience-with-Photo-and-Drinks/d334-5610033P1" target="_blank" rel="noopener">🔗 Viator 5610033P1 (Sumo Show)</a><a class="btn-pill" href="halal.html" target="_blank" rel="noopener">🔗 🍽️ Full Halal Restaurant Guide</a></div>
+              </td>
+              <td class="chk-due-cell" style="font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">Mon Nov 16 – Thu Nov 19, 2026</td>
+              <td class="chk-comp-cell" data-comp-for="chk-halal-meal-messages" style="font-weight:600;font-size:0.83rem;color:var(--cp-success);"></td>
             </tr><tr class="chk-item" data-chk-id="chk-offline-site-mine">
               <td class="chk-check-cell" style="width:42px;text-align:center;vertical-align:middle;">
                 <input type="checkbox" data-chk="chk-offline-site-mine" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
               </td>
               <td class="chk-main-cell">
-                <div class="chk-title">#4. Your iPhone: Save Final Trip Website Offline (Safari &#x27;Save to Files&#x27; + Reading List + Home Screen)</div>
-                <div class="chk-detail">Finish before travel week starts! In Safari, open Itinerary, Checklist &amp; Tips → tap Share → Save to Files → &#x27;On My iPhone&#x27; + &#x27;Add to Reading List&#x27; + &#x27;Add to Home Screen&#x27; so the site works in Airplane Mode.</div>
+                <div class="chk-title">#6. Your iPhone: Save Final Trip Website Offline (Safari &#x27;Save to Files&#x27; + Reading List + Home Screen)</div>
+                <div class="chk-detail">Finish before travel week starts! In Safari, open Itinerary, Halal Food, Checklist &amp; Tips → tap Share → Save to Files → &#x27;On My iPhone&#x27; + &#x27;Add to Reading List&#x27; + &#x27;Add to Home Screen&#x27; so the site works in Airplane Mode.</div>
                 <div class="action-row"><a class="btn-pill" href="tips.html#phone-organization" target="_blank" rel="noopener">🔗 See Offline Site Steps</a></div>
               </td>
               <td class="chk-due-cell" style="font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">By Sun Nov 22, 2026</td>
@@ -164,8 +187,8 @@
                 <input type="checkbox" data-chk="chk-offline-site-wife" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
               </td>
               <td class="chk-main-cell">
-                <div class="chk-title">#5. Wife&#x27;s iPhone: Save Final Trip Website Offline (Safari &#x27;Save to Files&#x27; + Reading List + Home Screen)</div>
-                <div class="chk-detail">Finish before travel week starts! On her iPhone in Safari, save Itinerary, Checklist &amp; Tips to &#x27;On My iPhone&#x27; in Files + Reading List + Add to Home Screen.</div>
+                <div class="chk-title">#7. Wife&#x27;s iPhone: Save Final Trip Website Offline (Safari &#x27;Save to Files&#x27; + Reading List + Home Screen)</div>
+                <div class="chk-detail">Finish before travel week starts! On her iPhone in Safari, save Itinerary, Halal Food, Checklist &amp; Tips to &#x27;On My iPhone&#x27; in Files + Reading List + Add to Home Screen.</div>
                 <div class="action-row"><a class="btn-pill" href="tips.html#phone-organization" target="_blank" rel="noopener">🔗 See Offline Site Steps</a></div>
               </td>
               <td class="chk-due-cell" style="font-weight:600;font-size:0.83rem;color:var(--cp-text-soft);">By Sun Nov 22, 2026</td>
@@ -175,7 +198,7 @@
                 <input type="checkbox" data-chk="chk-fujiq-pass" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
               </td>
               <td class="chk-main-cell">
-                <div class="chk-title">#6. Check Fri Mt. Fuji Weather &amp; Book Fuji-Q 1-Day Pass ($78/pair on Agoda) + 3 Priority Passes (~$102/pair)</div>
+                <div class="chk-title">#8. Check Fri Mt. Fuji Weather &amp; Book Fuji-Q 1-Day Pass ($78/pair on Agoda) + 3 Priority Passes (~$102/pair)</div>
                 <div class="chk-detail">Zero research left—your exact rides &amp; times are pre-decided: (1) Agoda Adult &#x27;1-Day Free Pass&#x27; (~$78 for 2 w/ promo ACTFORYOU26), and (2) 3 Priority Passes (~¥2,600 / $17 each on fujiq.jp): 13:00 Zokkon (Hagrid&#x27;s-style 4x motorbike launch, zero loops), 13:40 Fujiyama (81 mph hypercoaster, zero loops), and 15:15 Zokkon Round 2 (or Takabisha). ✈️ When to Book (3 Easy Options): (A) On your Tue Nov 24 domestic flight / MSP layover (fast free Delta Sync Wi-Fi + live cell SMS for credit card 3D Secure codes), (B) In the first 2 hours of DL275 (MSP → HND) before the northern Alaska/Pacific satellite dead zone (keep Wi-Fi Calling ON so bank SMS codes arrive), OR (C) Backup: Wed Nov 25 @ 5:30 PM JST once checked into JR Mets Shibuya (&lt;48-hr forecast).</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.fujiq.jp/en/ticket/priority.html" target="_blank" rel="noopener">🔗 Fuji-Q Priority</a><a class="btn-pill" href="https://www.agoda.com/activities/detail?activityId=1033787" target="_blank" rel="noopener">🔗 Agoda 1-Day Pass</a><a class="btn-pill" href="index.html#fujiq-rides" target="_blank" rel="noopener">🔗 🎢 Ride Ranking Table</a></div>
               </td>
@@ -186,7 +209,7 @@
                 <input type="checkbox" data-chk="chk-vjw-taxfree" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
               </td>
               <td class="chk-main-cell">
-                <div class="chk-title">#7. [OPTIONAL — Only If Buying $35+ Take-Home Goods for the US] Arrival Night: Scan Passport Landing Sticker in Visit Japan Web</div>
+                <div class="chk-title">#9. [OPTIONAL — Only If Buying $35+ Take-Home Goods for the US] Arrival Night: Scan Passport Landing Sticker in Visit Japan Web</div>
                 <div class="chk-detail">⚠️ STRICTLY FOR TAKE-HOME GOODS GOING BACK TO THE US (NEVER applies to restaurants, street food, or snacks/drinks consumed inside Japan — 100% optional if you aren&#x27;t buying souvenirs to bring home!). If you DO want the 10% refund on take-home shopping (¥5,000+ / ~$35+ per store), open Visit Japan Web → &#x27;Tax-Free Shopping&#x27; after clearing Haneda Immigration on Wed Nov 25 and scan the new Landing Permission sticker in your passport (takes 60 seconds).</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.digital.go.jp/en/policies/visit_japan_web" target="_blank" rel="noopener">🔗 Visit Japan Web</a><a class="btn-pill" href="https://www.customs.go.jp/kaigairyoko/taxrefund.htm" target="_blank" rel="noopener">🔗 Official Nov 2026 Refund Guide</a></div>
               </td>
@@ -197,7 +220,7 @@
                 <input type="checkbox" data-chk="chk-taxfree-checkout" data-default-comp="" style="width:18px;height:18px;accent-color:var(--cp-accent);cursor:pointer;" />
               </td>
               <td class="chk-main-cell">
-                <div class="chk-title">#8. [OPTIONAL — Only If You Bought Tax-Free Take-Home Goods] Checkout Morning (Wed Dec 2, 09:45–10:05 AM JST): Prep Refund on Phone</div>
+                <div class="chk-title">#10. [OPTIONAL — Only If You Bought Tax-Free Take-Home Goods] Checkout Morning (Wed Dec 2, 09:45–10:05 AM JST): Prep Refund on Phone</div>
                 <div class="chk-detail">⚠️ SKIP ENTIRELY IF YOU DIDN&#x27;T BUY TAX-FREE TAKE-HOME GOODS FOR THE US! (Remember: food, drinks, and items consumed inside Japan are never eligible—and eating even 1 item from a tax-free receipt voids that entire receipt&#x27;s refund if Customs inspects your bag.) If you DID buy ¥5,000+ (~$35+) of unopened take-home goods: (1) In Your Room at lyf Shibuya (09:45–10:05 AM JST before 11:00 AM check-out): confirm your credit card payout is saved on the store refund link and check your purchase list in Visit Japan Web → &#x27;Refund Procedure&#x27;; (2) At Haneda T3 (~2:45 PM before Delta bag drop): join &#x27;Customs_WiFi_For_TaxRefund&#x27; (PW: &#x27;jcustoms&#x27;) and tap &#x27;Confirm&#x27; in 10 seconds on your phone (if Green = done; if Red = show the unopened items to the Customs desk before checking your suitcase).</div>
                 <div class="action-row"><a class="btn-pill" href="https://www.digital.go.jp/en/policies/visit_japan_web" target="_blank" rel="noopener">🔗 Visit Japan Web</a><a class="btn-pill" href="https://www.nta.go.jp/publication/pamph/shohi/menzei/201805/format/002/onlinetetsuzuki/guideeng.htm" target="_blank" rel="noopener">🔗 NTA Online Refund Guide</a></div>
               </td>

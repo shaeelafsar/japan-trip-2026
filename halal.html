@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Halal, Seafood &amp; Vegetarian Restaurant Guide — Japan 2026 (v2)</title>
+  <script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    const saved = localStorage.getItem("jp_v2_theme");
+    const theme =
+      param || saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "dark" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js").catch(() => {});
+      });
+    }
+  })();
+</script>
+  <link rel="stylesheet" href="styles.css?v=17" />
+</head>
+<body>
+  <header class="top-nav">
+  <div class="top-nav-inner">
+    <div class="brand">
+      <span>🇯🇵 Japan 2026</span>
+      <span class="brand-badge">v2</span>
+    </div>
+    <nav class="nav-links">
+      <a class="nav-tab" href="index.html">Itinerary</a>
+      <a class="nav-tab active" href="halal.html">Halal Food</a>
+      <a class="nav-tab" href="checklist.html">Checklist</a>
+      <a class="nav-tab" href="tips.html">Tips &amp; Tricks</a>
+      <a class="nav-tab" href="about.html">About</a>
+      <button class="theme-btn" id="themeToggle" type="button">☀️/🌙</button>
+    </nav>
+  </div>
+  <div class="day-bar">
+    <div class="day-bar-inner">
+      <a class="day-pill" href="#halal-rules">🪪 Ordering Card</a>
+      <a class="day-pill" href="#halal-day-wed-25">Wed 25</a><a class="day-pill" href="#halal-day-thu-26">Thu 26</a><a class="day-pill" href="#halal-day-fri-27">Fri 27</a><a class="day-pill" href="#halal-day-sat-28">Sat 28</a><a class="day-pill" href="#halal-day-sun-29">Sun 29</a><a class="day-pill" href="#halal-day-mon-30">Mon 30</a><a class="day-pill" href="#halal-day-tue-1">Tue 1</a><a class="day-pill" href="#halal-day-wed-2">Wed 2</a>
+    </div>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Curated Day-by-Day Halal, Seafood &amp; Vegetarian Restaurant Guide</h1>
+      <p class="hero-sub">Organized by Itinerary Day and Town/Neighborhood so you have pre-vetted options right where you are standing—whether you want 100% Halal-certified A5 Wagyu &amp; Chicken Ramen or naturally Halal Seafood, Tempura, Soba &amp; Unagi.</p>
+      <div class="pill-row">
+        <span class="stat-pill accent">✅ 100% Halal-Certified Meat Spots</span>
+        <span class="stat-pill">🐟🥬 Naturally Halal Seafood &amp; Veg Spots</span>
+        <span class="stat-pill">📍 Mapped to Every Day's Exact Town &amp; Corridor</span>
+      </div>
+    </section>
+
+    <section class="info-card" id="halal-rules" style="scroll-margin-top:118px;">
+      <h2>🪪 How to Use This Guide + Bilingual Restaurant Card</h2>
+      <div class="grid-2" style="margin-bottom:12px;">
+        <div class="mini-box">
+          <h3>✅ Category 1: 100% Halal-Certified Meat Restaurants</h3>
+          <ul>
+            <li><strong>Zero Guessing:</strong> Every spot labeled <strong>"✅ 100% Halal-Certified Meat"</strong> (<em>Gyumon Shibuya</em>, <em>Shinjuku-tei</em> across Shibuya/Shinjuku/Harajuku/Asakusa, <em>Honolu Ebisu</em>, <em>Yakiniku no Mikore Shinjuku</em>, <em>THE SLICE Omotesando</em>, <em>Tendon Ginza Itsuki</em>, <em>Yakiniku PANGA</em>, <em>CoCo Ichibanya Halal Akihabara</em>, <em>Mrs Istanbul Haneda T3</em>) uses certified Halal beef/chicken and zero pork or alcohol in its broths and sauces.</li>
+            <li><strong>Brand-New Nov 16, 2026 Opening:</strong> <em>Halal Wagyu Ramen Shinjuku-tei Harajuku</em> opens right on Takeshita Street (`1-19-24 Jingumae`) on Nov 16, 2026—just 9 days before your trip!</li>
+          </ul>
+        </div>
+        <div class="mini-box">
+          <h3>🐟🥬 Category 2: Naturally Halal Seafood &amp; Vegetarian Spots</h3>
+          <ul>
+            <li><strong>Why It Works So Well in Japan:</strong> Traditional Japanese <strong>Soba</strong> (buckwheat noodles), <strong>Tempura</strong> (shrimp, squid, fish &amp; vegetables fried in sesame/vegetable oil), <strong>Sushi</strong>, <strong>Houtou</strong> (pumpkin miso flat noodles), and <strong>Unagi</strong> (charcoal-grilled freshwater eel) use <strong>kelp (<em>kombu</em>) and bonito fish flake (<em>katsuo</em>) dashi broth</strong>—100% free of pork or meat!</li>
+            <li><strong>When Ordering Seafood/Veg:</strong> Simply show the Japanese card below so staff confirm there is no pork extract/bacon and guide you to fish/kelp dashi or salt-seasoned dishes.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="chef-card" style="margin-bottom:0;">
+        <div class="chef-card-title">🪪 Show This Screen to Waitstaff (No Pork &amp; No Alcohol — Seafood, Veg, Halal Beef/Chicken OK)</div>
+        <div class="chef-jp">恐れ入りますが、豚肉（ベーコン・ハム・豚骨出汁・ラード等）とアルコール（お酒・みりん）を控えております。魚介類（海鮮・天ぷら・そば・うなぎ）・野菜料理、または豚肉を含まない牛肉・鶏肉料理をご案内いただけますと幸いです。ありがとうございます！</div>
+        <div class="chk-detail">"Excuse us for the trouble, but we kindly refrain from pork (bacon, ham, pork broth, lard, etc.) and alcohol (sake/mirin). We would be so grateful if you could guide us to seafood (sushi, tempura, soba, unagi), vegetable dishes, or beef/chicken dishes that contain no pork. Thank you very much!"</div>
+      </div>
+    </section>
+
+    <section class="day-card" id="halal-day-wed-25" style="scroll-margin-top:118px;">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Day 1 · Wed Nov 25, 2026</div>
+              <h2 class="day-title">Arrival Night in Shibuya</h2>
+              <div class="day-corridor">📍 Town / Corridor: Haneda Terminal 3 → Shibuya South / Higashi (JR-East Hotel Mets Shibuya)</div>
+            </div>
+            <a class="btn-pill" href="index.html#day-wed-25">🗓️ View Day on Itinerary</a>
+          </div>
+          <div class="day-overview">You check into JR-East Hotel Mets Shibuya around 20:15 after a 14-hour flight. You have two 100% Halal-certified meat spots within a 3–8 minute walk open until 23:00, plus a 2-minute walk to LIFE Supermarket for quick seafood/egg room bites.</div>
+          <div class="table-wrap" style="margin-top:10px;">
+            <table class="clean-table stack-mobile">
+              <thead>
+                <tr>
+                  <th style="width:180px;">Meal &amp; Town</th>
+                  <th style="width:230px;">Restaurant &amp; Type</th>
+                  <th style="width:190px;">Walk &amp; Hours</th>
+                  <th>What to Order, Notes &amp; 1-Tap Links</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+              <td><strong>Dinner (20:30–22:30)</strong><br /><em>Shibuya South (3-Min Walk from JR Mets)</em></td>
+              <td data-label="Restaurant"><strong>Gyumon Halal Yakiniku Shibuya (牛門 渋谷)</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ 100% Halal-Certified Meat</span></td>
+              <td data-label="Walk &amp; Hours">3-min walk from JR Mets Shibuya (3-14-5 Shibuya) · Open 12:00–23:00 (L.O. 22:30)</td>
+              <td data-label="What to Order">Charcoal-grilled A5 Halal Wagyu beef platters, beef tongue, and hot beef soup (100% Halal-certified meat &amp; zero alcohol in sauces). Walk-in or message ahead if arriving after 21:30.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Gyumon+Halal+Yakiniku+3-14-5+Shibuya+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Gyumon+Halal+Yakiniku+Shibuya" target="_blank" rel="noopener">🎬 TikTok</a><a class="btn-pill primary" href="https://fooddiversity.today/en/article_30633.html" target="_blank" rel="noopener">🔗 Food Diversity Listing</a></div></td>
+            </tr><tr>
+              <td><strong>Dinner (20:30–22:30)</strong><br /><em>Shibuya Center (8-Min Walk from JR Mets)</em></td>
+              <td data-label="Restaurant"><strong>Gyumon Halal Ramen Shibuya</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ 100% Halal-Certified Meat</span></td>
+              <td data-label="Walk &amp; Hours">8-min walk from JR Mets Shibuya (30-3 Udagawacho) · Open 11:00–23:00</td>
+              <td data-label="What to Order">Rich spicy or creamy Halal beef-bone &amp; chicken ramen, Halal crispy karaage fried chicken, and Wagyu sushi rolls—no reservation needed.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Gyumon+Halal+Ramen+Shibuya+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Gyumon+Halal+Ramen+Shibuya" target="_blank" rel="noopener">🎬 TikTok</a><a class="btn-pill primary" href="https://fooddiversity.today/en/" target="_blank" rel="noopener">🔗 Food Diversity Listing</a></div></td>
+            </tr><tr>
+              <td><strong>Light Room Bite (20:45–24:00)</strong><br /><em>Shibuya Higashi (2-Min Walk from JR Mets)</em></td>
+              <td data-label="Restaurant"><strong>LIFE Supermarket Shibuya Higashi &amp; 1F 7-Eleven</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">🐟🥬 Naturally Halal: Seafood &amp; Veg</span></td>
+              <td data-label="Walk &amp; Hours">2-min walk across Meiji-dori (1-26-22 Higashi) · Open until 24:00 Midnight</td>
+              <td data-label="What to Order">Red-salmon (紅しゃけ) or tuna-mayo (ツナマヨ) onigiri, salted soft-boiled eggs, tamago egg-salad sandwich, fresh strawberries, and plain Greek yogurt to heat/eat in your room.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=LIFE+Supermarket+Shibuya+Higashi+1-26-22+Higashi+Shibuya" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=7+Eleven+Japan+halal+snacks+onigiri" target="_blank" rel="noopener">🎬 TikTok</a><a class="btn-pill primary" href="tips.html#grocery-guide" target="_blank" rel="noopener">🔗 Room Grocery Guide</a></div></td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        </section><section class="day-card" id="halal-day-thu-26" style="scroll-margin-top:118px;">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Day 2 · Thu Nov 26, 2026</div>
+              <h2 class="day-title">Mt. Takao Hike Lunch &amp; Shinjuku Lantern Dinner</h2>
+              <div class="day-corridor">📍 Town / Corridor: Mt. Takao (Hachioji) → Shinjuku (Omoide Yokocho, Nishishinjuku &amp; Shinjuku 3-Chome)</div>
+            </div>
+            <a class="btn-pill" href="index.html#day-thu-26">🗓️ View Day on Itinerary</a>
+          </div>
+          <div class="day-overview">Mt. Takao has no Halal-certified meat stalls, making its famous mountain yam buckwheat soba and grilled walnut-miso dango the ideal naturally Halal lunch. For dinner in Shinjuku, walk through Omoide Yokocho for the lantern photos, then eat 3–7 minutes away at 100% Halal-certified Wagyu BBQ or Wagyu Ramen.</div>
+          <div class="table-wrap" style="margin-top:10px;">
+            <table class="clean-table stack-mobile">
+              <thead>
+                <tr>
+                  <th style="width:180px;">Meal &amp; Town</th>
+                  <th style="width:230px;">Restaurant &amp; Type</th>
+                  <th style="width:190px;">Walk &amp; Hours</th>
+                  <th>What to Order, Notes &amp; 1-Tap Links</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+              <td><strong>Lunch (10:45–11:45)</strong><br /><em>Mt. Takao Summit &amp; Cable Car Base (Hachioji)</em></td>
+              <td data-label="Restaurant"><strong>Takahashiya (高橋家) &amp; Mt. Takao Summit Soba Teahouses</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">🐟🥬 Naturally Halal: Seafood &amp; Veg</span></td>
+              <td data-label="Walk &amp; Hours">Right at Summit Viewpoint &amp; Cable Car Base · Open 10:00–16:00</td>
+              <td data-label="What to Order">Hot Tororo Soba (grated mountain yam over buckwheat soba in bonito/kelp seafood dashi) or Mushroom &amp; Mountain-Vegetable Tempura Soba (skip duck/kamo soba). Pair with charcoal-grilled walnut-miso Dango rice skewers &amp; Tengu-yaki black-bean pastries along Trail 1.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Takahashiya+Soba+Mount+Takao" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Mount+Takao+tororo+soba+dango" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr><tr>
+              <td><strong>Dinner #1 (17:30–20:30)</strong><br /><em>Shinjuku West (3-Min Walk from Omoide Yokocho)</em></td>
+              <td data-label="Restaurant"><strong>Yakiniku no Mikore Shinjuku (焼肉の名門 ミコレ)</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ 100% Halal-Certified Meat</span></td>
+              <td data-label="Walk &amp; Hours">3-min walk from Omoide Yokocho (1-15-5 Nishishinjuku B1F) · Open 11:00–23:00</td>
+              <td data-label="What to Order">100% Halal-certified A5 Wagyu Yakiniku (ribeye, kalbi short rib, beef tongue) grilled at your table, plus stone-pot bibimbap and cold noodles.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Yakiniku+no+Mikore+1-15-5+Nishishinjuku+Shinjuku+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Yakiniku+no+Mikore+Halal+Shinjuku" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr><tr>
+              <td><strong>Dinner #2 (17:30–20:30)</strong><br /><em>Shinjuku East / 3-Chome (7-Min Walk from Omoide Yokocho)</em></td>
+              <td data-label="Restaurant"><strong>Halal Wagyu Ramen Shinjuku-tei (新宿亭 新宿三丁目店)</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ 100% Halal-Certified Meat</span></td>
+              <td data-label="Walk &amp; Hours">7-min walk east (3-11-6 Shinjuku B1F) · Open 11:00–23:00</td>
+              <td data-label="What to Order">100% Halal A5 Wagyu Sirloin Ramen in rich Halal beef-bone broth, Spicy Wagyu Ramen, Halal chicken karaage, and Wagyu gyoza (prayer space available).<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Halal+Wagyu+Ramen+Shinjukutei+3-11-6+Shinjuku+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Halal+Wagyu+Ramen+Shinjukutei" target="_blank" rel="noopener">🎬 TikTok</a><a class="btn-pill primary" href="https://halal-shinjukutei.com/" target="_blank" rel="noopener">🔗 Official Site</a></div></td>
+            </tr><tr>
+              <td><strong>Dinner #3 / Skewer Option</strong><br /><em>Shinjuku West / Kabukicho Edge</em></td>
+              <td data-label="Restaurant"><strong>Gyopao Gyoza Shinjuku (肉汁水餃子 餃包) OR Himawari Zushi Shinjuku</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ Halal Chicken &amp; 🐟🥬 Seafood Sushi</span></td>
+              <td data-label="Walk &amp; Hours">3–5 min walk from Omoide Yokocho · Open until 22:30</td>
+              <td data-label="What to Order">Gyopao serves Halal-certified juicy chicken soup-gyoza, crispy fried chicken, and grilled chicken skewers (confirm Halal menu with staff); or walk into Himawari Zushi Shinjuku right next to Mikore for fresh chef-made conveyor sushi.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Gyopao+Gyoza+Shinjuku+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Gyopao+Gyoza+Shinjuku+Halal" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        </section><section class="day-card" id="halal-day-fri-27" style="scroll-margin-top:118px;">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Day 3 · Fri Nov 27, 2026</div>
+              <h2 class="day-title">Lake Kawaguchiko &amp; Fuji-Q Lunch + &#x27;Hana-kin&#x27; Friday Night Wagyu/Sushi</h2>
+              <div class="day-corridor">📍 Town / Corridor: Lake Kawaguchiko &amp; Fuji-Q Highland (Yamanashi) → Shibuya / Omotesando</div>
+            </div>
+            <a class="btn-pill" href="index.html#day-fri-27">🗓️ View Day on Itinerary</a>
+          </div>
+          <div class="day-overview">Around Mt. Fuji, Yamanashi&#x27;s signature dish is simmering Houtou flat noodles in pumpkin &amp; mushroom miso broth (naturally meat-free/seafood-friendly), plus Kawaguchiko has Halal-certified Houto Labo and Aladdin Indo. Back in Tokyo at 18:45, celebrate Friday night (&#x27;Hana-kin&#x27;) with Halal A5 Wagyu or sushi in Shibuya.</div>
+          <div class="table-wrap" style="margin-top:10px;">
+            <table class="clean-table stack-mobile">
+              <thead>
+                <tr>
+                  <th style="width:180px;">Meal &amp; Town</th>
+                  <th style="width:230px;">Restaurant &amp; Type</th>
+                  <th style="width:190px;">Walk &amp; Hours</th>
+                  <th>What to Order, Notes &amp; 1-Tap Links</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+              <td><strong>Lunch #1 (11:45 or 14:00)</strong><br /><em>Lake Kawaguchiko / Fuji-Q Highland</em></td>
+              <td data-label="Restaurant"><strong>Houtou Fudou (ほうとう不動) / HOUTO LABO (ほうとう研究所)</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">🐟🥬 Naturally Halal &amp; ✅ Halal Bowls</span></td>
+              <td data-label="Walk &amp; Hours">Kawaguchiko Station / Lakefront · Open 11:00–19:00</td>
+              <td data-label="What to Order">Simmering iron pot of thick flat wheat Houtou noodles cooked with sweet kabocha pumpkin, mountain mushrooms, cabbage, and tofu in miso broth (naturally meat-free at Houtou Fudou; Houto Labo specifically offers certified Halal/Vegan/Seafood Houtou bowls).<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Houtou+Fudou+Kawaguchiko+Station" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Houtou+Fudou+Kawaguchiko+noodles" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr><tr>
+              <td><strong>Lunch #2 (14:00–15:10 Inside Park)</strong><br /><em>Fuji-Q Highland (Inside Park)</em></td>
+              <td data-label="Restaurant"><strong>Fuji-Q Food Stadium / Pizzeria &amp; Aladdin Indo Kawaguchiko</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">🐟🥬 Seafood/Veg Inside Park · ✅ Halal Nearby</span></td>
+              <td data-label="Walk &amp; Hours">Inside Fuji-Q Highland (0-min walk between Zokkon &amp; Fujiyama)</td>
+              <td data-label="What to Order">Inside Fuji-Q Food Stadium: order Shrimp/Vegetable Tempura Udon (kelp/bonito dashi), Margherita/Cheese Pizza, or roasted Taiyaki &amp; sweet potato snacks (show No-Pork Chef Card). Or 5 mins away in Kawaguchiko: Aladdin Indo Restaurant (100% Halal-certified curries, tandoori chicken &amp; naan).<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Fuji+Q+Highland+Food+Stadium" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Fuji+Q+Highland+food" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr><tr>
+              <td><strong>Dinner #1 (18:45 Onward)</strong><br /><em>Shibuya (3–8 Min Walk from JR Mets)</em></td>
+              <td data-label="Restaurant"><strong>Gyumon Halal Yakiniku OR Halal Wagyu Ramen Shinjuku-tei Shibuya</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ 100% Halal-Certified Meat</span></td>
+              <td data-label="Walk &amp; Hours">3-min walk (Gyumon, 3-14-5 Shibuya) or 8-min walk (Shinjuku-tei, 19-9 Udagawacho) · Open till 23:00</td>
+              <td data-label="What to Order">Sizzling charcoal-grilled Halal A5 Wagyu beef at Gyumon, or rich A5 Wagyu Sirloin Ramen &amp; crispy Halal gyoza at Shinjuku-tei Shibuya.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Halal+Wagyu+Ramen+Shinjukutei+Shibuya+19-9+Udagawacho" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Halal+Wagyu+Ramen+Shinjukutei+Shibuya" target="_blank" rel="noopener">🎬 TikTok</a><a class="btn-pill primary" href="https://halal-shinjukutei.com/" target="_blank" rel="noopener">🔗 Shinjuku-tei Official</a></div></td>
+            </tr><tr>
+              <td><strong>Dinner #2 (18:45 Onward)</strong><br /><em>Omotesando / Shibuya</em></td>
+              <td data-label="Restaurant"><strong>THE SLICE Halal A5 Wagyu (Omotesando) OR Sushi no Midori Shibuya</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ Halal A5 Wagyu OR 🐟🥬 Fresh Sushi</span></td>
+              <td data-label="Walk &amp; Hours">1 subway stop to Omotesando (5-7-20 Jingumae B1F) or Mark City 4F Shibuya · Open till 22:00</td>
+              <td data-label="What to Order">THE SLICE serves 100% Halal A5 Wagyu Sukiyaki, Shabu-Shabu, and Sirloin Steaks; Sushi no Midori / Uobei Shibuya serve ultra-fresh nigiri sushi, salmon rolls, and shrimp tempura.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=THE+SLICE+Halal+Wagyu+5-7-20+Jingumae+Shibuya+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=THE+SLICE+Halal+Wagyu+Tokyo" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        </section><section class="day-card" id="halal-day-sat-28" style="scroll-margin-top:118px;">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Day 4 · Sat Nov 28, 2026</div>
+              <h2 class="day-title">Yanaka Old Town, 12:00 Asakusa Sushi Class &amp; Ebisu Chicken Ramen Night</h2>
+              <div class="day-corridor">📍 Town / Corridor: Yanaka Ginza (Taito/Bunkyo) → Asakusa → Shibuya &amp; Ebisu</div>
+            </div>
+            <a class="btn-pill" href="index.html#day-sat-28">🗓️ View Day on Itinerary</a>
+          </div>
+          <div class="day-overview">Your 12:00 PM Hands-On Sushi-Making Class in Asakusa (Viator 217172P1) is your sit-down seafood/veg lunch (plus Asakusa has 3 Halal spots 2 minutes away if you want extra bites). After your 16:40 SHIBUYA SKY sunset/night deck, ride 1 stop (2 mins) to Ebisu—home to Tokyo&#x27;s most famous 100% Halal Tori-Paitan Chicken Ramen shop!</div>
+          <div class="table-wrap" style="margin-top:10px;">
+            <table class="clean-table stack-mobile">
+              <thead>
+                <tr>
+                  <th style="width:180px;">Meal &amp; Town</th>
+                  <th style="width:230px;">Restaurant &amp; Type</th>
+                  <th style="width:190px;">Walk &amp; Hours</th>
+                  <th>What to Order, Notes &amp; 1-Tap Links</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+              <td><strong>Morning Snack &amp; 12:00 Booked Lunch</strong><br /><em>Yanaka Ginza → Asakusa</em></td>
+              <td data-label="Restaurant"><strong>Booked Asakusa Temari Sushi Class (217172P1) + Yanaka Chestnut Sweets</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">🐟🥬 Naturally Halal: Seafood &amp; Veg</span></td>
+              <td data-label="Walk &amp; Hours">09:30–11:20 Yanaka Ginza · 12:00–13:20 Asakusa Sushi Class</td>
+              <td data-label="What to Order">In Yanaka Ginza: freshly roasted chestnuts, Mont Blanc chestnut soft-serve at Waguriya, and matcha-glazed senbei rice crackers (skip beef/pork menchi-katsu). At 12:00 PM: your hands-on Asakusa sushi class (100% seafood &amp; vegetable, zero pork/alcohol).<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Waguriya+Yanaka+Ginza+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Waguriya+Yanaka+Ginza+chestnut" target="_blank" rel="noopener">🎬 TikTok</a><a class="btn-pill primary" href="https://www.viator.com/tours/Asakusa/Temari-Sushi-Experience/d59194-217172P1" target="_blank" rel="noopener">🔗 Viator 217172P1</a></div></td>
+            </tr><tr>
+              <td><strong>Bonus Asakusa Halal Options (If Hungry at 13:20)</strong><br /><em>Asakusa (2-Min Walk from Senso-ji / Ginza Line)</em></td>
+              <td data-label="Restaurant"><strong>Halal Wagyu Ramen Shinjuku-tei Asakusa · Sekai Cafe · Sushi Ken</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ 100% Halal-Certified</span></td>
+              <td data-label="Walk &amp; Hours">1–3 min walk from Kaminarimon / Asakusa Station · Open 11:00–22:00</td>
+              <td data-label="What to Order">Shinjuku-tei Asakusa (1-11-1 Asakusa): Halal A5 Wagyu ramen &amp; gyoza; Sekai Cafe (1-18-8 Asakusa): Muslim-friendly beef/fish burgers &amp; vegetarian ramen; Sushi Ken (2-11-4 Asakusa): 100% Halal-certified sushi using alcohol-free soy sauce.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Halal+Wagyu+Ramen+Shinjukutei+Asakusa+1-11-1+Asakusa" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Halal+food+Asakusa+Tokyo" target="_blank" rel="noopener">🎬 TikTok</a><a class="btn-pill primary" href="https://halal-shinjukutei.com/" target="_blank" rel="noopener">🔗 Shinjuku-tei Official</a></div></td>
+            </tr><tr>
+              <td><strong>Dinner #1 (18:15–20:00 · Primary Pick)</strong><br /><em>Ebisu (4-Min Walk from JR Ebisu Station)</em></td>
+              <td data-label="Restaurant"><strong>Halal Ramen &amp; Dining Honolu Ebisu (帆のる 恵比寿本店)</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ 100% Halal-Certified Meat</span></td>
+              <td data-label="Walk &amp; Hours">4-min walk from JR Ebisu (1-23-1 Ebisu-Minami) · Open 11:30–14:30 &amp; 17:00–22:00</td>
+              <td data-label="What to Order">Tokyo&#x27;s #1 Halal chicken ramen flagship—matches your Saturday Ebisu Tori-Paitan itinerary stop 100%! Order the Rich Creamy Tori-Paitan Chicken Ramen, Spicy Fried Chicken Ramen, crispy Halal Karaage, and Roasted Chicken Gyoza.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Halal+Ramen+Honolu+Ebisu+1-23-1+Ebisu-Minami+Shibuya+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Halal+Ramen+Honolu+Ebisu" target="_blank" rel="noopener">🎬 TikTok</a><a class="btn-pill primary" href="https://fooddiversity.today/en/" target="_blank" rel="noopener">🔗 Food Diversity Listing</a></div></td>
+            </tr><tr>
+              <td><strong>Dinner #2 &amp; #3 (18:15–20:30 Backups in Ebisu)</strong><br /><em>Ebisu West Exit (1–3 Min Walk from Station)</em></td>
+              <td data-label="Restaurant"><strong>Hakata Motsunabe &amp; Karaage Ryu Ebisu OR Wagyu Yakiniku Keisuke Sannanbou</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ 100% Halal-Certified Meat</span></td>
+              <td data-label="Walk &amp; Hours">1-min walk from JR Ebisu West Exit (1-8-14 Ebisu-Nishi B1F) · Open 17:00–23:00</td>
+              <td data-label="What to Order">Ryu Ebisu is 100% Halal-certified and famous for sizzling Halal Wagyu skewers, crispy Hakata fried chicken, and rich beef hot-pot; Keisuke Sannanbou offers Halal Wagyu BBQ right in Ebisu.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Hakata+Motsunabe+Ryu+Ebisu+1-8-14+Ebisu-Nishi+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Halal+Ebisu+Tokyo" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        </section><section class="day-card" id="halal-day-sun-29" style="scroll-margin-top:118px;">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Day 5 · Sun Nov 29, 2026</div>
+              <h2 class="day-title">Harajuku &amp; Omotesando Lunch, Asakusa Matcha Break &amp; 17:30 Shinjuku Sumo Dinner</h2>
+              <div class="day-corridor">📍 Town / Corridor: Harajuku &amp; Omotesando → Asakusa → Shinjuku</div>
+            </div>
+            <a class="btn-pill" href="index.html#day-sun-29">🗓️ View Day on Itinerary</a>
+          </div>
+          <div class="day-overview">You have two 100% Halal Wagyu spots right along your 11:10–12:25 Takeshita Street → Omotesando walk (including Shinjuku-tei&#x27;s brand-new Takeshita Street shop opening Nov 16, 2026!), naturally Halal matcha gelato &amp; sesame-oil shrimp tempura in Asakusa at 16:00, and your booked Chicken Chanko-Nabe hot-pot dinner at the 17:30 Shinjuku Sumo Show.</div>
+          <div class="table-wrap" style="margin-top:10px;">
+            <table class="clean-table stack-mobile">
+              <thead>
+                <tr>
+                  <th style="width:180px;">Meal &amp; Town</th>
+                  <th style="width:230px;">Restaurant &amp; Type</th>
+                  <th style="width:190px;">Walk &amp; Hours</th>
+                  <th>What to Order, Notes &amp; 1-Tap Links</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+              <td><strong>Lunch #1 (11:10–12:15)</strong><br /><em>Harajuku (Right on Takeshita Street)</em></td>
+              <td data-label="Restaurant"><strong>Halal Wagyu Ramen Shinjuku-tei Harajuku + Marion Crepes</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ 100% Halal Meat + 🍓 Veg Crepes</span></td>
+              <td data-label="Walk &amp; Hours">On Takeshita Street (1-19-24 Jingumae, 2F — Opens Nov 16, 2026!) · Open 11:00–22:00</td>
+              <td data-label="What to Order">Hot Halal A5 Wagyu Ramen right on Takeshita Street, followed by a warm Strawberry-Banana Custard &amp; Whipped Cream crepe at Marion Crepes or Santa Monica Crepes (naturally vegetarian; skip cheesecake/mousse cubes that use gelatin).<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=1-19-24+Jingumae+Shibuya+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Takeshita+Street+crepes+Harajuku" target="_blank" rel="noopener">🎬 TikTok</a><a class="btn-pill primary" href="https://halal-shinjukutei.com/" target="_blank" rel="noopener">🔗 Shinjuku-tei Official</a></div></td>
+            </tr><tr>
+              <td><strong>Lunch #2 (11:20–12:15)</strong><br /><em>Omotesando (1-Min Walk from 12:25 Ginza Line Gate)</em></td>
+              <td data-label="Restaurant"><strong>THE SLICE Halal Wagyu Steak &amp; Burgers Omotesando</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ 100% Halal-Certified Meat</span></td>
+              <td data-label="Walk &amp; Hours">Right at Omotesando Station (5-7-20 Jingumae B1F) · Open 11:30–22:00</td>
+              <td data-label="What to Order">100% Halal A5 Wagyu Smash Burgers, Wagyu Steak Rice Bowls, or Sukiyaki right next to the Omotesando Station entrance before you board the 12:25 PM Ginza Line to Asakusa.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=THE+SLICE+Halal+Wagyu+5-7-20+Jingumae+Shibuya+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=THE+SLICE+Halal+Wagyu+Omotesando" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr><tr>
+              <td><strong>Afternoon Cafe Break (16:00–16:45)</strong><br /><em>Asakusa (Around Maikoya &amp; Senso-ji)</em></td>
+              <td data-label="Restaurant"><strong>Suzukien Asakusa Matcha Gelato · Kaminarimon Sansada Tempura · Shinjuku-tei Asakusa</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">🍵 Naturally Halal &amp; ✅ Halal Ramen</span></td>
+              <td data-label="Walk &amp; Hours">1–4 min walk from Maikoya Asakusa · Open till 17:00–22:00</td>
+              <td data-label="What to Order">Suzukien Asakusa (world&#x27;s richest 7-level matcha &amp; roasted hojicha gelato—naturally vegetarian), Kaminarimon Sansada (Tokyo&#x27;s oldest 1837 tempura shop—shrimp &amp; fish tendon fried in fragrant sesame oil), or Shinjuku-tei Asakusa (1-min walk from Maikoya).<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Suzukien+Asakusa+Matcha+Gelato+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Suzukien+Asakusa+7+level+matcha" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr><tr>
+              <td><strong>Dinner (17:30–19:15 Booked + Late Backups)</strong><br /><em>Shinjuku</em></td>
+              <td data-label="Restaurant"><strong>Booked Shinjuku Sumo Show Chicken Chanko-Nabe (5610033P1) + Shinjuku Halal Backups</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">🍲 Booked Chicken Hot-Pot + ✅ Halal Backups</span></td>
+              <td data-label="Walk &amp; Hours">17:30–19:15 Show · Backups open till 23:00 (&lt;10 min walk)</td>
+              <td data-label="What to Order">Your Sumo Show ticket includes Chicken Chanko-Nabe hot-pot dinner (message Viator 5610033P1 per Checklist #5 to confirm No-Pork/Muslim-friendly prep). If you want extra food afterward, Yakiniku no Mikore Shinjuku and Shinjuku-tei Shinjuku are both open until 23:00.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Halal+Wagyu+Ramen+Shinjukutei+3-11-6+Shinjuku+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Tokyo+Shinjuku+Sumo+Show+chanko+nabe" target="_blank" rel="noopener">🎬 TikTok</a><a class="btn-pill primary" href="https://www.viator.com/tours/Tokyo/Tokyo-Shinjuku-Sumo-Show-Experience-with-Photo-and-Drinks/d334-5610033P1" target="_blank" rel="noopener">🔗 Viator 5610033P1</a></div></td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        </section><section class="day-card" id="halal-day-mon-30" style="scroll-margin-top:118px;">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Day 6 · Mon Nov 30, 2026</div>
+              <h2 class="day-title">Hakone Loop (Owakudani, Lake Ashi &amp; Kowakidani Onsen Mizunoto)</h2>
+              <div class="day-corridor">📍 Town / Corridor: Owakudani Crater → Moto-Hakone (Lake Ashi) → Gora / Kowakidani (Mizunoto Ryokan)</div>
+            </div>
+            <a class="btn-pill" href="index.html#day-mon-30">🗓️ View Day on Itinerary</a>
+          </div>
+          <div class="day-overview">Hakone is a traditional mountain resort town with no Halal-certified slaughterhouses, so your comfort with naturally Halal Seafood &amp; Vegetarian dishes shines here! Plus, because your $380 Mizunoto booking is Room-Only (no paid Kaiseki dinner locked in), you have total freedom to eat seafood/tempura soba by Lake Ashi or Gora and message Mizunoto via Agoda (Checklist #5) about dinner/broth options.</div>
+          <div class="table-wrap" style="margin-top:10px;">
+            <table class="clean-table stack-mobile">
+              <thead>
+                <tr>
+                  <th style="width:180px;">Meal &amp; Town</th>
+                  <th style="width:230px;">Restaurant &amp; Type</th>
+                  <th style="width:190px;">Walk &amp; Hours</th>
+                  <th>What to Order, Notes &amp; 1-Tap Links</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+              <td><strong>Midday Crater Snack (12:30–13:00)</strong><br /><em>Owakudani Volcanic Valley</em></td>
+              <td data-label="Restaurant"><strong>Owakudani Kuro-Tamago (Black Hot-Spring Eggs)</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">🥚 Naturally Halal: 100% Plain Eggs</span></td>
+              <td data-label="Walk &amp; Hours">Right at Owakudani Ropeway Summit Station · Open 09:00–16:20</td>
+              <td data-label="What to Order">Bag of 5 hot volcanic spring-boiled eggs (¥500 cash) with salt packets—100% naturally Halal protein with Mt. Fuji views.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Owakudani+Kurotamago+Kan+Hakone" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Owakudani+black+eggs+Hakone" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr><tr>
+              <td><strong>Lunch #1 (14:10–15:10)</strong><br /><em>Moto-Hakone Pier (Lake Ashi Waterfront)</em></td>
+              <td data-label="Restaurant"><strong>Hatsuhana Soba / Lakeside Tempura Soba Cafes &amp; Wakasa (Grilled Trout/Smelt)</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">🐟🥬 Naturally Halal: Seafood &amp; Veg</span></td>
+              <td data-label="Walk &amp; Hours">1–3 min walk from Moto-Hakone Pirate Ship Pier · Open 11:00–16:30</td>
+              <td data-label="What to Order">Hot buckwheat soba noodles with crispy giant prawn &amp; mountain-vegetable tempura in fish/kelp dashi, OR freshly grilled Lake Ashi wakasagi (smelt) and rainbow trout set meals with steamed rice.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Moto-Hakone+Pier+Soba+Restaurant+Lake+Ashi" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Lake+Ashi+Moto+Hakone+soba+tempura" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr><tr>
+              <td><strong>Lunch #2 / Cafe (14:10–15:10)</strong><br /><em>Moto-Hakone Pier (Lake Ashi Waterfront)</em></td>
+              <td data-label="Restaurant"><strong>Bakery &amp; Table Hakone (Lake Ashi Footbath Bakery Cafe)</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">🐟🥬 Naturally Halal: Egg/Cheese/Veg Pastries</span></td>
+              <td data-label="Walk &amp; Hours">1-min walk from Moto-Hakone Pier · Open 10:00–17:00</td>
+              <td data-label="What to Order">Famous crispy Rice-Flour Curry Bread (check vegetable/egg tags), egg-salad &amp; cheese panini, matcha pastries, and hot lattes overlooking Lake Ashi (show No-Pork Chef Card to skip bacon/ham items).<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Bakery+and+Table+Hakone+Moto-Hakone" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Bakery+and+Table+Hakone" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr><tr>
+              <td><strong>Dinner &amp; Late Night (16:00–22:30)</strong><br /><em>Kowakidani / Gora (Mizunoto Ryokan)</em></td>
+              <td data-label="Restaurant"><strong>Mizunoto Ryokan ($380 Room-Only Plan) + Gora Seafood / Kowakidani Lawson</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">🐟🥬 Seafood / Veg + Free 22:30 Ramen</span></td>
+              <td data-label="Walk &amp; Hours">Check-in 16:00 · Gora is 5 mins away · Free Yonaki Soba at 22:30</td>
+              <td data-label="What to Order">(1) Message Mizunoto on Agoda (Checklist #5) to ask if you can add a Seafood/No-Pork dinner AND confirm whether the complimentary 22:30 Yonaki Soba soy ramen broth is fish/kelp/chicken vs. pork; (2) If eating out before 18:30, take a 5-min ride to Gora for Tamura Ginkatsutei (tofu &amp; seafood cutlets) or Itoh Dining by Nobu (seafood teppanyaki), and grab red-salmon onigiri, egg sandos &amp; fruit at Kowakidani Lawson.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Hakone+Kowakudani+Onsen+Mizunoto" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Mizunoto+Hakone+ryokan" target="_blank" rel="noopener">🎬 TikTok</a><a class="btn-pill primary" href="https://dormy-hotels.com/resort/hotels/mizunoto/rooms/" target="_blank" rel="noopener">🔗 Mizunoto Official Site</a></div></td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        </section><section class="day-card" id="halal-day-tue-1" style="scroll-margin-top:118px;">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Day 7 · Tue Dec 1, 2026</div>
+              <h2 class="day-title">Tokyo Station Bullet Train Lunch, Asakusa/Ueno/Akihabara Afternoon &amp; Shibuya Finale Dinner</h2>
+              <div class="day-corridor">📍 Town / Corridor: Tokyo Station / Ginza → Asakusa / Kappabashi / Ueno / Akihabara → Shibuya</div>
+            </div>
+            <a class="btn-pill" href="index.html#day-tue-1">🗓️ View Day on Itinerary</a>
+          </div>
+          <div class="day-overview">When your 11:14 Kodama 808 Shinkansen arrives at Tokyo Station at 11:48 AM, you have Michelin Bib Gourmand vegan/seafood ramen right inside the station OR 100% Halal Tendon Ginza Itsuki 8 minutes away. In the afternoon, Ueno (PANGA) and Akihabara (CoCo Ichibanya Halal) sit right on your route back from Kappabashi to Shibuya, followed by Charcoal-Grilled Unagi (eel) or Halal Wagyu in Shibuya.</div>
+          <div class="table-wrap" style="margin-top:10px;">
+            <table class="clean-table stack-mobile">
+              <thead>
+                <tr>
+                  <th style="width:180px;">Meal &amp; Town</th>
+                  <th style="width:230px;">Restaurant &amp; Type</th>
+                  <th style="width:190px;">Walk &amp; Hours</th>
+                  <th>What to Order, Notes &amp; 1-Tap Links</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+              <td><strong>Lunch #1 (11:55–12:50 · Inside Station)</strong><br /><em>Tokyo Station (Ramen Street &amp; Gransta)</em></td>
+              <td data-label="Restaurant"><strong>Soranoiro NIPPON (ソラノイロ・NIPPON) &amp; T&#x27;s Tantan</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">🐟🥬 Naturally Halal: Vegan/Veggie &amp; Clam</span></td>
+              <td data-label="Walk &amp; Hours">Inside Tokyo Station (Yaesu Underground Central Exit) · Open 10:30–22:30</td>
+              <td data-label="What to Order">At Soranoiro NIPPON (right under the Yaesu Taxi Stand!): Michelin Bib Gourmand Veggie Soba (sweet carrot-cabbage broth with brown-rice noodles) or Clam &amp; Mushroom Soy Ramen. At T&#x27;s Tantan (Gransta): rich golden sesame-peanut tantanmen &amp; crispy soy-meat karaage.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Soranoiro+NIPPON+Tokyo+Ramen+Street" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Soranoiro+NIPPON+Tokyo+Station" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr><tr>
+              <td><strong>Lunch #2 (12:00–12:50 · 8-Min Walk)</strong><br /><em>Ginza / Yurakucho (Near Tokyo Station)</em></td>
+              <td data-label="Restaurant"><strong>Halal Tendon Ginza Itsuki (銀座いつき)</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ 100% Halal-Certified Tempura</span></td>
+              <td data-label="Walk &amp; Hours">8-min walk / 2-min taxi from Tokyo Station (Ginza INZ 1, 2F) · Open 11:00–22:00</td>
+              <td data-label="What to Order">One of Tokyo&#x27;s highest-rated 100% Halal-certified Japanese restaurants: giant crispy tempura prawns, tender Halal chicken breast, autumn mushrooms, and soft-boiled egg over steamed rice in Halal soy-dashi tare, served with Chawanmushi (savory egg custard) &amp; miso soup!<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Tendon+Ginza+Itsuki+Ginza+INZ+1+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Tendon+Ginza+Itsuki+Halal" target="_blank" rel="noopener">🎬 TikTok</a><a class="btn-pill primary" href="https://fooddiversity.today/en/" target="_blank" rel="noopener">🔗 Food Diversity Listing</a></div></td>
+            </tr><tr>
+              <td><strong>Afternoon En-Route Stop-Offs (15:35–17:30)</strong><br /><em>Ueno / Okachimachi &amp; Akihabara (Right on Ginza Line Back to Shibuya)</em></td>
+              <td data-label="Restaurant"><strong>Halal Wagyu Yakiniku PANGA (Ueno) &amp; CoCo Ichibanya Halal Akihabara</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ 100% Halal-Certified Meat</span></td>
+              <td data-label="Walk &amp; Hours">2 stops from Kappabashi on the exact Ginza Line back to Shibuya</td>
+              <td data-label="What to Order">If you want an early Halal feast on your way back from Kappabashi: (1) Yakiniku PANGA (3-27-9 Taito, Ueno/Okachimachi — Tokyo&#x27;s #1 Halal A5 Wagyu Yakiniku flagship), or (2) CoCo Ichibanya Halal Akihabara (1-6 Matsunagacho — 100% Halal Japanese Chicken Katsu &amp; Beef Curry right on your optional Akihabara stop!).<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Yakiniku+Panga+3-27-9+Taito+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Yakiniku+Panga+Halal+Tokyo" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr><tr>
+              <td><strong>Finale Dinner (18:30–20:30)</strong><br /><em>Shibuya (Around lyf Shibuya &amp; Hikarie/Scramble Square)</em></td>
+              <td data-label="Restaurant"><strong>Hitsumabushi Nagoya Bincho / Unagi Matsukawa (Eel) OR Shinjuku-tei / Gyumon Shibuya</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">🐟🥬 Seafood Unagi OR ✅ 100% Halal Wagyu</span></td>
+              <td data-label="Walk &amp; Hours">3–6 min walk in Shibuya · Open until 22:00–23:00</td>
+              <td data-label="What to Order">Seafood Unagi Option: Charcoal-grilled freshwater eel over steamed rice at Hitsumabushi Nagoya Bincho (Shibuya Hikarie 6F) or Matsukawa (Scramble Square 12F — show Chef Card if avoiding mirin in glaze). 100% Halal Meat Option (3 mins from lyf Shibuya): Halal Wagyu Ramen Shinjuku-tei Shibuya (19-9 Udagawacho) or Gyumon Halal Yakiniku Shibuya.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Hitsumabushi+Nagoya+Bincho+Shibuya+Hikarie" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Hitsumabushi+Nagoya+Bincho+Shibuya+unagi" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        </section><section class="day-card" id="halal-day-wed-2" style="scroll-margin-top:118px;">
+          <div class="day-top">
+            <div>
+              <div class="day-date">Day 8 · Wed Dec 2, 2026</div>
+              <h2 class="day-title">Isetan &amp; Shinjuku Gyoen Lunch + Haneda Terminal 3 Pre-Flight Halal Meal</h2>
+              <div class="day-corridor">📍 Town / Corridor: Shinjuku 3-Chome (Isetan &amp; Shinjuku Gyoen) → Haneda Airport Terminal 3</div>
+            </div>
+            <a class="btn-pill" href="index.html#day-wed-2">🗓️ View Day on Itinerary</a>
+          </div>
+          <div class="day-overview">On your final morning, Shinjuku-tei&#x27;s 3-Chome branch sits on the exact block between Isetan Shinjuku and Shinjuku Gyoen Gate (a 2-minute walk!), so you can either picnic in the maple garden with Isetan seafood tempura &amp; daifuku OR eat hot Halal A5 Wagyu ramen at 11:00 AM. At Haneda Terminal 3 (~14:45), Mrs Istanbul on 4F Edo Koji serves 100% Halal-certified kebabs before security.</div>
+          <div class="table-wrap" style="margin-top:10px;">
+            <table class="clean-table stack-mobile">
+              <thead>
+                <tr>
+                  <th style="width:180px;">Meal &amp; Town</th>
+                  <th style="width:230px;">Restaurant &amp; Type</th>
+                  <th style="width:190px;">Walk &amp; Hours</th>
+                  <th>What to Order, Notes &amp; 1-Tap Links</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+              <td><strong>Lunch Option A (10:50–12:40 Picnic)</strong><br /><em>Shinjuku 3-Chome (Isetan Basement → Shinjuku Gyoen)</em></td>
+              <td data-label="Restaurant"><strong>Isetan Shinjuku Depachika Basement Food Hall</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">🐟🥬 Naturally Halal: Seafood &amp; Sweets</span></td>
+              <td data-label="Walk &amp; Hours">Opens 10:00 AM · 5-min walk to Shinjuku Gyoen Gate</td>
+              <td data-label="What to Order">Freshly fried prawn, squid, and lotus-root tempura over rice (Tenichi), salt-grilled red salmon or mackerel obento, red-salmon onigiri, and fresh strawberry daifuku mochi to eat on a sunny waterside bench inside Shinjuku Gyoen.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Isetan+Shinjuku+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Isetan+Shinjuku+depachika+food+hall" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr><tr>
+              <td><strong>Lunch Option B (11:00–11:40 Sit-Down)</strong><br /><em>Shinjuku 3-Chome (Between Isetan &amp; Shinjuku Gyoen Gate)</em></td>
+              <td data-label="Restaurant"><strong>Halal Wagyu Ramen Shinjuku-tei (新宿亭 新宿三丁目店)</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ 100% Halal-Certified Meat</span></td>
+              <td data-label="Walk &amp; Hours">2-min walk from Isetan on the way to Gyoen (3-11-6 Shinjuku B1F) · Opens 11:00 AM</td>
+              <td data-label="What to Order">If it&#x27;s chilly and you want a hot sit-down Halal meal right before walking into Shinjuku Gyoen: A5 Halal Wagyu Sirloin Ramen, Halal chicken karaage, and Wagyu gyoza.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Halal+Wagyu+Ramen+Shinjukutei+3-11-6+Shinjuku+Tokyo" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Halal+Wagyu+Ramen+Shinjukutei+Shinjuku" target="_blank" rel="noopener">🎬 TikTok</a><a class="btn-pill primary" href="https://halal-shinjukutei.com/" target="_blank" rel="noopener">🔗 Shinjuku-tei Official</a></div></td>
+            </tr><tr>
+              <td><strong>Pre-Flight Meal (14:45–15:45)</strong><br /><em>Haneda Airport Terminal 3 (4F Edo Koji — Before Security)</em></td>
+              <td data-label="Restaurant"><strong>Mrs Istanbul (ミセス・イスタンブール) &amp; Ariso Sushi</strong><br /><span class="crowd-pill" style="display:inline-block;margin-top:4px;font-size:0.74rem;">✅ 100% Halal Certified + 🐟🥬 Sushi</span></td>
+              <td data-label="Walk &amp; Hours">Haneda T3 4th Floor Edo Koji (1 floor above Delta check-in) · Open 10:00–21:00</td>
+              <td data-label="What to Order">Right after dropping your bags at Delta (~14:45), ride the escalator up to 4F Edo Koji: Mrs Istanbul is 100% Halal-certified (Turkish doner kebab plates, grilled chicken/beef shish kebabs, rice &amp; baklava), and Ariso Sushi next door serves fresh seafood nigiri.<div class="action-row" style="margin-top:6px;"><a class="btn-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Mrs+Istanbul+Haneda+Airport+Terminal+3" target="_blank" rel="noopener">📍 Maps</a><a class="btn-pill" href="https://www.tiktok.com/search?q=Haneda+Airport+Terminal+3+Edo+Koji+food" target="_blank" rel="noopener">🎬 TikTok</a></div></td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+  </main>
+
+  <script>
+    document.getElementById("themeToggle").addEventListener("click", () => {
+      const cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", cur);
+      localStorage.setItem("jp_v2_theme", cur);
+    });
+  </script>
+</body>
+</html>
