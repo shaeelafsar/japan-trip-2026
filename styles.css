@@ -485,6 +485,32 @@ a:hover {
   font-size: 0.85rem;
   margin: 2px 0 5px;
 }
+.nav-steps-box {
+  background: var(--cp-surface);
+  border: 1px solid var(--cp-border);
+  border-left: 3px solid var(--cp-link);
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 6px 10px;
+  margin: 5px 0 6px;
+}
+.nav-steps-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--cp-link);
+  margin-bottom: 3px;
+}
+.nav-steps-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.82rem;
+  color: var(--cp-text);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.nav-steps-list li strong {
+  color: var(--cp-text);
+}
 .stop-req {
   font-size: 0.82rem;
   color: var(--cp-text);
