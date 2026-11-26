@@ -52,6 +52,48 @@ html[data-theme="dark"] {
   --cp-highlight: rgba(253, 142, 161, 0.12);
 }
 
+.friday-plans {
+  border: 0;
+  margin: 16px 0 0;
+  padding: 0;
+  min-width: 0;
+}
+.friday-plans legend {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.friday-plans input {
+  position: absolute;
+  opacity: 0;
+}
+.friday-plans label {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid var(--cp-border-strong);
+  border-radius: 0.625rem;
+  padding: 8px 12px;
+  margin: 0 4px 8px 0;
+  background: var(--cp-surface);
+  color: var(--cp-text);
+}
+.friday-plans input:checked + label {
+  background: var(--cp-accent);
+  border-color: var(--cp-accent);
+  color: var(--cp-accent-fg);
+  font-weight: 700;
+}
+.friday-plans input:focus-visible + label {
+  outline: 3px solid var(--cp-link);
+  outline-offset: 2px;
+}
+.friday-alternative-panel,
+#friday-alternative:checked ~ .friday-original-panel {
+  display: none;
+}
+#friday-alternative:checked ~ .friday-alternative-panel {
+  display: block;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
