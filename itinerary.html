@@ -297,6 +297,15 @@
             </div>
             <span class="crowd-pill">Selected: 08:15 Bus ✅</span>
           </div>
+          <div class="schedule-bullet">
+            <div class="bullet-top"><span class="stop-time">BUS TICKETS</span><span class="stop-name">🎟️ Mobile boarding passes</span></div>
+            <div class="action-row" id="friday-bus-ticket-links" style="display:none;">
+              <a class="btn-pill primary" id="friday-outbound-ticket" href="https://www.highwaybus.com/gp/inbound/inbRsvSearch" target="_blank" rel="noopener noreferrer">🚌 08:15 outbound ticket</a>
+              <a class="btn-pill primary" id="friday-return-ticket" href="https://www.highwaybus.com/gp/inbound/inbRsvSearch" target="_blank" rel="noopener noreferrer">🚌 16:18 return ticket</a>
+            </div>
+            <div class="stop-note" id="friday-bus-ticket-status" role="status">Open your private setup link on this phone to add your ticket buttons.</div>
+            <div class="stop-note">Open the live mobile ticket with internet; screenshots are not accepted. <a href="https://www.highwaybus.com/gp/inbound/inbRsvSearch" target="_blank" rel="noopener noreferrer">Find your reservation</a>.</div>
+          </div>
           <div class="schedule-bullet break-bullet">
             <div class="bullet-top"><span class="stop-time">FRI MORNING</span><span class="stop-name">Bus plan selected: cancel the unused Kaiji</span></div>
             <div class="stop-note"><strong>Keep the 08:15 outbound and 16:18 return buses.</strong> If you haven't canceled the unused Kaiji yet, do so now; no cancellation has been made for you. Leave the hotel around 07:35, or earlier for more buffer.</div>
@@ -1192,6 +1201,44 @@
   </div>
 
   <script>
+    (() => {
+      function loadFridayBusTickets() {
+        let fridayBusTickets;
+        try {
+          fridayBusTickets = new URLSearchParams(window.location.hash.slice(1)).get("fridayBusTickets");
+          if (fridayBusTickets !== null) {
+            history.replaceState(null, "", window.location.pathname + window.location.search + "#day-fri-27");
+            document.getElementById("day-fri-27").scrollIntoView();
+            if (!/^[a-f0-9]{32},[a-f0-9]{32}$/i.test(fridayBusTickets)) {
+              throw new Error("Invalid ticket setup link.");
+            }
+            localStorage.setItem("jp_v2_friday_bus_tickets", fridayBusTickets);
+          } else {
+            fridayBusTickets = localStorage.getItem("jp_v2_friday_bus_tickets");
+          }
+          if (fridayBusTickets === null) return;
+          if (!/^[a-f0-9]{32},[a-f0-9]{32}$/i.test(fridayBusTickets)) {
+            throw new Error("Invalid saved tickets.");
+          }
+          fridayBusTickets = fridayBusTickets.split(",");
+          document.getElementById("friday-outbound-ticket").href = "https://www.highwaybus.com/gp/inbound/inbWebticketPrint?" + fridayBusTickets[0] + "&lang=EN&ticket_type=mobile";
+          document.getElementById("friday-return-ticket").href = "https://www.highwaybus.com/gp/inbound/inbWebticketPrint?" + fridayBusTickets[1] + "&lang=EN&ticket_type=mobile";
+          document.getElementById("friday-bus-ticket-links").style.display = "";
+          document.getElementById("friday-bus-ticket-status").textContent = "Tickets are saved in this browser on this device.";
+        } catch {
+          console.error("Could not save or load Friday bus tickets.");
+          document.getElementById("friday-bus-ticket-links").style.display = "none";
+          document.getElementById("friday-bus-ticket-status").textContent = "Could not save or load the tickets. Open your ticket emails or find your reservation below.";
+        }
+      }
+      loadFridayBusTickets();
+      window.addEventListener("hashchange", () => {
+        if (new URLSearchParams(window.location.hash.slice(1)).has("fridayBusTickets")) {
+          loadFridayBusTickets();
+        }
+      });
+    })();
+
     document.getElementById("themeToggle").addEventListener("click", () => {
       const cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
       document.documentElement.setAttribute("data-theme", cur);
